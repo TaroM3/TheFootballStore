@@ -6,7 +6,7 @@ const ProtectedRoutes = () => {
   return (
     <div>
       <Navigate to={"/"} />
-      {/* <Outlet /> */}
+      <Outlet />
     </div>
   );
 };
