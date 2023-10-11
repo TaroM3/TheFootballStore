@@ -1,0 +1,12 @@
+.btn:hover {
+  cursor: "pointer";
+}
+.img {
+  transition: all;
+  transition-duration: 0.5s;
+  height: 200px;
+}
+.img:hover {
+  background-color: #dd807d42;
+  opacity: 80%;
+}
