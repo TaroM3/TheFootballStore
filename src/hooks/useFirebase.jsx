@@ -4,7 +4,7 @@ import { db } from "../firebaseConfig"
 //entra por parametro el nombre de la base de datos y devuelve un array de objetos
 const useFirestore = (databaseName, id = undefined) => {
     
-    const [data, setData] = useState({})
+    const [data, setData] = useState([])
 
     useEffect(() => {
         const getData = collection(db, databaseName);

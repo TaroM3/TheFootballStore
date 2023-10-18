@@ -1,0 +1,27 @@
+:root {
+
+    /*Pallette*/
+    --primary: #FFFFFF;
+    --secondary: #000000;
+    --accent: #FFE54E;
+    --main: #6DF0F7;
+
+    /* Font Sizes */
+    --text-xxl: 3.6em;
+    --text-xl: 2.8em;
+    --text-lg: 2.2em;
+    --text-sm2: 2em;
+    --text-sm: 1.8em;
+    --text-xs: 1.4em;
+
+    /* Spacings */
+    --space-xxl: 12rem;
+    --space-xl: 8rem;
+    --space-lg: 5rem;
+    --space-md: 3.2rem;
+    --space-sm: 1.6rem;
+    --space-xs: 0.8rem;
+    
+    --font-neue: frontpageneue;
+    --font-bebas: bebas;
+}
