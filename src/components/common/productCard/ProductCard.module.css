@@ -2,11 +2,23 @@
   cursor: "pointer";
 }
 .img {
+  height: 31.2rem;
+  width: 31.8rem;
   transition: all;
   transition-duration: 0.5s;
-  height: 200px;
+  /* height: 200px; */
 }
 .img:hover {
-  background-color: #dd807d42;
+  background-color: var(--accent);
   opacity: 80%;
+}
+.titleCard{
+  font-size: var(--text-sm);
+  color: var(--secondary);
+  font-family: 'Courier New', Courier, monospace;
+}
+.card { 
+  width: 31.8rem;
+  cursor: pointer;
+  font-family: var(--font-roboto) ;
 }
