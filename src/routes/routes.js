@@ -1,6 +1,6 @@
 import CartContainer from "../components/page/cart/CartContainer";
 import ContactoContainer from "../components/page/contacto/ContactoContainer";
-import Dashboard from "../components/page/dashboard/DashboardContainer";
+import DashboardContainer from "../components/page/dashboard/DashboardContainer";
 import HomeContainer from "../components/page/home/HomeContainer";
 import InfoContainer from "../components/page/info/InfoContainer";
 import ItemDetailContainer from "../components/page/itemDetail/ItemDetailContainer";
@@ -35,7 +35,7 @@ export const routes = [
   {
     id: "dashboard",
     path: "/dashboard",
-    Element: Dashboard,
+    Element: DashboardContainer,
   },
   {
     id: "info",

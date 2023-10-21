@@ -1,8 +1,32 @@
 .navbar {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  font-family: Bebas Neue;
+  background-color: var(--secondary);
 }
 ul {
   list-style: none;
+}
+.img {
+  width: 50px;
+}
+
+h5 {
+  background-color: var(--accent);
+}
+.dropdown div {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.dropdown div a {
+  margin: 10px;
+}
+.dropdown {
+  flex-direction: column;
+  display: flex;
+}
+a {
+  color: var(--primary);
 }

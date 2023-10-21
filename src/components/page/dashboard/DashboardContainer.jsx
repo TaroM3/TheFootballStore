@@ -1,7 +1,20 @@
-import Dashboard from "./Dashboard";
+import { db } from "../../../firebaseConfig";
+import { products } from "../../products";
+import { addDoc, collection } from "firebase/firestore";
 
-const DashboardContainer = () => {
-  return <Dashboard />;
+const Dashboard = () => {
+  const rellenar = () => {
+    products.forEach((product) => {
+      let refCollection = collection(db, "products");
+      addDoc(refCollection, product);
+    });
+  };
+
+  return (
+    <div>
+      <button onClick={rellenar}>Rellenar base de datos</button>
+    </div>
+  );
 };
 
-export default DashboardContainer;
+export default Dashboard;

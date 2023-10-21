@@ -2,23 +2,28 @@
   cursor: "pointer";
 }
 .img {
-  height: 31.2rem;
-  width: 31.8rem;
   transition: all;
   transition-duration: 0.5s;
-  /* height: 200px; */
 }
 .img:hover {
   background-color: var(--accent);
   opacity: 80%;
 }
-.titleCard{
+.titleCard {
   font-size: var(--text-sm);
-  color: var(--secondary);
-  font-family: 'Courier New', Courier, monospace;
 }
-.card { 
-  width: 31.8rem;
+.titleCard a {
+  color: var(--secondary);
+}
+.card {
   cursor: pointer;
-  font-family: var(--font-roboto) ;
+  width: 20vw;
+  font-family: "frontpageneue";
+}
+/* a {
+  color: var(--secondary);
+} */
+.card div {
+  padding-bottom: 0;
+  margin-bottom: 0;
 }

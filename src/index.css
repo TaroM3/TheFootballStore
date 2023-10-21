@@ -1,32 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 @font-face {
   font-family: frontpageneue;
-  src: url('./fonts/FrontPageNeue.woff');
+  src: url("./fonts/FrontPageNeue.woff");
 }
-html{
-  font-size: 62.5%;
+@font-face {
+  font-family: urae;
+  src: url("./fonts/urae_nium.ttf");
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-h1{
-  font-family: "Bebas Neue", sans-serif;
-}
-a {
-  text-decoration: none;
-}
-
 :root {
-
   /*Pallette*/
-  --primary: #FFFFFF;
+  --primary: #ffffff;
   --secondary: #000000;
-  --accent: #FFE54E;
-  --main: #6DF0F7;
+  --accent: #ffe54e;
+  --main: #6df0f7;
 
   /* Font Sizes */
   --text-xxl: 3.6em;
@@ -43,8 +36,21 @@ a {
   --space-md: 3.2rem;
   --space-sm: 1.6rem;
   --space-xs: 0.8rem;
-  
-  --font-fneue: frontpageneue;
+
+  --font-urae: urae;
+  --font-fneue: "frontpageneue";
   --font-bebas: "Bebas Neue";
   --font-roboto: "Roboto";
+}
+h5 {
+  font-family: "frontpageneue";
+  font-weight: 100;
+  padding: var(--space-xs);
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+}
+a {
+  text-decoration: none;
 }
