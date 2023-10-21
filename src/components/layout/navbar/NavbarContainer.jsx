@@ -4,7 +4,9 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { Button, Form } from "react-bootstrap";
+import { Form } from "react-bootstrap";
+import CartWidget from "../../common/cartWidget/CartWidget";
+import UserIcon from "../../common/userIcon/UserIcon";
 
 const NavbarContainer = () => {
   return (
@@ -222,14 +224,15 @@ const NavbarContainer = () => {
           <Form className="d-flex">
             <Form.Control
               type="search"
-              placeholder="Search"
+              placeholder="Buscar"
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Search</Button>
-          </Form>
-        </Container>
-      </Navbar>
+          </Form>{" "}
+          <CartWidget />
+          <UserIcon />
+        </Container>{" "}
+      </Navbar>{" "}
     </div>
   );
 };

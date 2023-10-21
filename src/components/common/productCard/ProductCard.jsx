@@ -26,10 +26,16 @@ const ProductCard = ({ elemento }) => {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
+            paddingBottom: 0,
           }}
         >
           <Link to={`/itemDetail/${elemento.id}`}>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography
+              style={{ fontFamily: "frontpageneue" }}
+              gutterBottom
+              variant="h5"
+              component="div"
+            >
               {elemento.title}
             </Typography>
           </Link>

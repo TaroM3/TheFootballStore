@@ -2,7 +2,7 @@ import { Skeleton } from "@mui/material";
 import ProductCard from "../../common/productCard/ProductCard";
 
 const ItemList = ({ items }) => {
-  let arr = [1, 2, 3];
+  let arr = [1, 2, 3, 4];
   return (
     <div>
       <div
@@ -26,12 +26,6 @@ const ItemList = ({ items }) => {
                     sx={{ fontSize: "1.3rem" }}
                     width={100}
                   />
-                  <Skeleton
-                    variant="text"
-                    sx={{ fontSize: "1rem" }}
-                    width={150}
-                  />
-                  <Skeleton variant="rounded" width={100} />
                 </div>
               );
             })}

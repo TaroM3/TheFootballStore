@@ -16,6 +16,19 @@ const Home = () => {
           <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1697859086/Banner_Packging_fbsdjk.jpg" />
         </div>
       </Carousel>
+      <section
+        style={{
+          textAlign: "center",
+          fontSize: "var(--text-xs)",
+          padding: "var(--space-sm)",
+        }}
+      >
+        Breve descripción de la marca? forma de trabajo? Lorem ipsum dolor sit
+        amet consectetur. Massa purus commodo faucibus id diam amet ultricies
+        risus. Adipiscing aliquam maecenas duis aliquet nibh vel libero. Quis
+        magna pellentesque in quam velit rhoncus non nec. Volutpat ultricies
+        ornare blandit dictum pretium lorem. Venenatis auctor
+      </section>
     </div>
   );
 };
