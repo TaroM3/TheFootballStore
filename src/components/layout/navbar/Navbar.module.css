@@ -14,12 +14,7 @@ ul {
 h5 {
   background-color: var(--accent);
 }
-.dropdown div {
-  display: inline-flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-evenly;
-}
+
 .dropdown div a {
   margin: 10px;
 }
@@ -29,4 +24,9 @@ h5 {
 }
 a {
   color: var(--primary);
+}
+.item {
+  display: flex;
+  margin: 10px;
+  flex-direction: row;
 }

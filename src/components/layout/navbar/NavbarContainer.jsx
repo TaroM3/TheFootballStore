@@ -51,7 +51,7 @@ const NavbarContainer = () => {
                 id="basic-nav-dropdown"
                 className={styles.dropdown}
               >
-                <NavDropdown.Item>
+                <NavDropdown.Item className={styles.item}>
                   <ul>
                     {" "}
                     <Link to="/category/premierleague">Premier League</Link>
@@ -86,8 +86,6 @@ const NavbarContainer = () => {
                       </Link>
                     </li>
                   </ul>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
                   <ul>
                     <Link to="/category/ligasantander">Liga Santander</Link>
 
@@ -107,8 +105,6 @@ const NavbarContainer = () => {
                       </Link>
                     </li>
                   </ul>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
                   <ul>
                     <Link to="/category/league-one">League One</Link>
 
@@ -124,8 +120,6 @@ const NavbarContainer = () => {
                       <Link to="/category/league-one/club">PSG</Link>
                     </li>
                   </ul>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
                   <ul>
                     <Link to="/category/serie-a">Serie A</Link>
 
@@ -145,8 +139,6 @@ const NavbarContainer = () => {
                       <Link to="/category/serie-a/club/roma">Roma</Link>
                     </li>
                   </ul>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
                   <ul>
                     <Link to="/category/bundesliga">Bundesliga</Link>
 
@@ -166,8 +158,6 @@ const NavbarContainer = () => {
                       </Link>
                     </li>
                   </ul>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
                   <ul>
                     <Link to="/category/selecciones">Selecciones</Link>
 
@@ -178,11 +168,7 @@ const NavbarContainer = () => {
                       <Link to="/category/selecciones/europa">Europa</Link>
                     </li>
                   </ul>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
                   <Link to="/category/inter-miami">Inter Miami</Link>{" "}
-                </NavDropdown.Item>
-                <NavDropdown.Item>
                   <ul>
                     <li>
                       <Link to="/category/liga-argentina">Liga Argentina</Link>
@@ -196,8 +182,6 @@ const NavbarContainer = () => {
                       <Link to="/category/liga-argentina/club/boca">Boca</Link>
                     </li>
                   </ul>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
                   <ul>
                     <Link to="/category/retros">Retros</Link>
 
