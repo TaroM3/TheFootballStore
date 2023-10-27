@@ -12,10 +12,12 @@ const ItemDetailContainer = () => {
 
   const agregarAlCarrito = (size) => {
     let data = {
+      id: id,
       ...item,
       quantity: 1,
       size: size,
     };
+    console.log(data);
     addToCart(data);
   };
   return (

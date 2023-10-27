@@ -47,7 +47,7 @@ const ItemDetail = ({ item, agregarAlCarrito }) => {
         <Select
           select
           labelId="select-label"
-          value={sizeOption}
+          // value={sizeOption}
           onChange={handleChange}
           sx={{ width: "350px" }}
           name="size"
@@ -70,7 +70,7 @@ const ItemDetail = ({ item, agregarAlCarrito }) => {
         </Typography>
         <Select
           labelId="select-label"
-          value={sizeOption}
+          // value={sizeOption}
           // onChange={handleChange}
           defaultValue="nombre"
           sx={{ width: "350px" }}
@@ -84,7 +84,7 @@ const ItemDetail = ({ item, agregarAlCarrito }) => {
             textTransform: "none",
             fontSize: "22px",
           }}
-          onClick={() => agregarAlCarrito()}
+          onClick={() => agregarAlCarrito(sizeOption)}
         >
           Agregar al carrito
         </Button>
