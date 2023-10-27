@@ -6,13 +6,18 @@ import { getDocs, collection, query, where } from "firebase/firestore";
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
-
   const { categoryName } = useParams();
+  const { subCategoryName } = useParams();
 
   useEffect(() => {
     let productsCollection = collection(db, "products");
     let consulta;
-    if (categoryName) {
+    if (subCategoryName) {
+      consulta = query(
+        productsCollection,
+        where("subCategory", "==", subCategoryName)
+      );
+    } else if (categoryName) {
       consulta = query(
         productsCollection,
         where("category", "==", categoryName)
@@ -28,7 +33,7 @@ const ItemListContainer = () => {
 
       setItems(productos);
     });
-  }, [categoryName]);
+  }, [categoryName, subCategoryName]);
 
   return <ItemList items={items} />;
 };

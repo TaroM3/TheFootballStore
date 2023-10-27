@@ -1,6 +1,7 @@
 export let products = [
   {
     category: "retros",
+    subCategory: "selecciones",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697734437/thefootballstore/Argentina%20Retro%20Jersey%20Away%20World%20Cup%202006.webp",
     ],
@@ -10,6 +11,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "clubes",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730486/thefootballstore/River%20Plate%20Retro%20Jersey%20Home%201986.webp",
     ],
@@ -19,6 +21,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "clubes",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731893/thefootballstore/Barcelona%20Retro%20Jersey%20Home%202015-16.webp",
     ],
@@ -28,6 +31,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "clubes",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731852/thefootballstore/Barcelona%20Retro%20Away%20Jersey%202013-14.webp",
     ],
@@ -37,6 +41,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "clubes",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731666/thefootballstore/Chelsea%20Retro%20Jersey%20Home%202012-13.webp",
     ],
@@ -46,6 +51,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "clubes",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730681/thefootballstore/Real%20Madrid%20Retro%20Jersey%20Home%201998-00.webp",
     ],
@@ -55,6 +61,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "clubes",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731466/thefootballstore/Inter%20Milan%20Retro%20Jersey%20Away%202009-10.webp",
     ],
@@ -64,6 +71,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "selecciones",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697734326/thefootballstore/Argentina%20Retro%20Jersey%20Away%20World%20Cup%201994.webp",
     ],
@@ -73,6 +81,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "selecciones",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697734299/thefootballstore/Brazil%20Retro%20Jersey%20Home%20World%20Cup%202002.webp",
     ],
@@ -82,6 +91,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "selecciones",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697734238/thefootballstore/France%20Retro%20Jersey%20Away%20World%20Cup%201998.webp",
     ],
@@ -91,6 +101,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "clubes",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730620/thefootballstore/Real%20Madrid%20Retro%20Jersey%20Away%202011-12.webp",
     ],
@@ -100,6 +111,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "selecciones",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697734360/thefootballstore/Argentina%20Retro%20Jersey%20Away%20World%20Cup%201998.webp",
     ],
@@ -109,6 +121,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "clubes",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730545/thefootballstore/River%20Plate%20Retro%20Jersey%20Home%201996-97.webp",
     ],
@@ -118,6 +131,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "clubes",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730729/thefootballstore/Real%20Madrid%20Retro%20Away%20Jersey%201999-01.webp",
     ],
@@ -127,6 +141,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "clubes",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731341/thefootballstore/Manchester%20United%20Retro%20Jersey%20Away%202002-03.webp",
     ],
@@ -136,6 +151,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "clubes",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697732098/thefootballstore/AC%20Milan%20Retro%20Jersey%20Home%202006-07.webp",
     ],
@@ -145,6 +161,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "clubes",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731602/thefootballstore/Chelsea%20UCL%20Final%20Home%20Retro%20Jersey%202008.webp",
     ],
@@ -154,6 +171,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "clubes",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731799/thefootballstore/Boca%20Juniors%20Retro%20Soccer%20Jersey%20Home%202002.webp",
     ],
@@ -163,6 +181,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "clubes",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730575/thefootballstore/River%20Plate%20Retro%20Away%20Jersey%201996-97.webp",
     ],
@@ -172,6 +191,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "selecciones",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697734391/thefootballstore/Argentina%20Retro%20Jersey%20Home%20World%20Cup%202006.webp",
     ],
@@ -181,6 +201,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "clubes",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731931/thefootballstore/Barcelona%20UCL%20Final%20Retro%20Home%20Jersey%202008-09.webp",
     ],
@@ -190,6 +211,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "selecciones",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697734210/thefootballstore/Spain%20Retro%20Jersey%20Away%20World%20Cup%20Final%202010.webp",
     ],
@@ -199,6 +221,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "clubes",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731431/thefootballstore/Retro%20Manchester%20United%20Third%20Away%20Jersey%202007-08.webp",
     ],
@@ -208,6 +231,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "clubes",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731496/thefootballstore/Inter%20Milan%20UCL%20Final%20Retro%20Home%20Jersey%202009-10.webp",
     ],
@@ -217,6 +241,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "clubes",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731399/thefootballstore/Manchester%20United%20Retro%20Jersey%20Home%20UCL%20Final%202007-08.webp",
     ],
@@ -226,6 +251,7 @@ export let products = [
   },
   {
     category: "retros",
+    subCategory: "clubes",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697732256/thefootballstore/AC%20Milan%20UCL%20Final%20Retro%20Jersey%20Away%202006-07.webp",
     ],
@@ -235,6 +261,7 @@ export let products = [
   },
   {
     category: "liga-argentina",
+    subCategory: "river",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729372/thefootballstore/River%20Plate%20Away%20Jersey%20Player%20Version%202023-24.webp",
     ],
@@ -244,6 +271,7 @@ export let products = [
   },
   {
     category: "liga-argentina",
+    subCategory: "river",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729433/thefootballstore/River%20Plate%20Third%20Away%20Jersey%20Player%20Version%202023-24.webp",
     ],
@@ -253,6 +281,7 @@ export let products = [
   },
   {
     category: "liga-argentina",
+    subCategory: "boca",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729505/thefootballstore/Boca%20Juniors%20Home%20Jersey%20Fan%20Version%202023-24.webp",
     ],
@@ -262,6 +291,7 @@ export let products = [
   },
   {
     category: "liga-argentina",
+    subCategory: "boca",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729474/thefootballstore/Boca%20Juniors%20Jersey%20Third%20Away%20Fan%20Version%202023-24.webp",
     ],
@@ -380,7 +410,7 @@ export let products = [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733967/thefootballstore/Argentina%20World%20Cup%20Champion%20Edition%20Jersey%20Home%20Player%20Version%202022.webp",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
-    sold: 0,
+    sold: 1,
     title:
       "Argentina World Cup Champion Edition Jersey Home Player Version 2022",
   },
@@ -502,7 +532,7 @@ export let products = [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733920/thefootballstore/Italy%20Away%20Jersey%20Player%20Version%202023-24.webp",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
-    sold: 0,
+    sold: 1,
     title: "Italy Away Jersey Player Version 2023-24",
   },
   {
@@ -722,7 +752,7 @@ export let products = [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733886/thefootballstore/Roma%20Jersey%20Away%20Player%20Version%202023-24.webp",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
-    sold: 0,
+    sold: 1,
     title: "Roma Jersey Away Player Version 2023-24",
   },
   {
@@ -737,7 +767,7 @@ export let products = [
   },
   {
     category: "serie-a",
-    subCategory: "napoly",
+    subCategory: "napoli",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697732925/thefootballstore/Napoli%20Away%20Jersey%20Player%20Version%202023-24.webp",
     ],
@@ -747,7 +777,7 @@ export let products = [
   },
   {
     category: "serie-a",
-    subCategory: "napoly",
+    subCategory: "napoli",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697732972/thefootballstore/Napoli%20Home%20Jersey%20Player%20Version%202023-24.webp",
     ],
@@ -756,7 +786,7 @@ export let products = [
     title: "Napoli Home Jersey Player Version 2023-24",
   },
   {
-    category: "ligue-one",
+    category: "league-one",
     subCategory: "olympique-de-marsella",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730262/thefootballstore/Olympique%20de%20Marseille%20Jersey%20Away%202023-24.webp",
@@ -766,7 +796,7 @@ export let products = [
     title: "Olympique de Marseille Jersey Away 2023-24",
   },
   {
-    category: "ligue-one",
+    category: "league-one",
     subCategory: "olympique-de-marsella",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730296/thefootballstore/Olympique%20de%20Marseille%20Jersey%20Home%202023-24.webp",
@@ -776,7 +806,7 @@ export let products = [
     title: "Olympique de Marseille Jersey Home 2023-24",
   },
   {
-    category: "ligue-one",
+    category: "league-one",
     subCategory: "lyon",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730336/thefootballstore/Olympique%20Lyon%20Home%20Jersey%20Player%20Version%202023-24.webp",
@@ -786,7 +816,7 @@ export let products = [
     title: "Olympique Lyon Home Jersey Player Version 2023-24",
   },
   {
-    category: "ligue-one",
+    category: "league-one",
     subCategory: "psg",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730423/thefootballstore/PSG%20Home%20Jersey%20Player%20Version%202023-24.webp",
@@ -796,7 +826,7 @@ export let products = [
     title: "PSG Home Jersey Player Version 2023-24",
   },
   {
-    category: "ligue-one",
+    category: "league-one",
     subCategory: "psg",
     imgUrl: [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730393/thefootballstore/PSG%20Away%20Jersey%20Player%20Version%202023-24.webp",
@@ -862,7 +892,7 @@ export let products = [
       "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733999/thefootballstore/Real%20Madrid%20Home%20Jersey%20Player%20Version%202023-24.webp",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
-    sold: 0,
+    sold: 1,
     title: "Real Madrid Home Jersey Player Version 2023-24",
   },
   {

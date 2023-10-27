@@ -14,11 +14,10 @@ const CartContextProvider = ({ children }) => {
     let exist = cart.some((product) => product.id === productToAdd.id);
     if (exist) {
       let newCart = cart.map((product) => {
-        if (productToAdd.id === product.id) {
-          return {
-            ...product,
-            quantity: productToAdd.quantity,
-          };
+        if (product.id === productToAdd.id) {
+          return { ...product, quantity: productToAdd.quantity };
+        } else {
+          return product;
         }
       });
       setCart(newCart);

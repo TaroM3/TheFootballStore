@@ -54,53 +54,53 @@ const NavbarContainer = () => {
                 <NavDropdown.Item className={styles.item}>
                   <ul>
                     {" "}
-                    <Link to="/category/premierleague">Premier League</Link>
+                    <Link to="/category/premier-league">Premier League</Link>
                     <li>
-                      <Link to="/category/premierleague/club/tottenham">
+                      <Link to="/category/premier-league/subcategory/tottenham">
                         Tottenham
                       </Link>
                     </li>
                     <li>
-                      <Link to="/category/premierleague/club/manchester-city">
+                      <Link to="/category/premier-league/subcategory/manchester-city">
                         Manchester City
                       </Link>
                     </li>
                     <li>
-                      <Link to="/category/premierleague/club/chelsea">
+                      <Link to="/category/premier-league/subcategory/chelsea">
                         Chelsea
                       </Link>
                     </li>
                     <li>
-                      <Link to="/category/premierleague/club/arsenal">
+                      <Link to="/category/premier-league/subcategory/arsenal">
                         Arsenal
                       </Link>
                     </li>
                     <li>
-                      <Link to="/category/premierleague/club/liverpool">
+                      <Link to="/category/premier-league/subcategory/liverpool">
                         Liverpool
                       </Link>
                     </li>
                     <li>
-                      <Link to="/category/premierleague/club/manchester-united">
+                      <Link to="/category/premier-league/subcategory/manchester-united">
                         Manchester United
                       </Link>
                     </li>
                   </ul>
                   <ul>
-                    <Link to="/category/ligasantander">Liga Santander</Link>
+                    <Link to="/category/liga-santander">Liga Santander</Link>
 
                     <li>
-                      <Link to="/category/ligasantander/club/atletico-madrid">
+                      <Link to="/category/liga-santander/subcategory/atletico-madrid">
                         Atletico Madrid
                       </Link>
                     </li>
                     <li>
-                      <Link to="/category/ligasantander/club/real-madrid">
+                      <Link to="/category/liga-santander/subcategory/real-madrid">
                         Real Madrid
                       </Link>
                     </li>
                     <li>
-                      <Link to="/category/ligasantander/club/barcelona">
+                      <Link to="/category/liga-santander/subcategory/barcelona">
                         Barcelona
                       </Link>
                     </li>
@@ -109,52 +109,57 @@ const NavbarContainer = () => {
                     <Link to="/category/league-one">League One</Link>
 
                     <li>
-                      <Link to="/category/league-one/club/">
+                      <Link to="/category/league-one/subcategory/olympique-de-marsella">
                         Olympique de Marsella
                       </Link>
                     </li>
                     <li>
-                      <Link to="/category/league-one/club">Lyon</Link>
+                      <Link to="/category/league-one/subcategory/lyon">
+                        Lyon
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/category/league-one/club">PSG</Link>
+                      <Link to="/category/league-one/subcategory/psg">PSG</Link>
                     </li>
                   </ul>
                   <ul>
                     <Link to="/category/serie-a">Serie A</Link>
 
                     <li>
-                      <Link to="/category/serie-a/club/milan">Milan</Link>
+                      <Link to="/category/serie-a/subcategory/milan">
+                        Milan
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/category/serie-a/club/inter">Inter</Link>
+                      <Link to="/category/serie-a/subcategory/inter">
+                        Inter
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/category/serie-a/club/napoli">Napoli</Link>
+                      <Link to="/category/serie-a/subcategory/napoli">
+                        Napoli
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/category/serie-a/club/juventus">Juventus</Link>
+                      <Link to="/category/serie-a/subcategory/juventus">
+                        Juventus
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/category/serie-a/club/roma">Roma</Link>
+                      <Link to="/category/serie-a/subcategory/roma">Roma</Link>
                     </li>
                   </ul>
                   <ul>
                     <Link to="/category/bundesliga">Bundesliga</Link>
 
                     <li>
-                      <Link to="/category/bundesliga/club/bayern-munich">
+                      <Link to="/category/bundesliga/subcategory/bayern-munich">
                         Bayern Munich
                       </Link>
                     </li>
                     <li>
-                      <Link to="/category/bundesliga/club/borussia">
-                        Borussia
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/category/bundesliga/club/dortmund">
-                        Dortmund
+                      <Link to="/category/bundesliga/subcategory/borussia-dortmund">
+                        Borussia Dortmund
                       </Link>
                     </li>
                   </ul>
@@ -162,10 +167,14 @@ const NavbarContainer = () => {
                     <Link to="/category/selecciones">Selecciones</Link>
 
                     <li>
-                      <Link to="/category/selecciones/america">America</Link>
+                      <Link to="/category/selecciones/subcategory/america">
+                        America
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/category/selecciones/europa">Europa</Link>
+                      <Link to="/category/selecciones/subcategory/europa">
+                        Europa
+                      </Link>
                     </li>
                   </ul>
                   <Link to="/category/inter-miami">Inter Miami</Link>{" "}
@@ -174,22 +183,28 @@ const NavbarContainer = () => {
                       <Link to="/category/liga-argentina">Liga Argentina</Link>
                     </li>
                     <li>
-                      <Link to="/category/liga-argentina/club/river">
+                      <Link to="/category/liga-argentina/subcategory/river">
                         River
                       </Link>
                     </li>
                     <li>
-                      <Link to="/category/liga-argentina/club/boca">Boca</Link>
+                      <Link to="/category/liga-argentina/subcategory/boca">
+                        Boca
+                      </Link>
                     </li>
                   </ul>
                   <ul>
                     <Link to="/category/retros">Retros</Link>
 
                     <li>
-                      <Link to="/category/retros/clubes">Clubes</Link>
+                      <Link to="/category/retros/subcategory/clubes">
+                        Clubes
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/category/retros/selecciones">Selecciones</Link>
+                      <Link to="/category/retros/subcategory/selecciones">
+                        Selecciones
+                      </Link>
                     </li>
                   </ul>
                 </NavDropdown.Item>

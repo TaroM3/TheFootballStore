@@ -2,13 +2,13 @@ import { SvgIcon } from "@mui/material";
 import styles from "../footer/Footer.module.css";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { Link } from "react-router-dom";
-
+import FacebookIcon from "@mui/icons-material/Facebook";
 const Footer = () => {
   return (
     <div className={styles.footer}>
       <div>
         <h2> The Football Store </h2>
-        <h3>Dejanos tu mail para recibir novedades</h3>
+        <p>Dejanos tu mail para recibir novedades</p>
         <Link to={"/info"}>Terminos y condiciones</Link>
       </div>
       <ul className={styles.ul}>
@@ -48,6 +48,9 @@ const Footer = () => {
         <li>
           <Link to={"/info"}>
             <SvgIcon component={InstagramIcon} />
+          </Link>
+          <Link to={"/info"}>
+            <SvgIcon component={FacebookIcon} />
           </Link>
         </li>
       </ul>

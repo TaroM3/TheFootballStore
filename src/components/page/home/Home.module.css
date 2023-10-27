@@ -3,3 +3,39 @@
 
   color: var(--primary);
 }
+.sections {
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.sections div img {
+  width: 30vw;
+  height: inherit;
+  padding: 20px;
+  border-radius: 2rem;
+}
+.sections div {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.destacados img {
+  width: 20vw;
+  border-radius: 2rem;
+  border: solid var(--accent);
+}
+.destacados {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.destacados div {
+  padding: 20px;
+}
+h3 {
+  font-family: "Bebas Neue";
+  font-weight: 100;
+}

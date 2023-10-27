@@ -9,6 +9,7 @@ const ProductCard = ({ elemento }) => {
       sx={{
         backgroundColor: "--primary",
         margin: "10px 30px",
+        boxShadow: "0",
       }}
     >
       <Link to={`/itemDetail/${elemento.id}`}>
