@@ -14,6 +14,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  font-weight: 100;
 }
 :root {
   /*Pallette*/
@@ -43,11 +44,11 @@
   --font-bebas: "Bebas Neue";
 }
 h5 {
-  font-weight: 100;
   padding: var(--space-xs);
 }
 h1 {
   font-family: "Bebas Neue", sans-serif;
+  text-align: left;
 }
 a {
   text-decoration: none;
@@ -55,9 +56,10 @@ a {
 h3 {
   color: var(--main);
   font-family: "urae";
-  font-weight: 100;
 }
 h2 {
   font-family: "Bebas Neue";
-  font-weight: 100;
+}
+.MuiBreadcrumbs-separator {
+  color: var(--main);
 }

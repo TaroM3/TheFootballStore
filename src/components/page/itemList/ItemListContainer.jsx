@@ -35,7 +35,13 @@ const ItemListContainer = () => {
     });
   }, [categoryName, subCategoryName]);
 
-  return <ItemList items={items} />;
+  return (
+    <ItemList
+      items={items}
+      categoryName={categoryName}
+      subCategoryName={subCategoryName}
+    />
+  );
 };
 
 export default ItemListContainer;

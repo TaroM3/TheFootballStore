@@ -8,7 +8,7 @@ const ProductCard = ({ elemento }) => {
       className={styles.card}
       sx={{
         backgroundColor: "--primary",
-        margin: "10px 30px",
+        marginRight: "10px",
         boxShadow: "0",
       }}
     >
@@ -20,16 +20,17 @@ const ProductCard = ({ elemento }) => {
           image={elemento.imgUrl}
         />
       </Link>
-      <CardContent>
-        <section
-          className={styles.titleCard}
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            paddingBottom: 0,
-          }}
-        >
+      <CardContent
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          padding: "28px 0px",
+          backgroundColor: "black",
+          color: "var(--primary)",
+        }}
+      >
+        <section className={styles.titleCard}>
           <Link to={`/itemDetail/${elemento.id}`}>
             <Typography gutterBottom variant="h5" component="div">
               {elemento.title}
