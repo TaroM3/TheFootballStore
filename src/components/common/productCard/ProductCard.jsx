@@ -31,12 +31,7 @@ const ProductCard = ({ elemento }) => {
           }}
         >
           <Link to={`/itemDetail/${elemento.id}`}>
-            <Typography
-              style={{ fontFamily: "frontpageneue" }}
-              gutterBottom
-              variant="h5"
-              component="div"
-            >
+            <Typography gutterBottom variant="h5" component="div">
               {elemento.title}
             </Typography>
           </Link>

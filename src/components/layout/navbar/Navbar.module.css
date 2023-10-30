@@ -1,32 +1,72 @@
 .navbar {
   display: flex;
   justify-content: space-around;
+  align-items: start;
   font-family: Bebas Neue;
   background-color: var(--secondary);
+  padding-top: 20px;
 }
 ul {
   list-style: none;
+  margin: 0px 15px;
 }
 .img {
   width: 50px;
 }
 
-h5 {
-  background-color: var(--accent);
-}
-
-.dropdown div a {
-  margin: 10px;
-}
 .dropdown {
-  flex-direction: column;
-  display: flex;
+  background-color: var(--secondary);
+  color: var(--primary);
+  width: 91px;
+  margin: 0;
 }
 a {
   color: var(--primary);
+  transition-duration: 0.5s;
+  font-family: "Bebas Neue";
+  font-size: 1.3rem;
+}
+li a {
+  font-size: 1rem;
+}
+a:hover {
+  color: var(--main);
 }
 .item {
   display: flex;
   margin: 10px;
   flex-direction: row;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--accent);
+}
+
+.scroll {
+  white-space: nowrap;
+  margin: 0 2em;
+}
+
+.scroll div {
+  display: flex;
+  gap: 2em;
+}
+
+.scroll p {
+  font-family: "Bebas Neue";
+  color: var(--secondary);
+}
+.RightToLeft {
+  animation: RightToLeft 30s infinite linear;
+}
+@keyframes RightToLeft {
+  from {
+    transform: translateX(5%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }

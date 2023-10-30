@@ -8,6 +8,8 @@ const Layout = () => {
     <Box
       sx={{
         minHeight: "100vh",
+        backgroundColor: "var(--secondary)",
+        color: "var(--primary)",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",

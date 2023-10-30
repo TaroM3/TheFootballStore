@@ -4,9 +4,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  border-top: solid var(--accent);
+  padding: 40px 0px;
 }
-h2 {
+.ul li a {
+  transition-duration: 0.5s;
+  font-family: "Roboto", sans-serif;
+}
+a:hover {
   color: var(--main);
-  font-family: "urae";
-  font-weight: 100;
 }

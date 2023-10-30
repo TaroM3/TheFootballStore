@@ -9,7 +9,7 @@ const ItemList = ({ items }) => {
         style={{
           width: "100%",
           display: "flex",
-          justifyContent: "space-evenly",
+          justifyContent: "space-between",
           flexWrap: "wrap",
         }}
       >

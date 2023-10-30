@@ -13,27 +13,31 @@ const Home = ({ el }) => {
           <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1697859086/Banner_Ilustraci%C3%B3n_e90apk.jpg" />
         </div>
         <div>
-          <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1697859085/Banner_Camiseta_atzxi4.jpg" />
+          <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1697859086/Banner_Packging_fbsdjk.jpg" />
         </div>
         <div>
-          <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1697859086/Banner_Packging_fbsdjk.jpg" />
+          <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1698686154/thefootballstore/Banner_Entrega_iuxjiq.jpg" />
+        </div>
+        <div>
+          <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1697859085/Banner_Camiseta_atzxi4.jpg" />
         </div>
       </Carousel>
       <section
         style={{
           textAlign: "center",
           fontSize: "var(--text-xs)",
-          padding: "var(--space-sm)",
+          padding: "var(--space-md)",
         }}
       >
-        Breve descripción de la marca? forma de trabajo? Lorem ipsum dolor sit
-        amet consectetur. Massa purus commodo faucibus id diam amet ultricies
-        risus. Adipiscing aliquam maecenas duis aliquet nibh vel libero. Quis
-        magna pellentesque in quam velit rhoncus non nec. Volutpat ultricies
-        ornare blandit dictum pretium lorem. Venenatis auctor
+        En <b>The Football Store</b>, trabajamos bajo la modalidad de encargo,
+        importando productos desde el extranjero hacia Argentina. El tiempo de
+        entrega estimado es de alrededor de <b>30 días hábiles</b>, aunque puede
+        variar debido a factores externos. Nos esforzamos por minimizar
+        cualquier demora y te mantendremos informado(a) sobre el estado de tu
+        pedido.
       </section>
       <section>
-        <h3>Productos destacados</h3>
+        <h2>Productos destacados</h2>
         <div className={styles.destacados}>
           {el.length > 0
             ? el.map((elemento) => {

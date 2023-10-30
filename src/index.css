@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @font-face {
   font-family: frontpageneue;
   src: url("./fonts/FrontPageNeue.woff");
@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "frontpageneue";
+  font-family: "Roboto", sans-serif;
 }
 :root {
   /*Pallette*/
@@ -46,10 +46,18 @@ h5 {
   font-weight: 100;
   padding: var(--space-xs);
 }
-
 h1 {
   font-family: "Bebas Neue", sans-serif;
 }
 a {
   text-decoration: none;
+}
+h3 {
+  color: var(--main);
+  font-family: "urae";
+  font-weight: 100;
+}
+h2 {
+  font-family: "Bebas Neue";
+  font-weight: 100;
 }

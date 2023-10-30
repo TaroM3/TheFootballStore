@@ -11,6 +11,7 @@
 }
 .titleCard {
   font-size: var(--text-sm);
+  padding: 0;
 }
 .titleCard a {
   color: var(--secondary);
@@ -18,10 +19,13 @@
 .card {
   cursor: pointer;
   width: 20vw;
-  font-family: "frontpageneue";
 }
 
 .card div {
   padding-bottom: 0;
   margin-bottom: 0;
+}
+.titleCard a div {
+  font-family: "frontpageneue";
+  font-size: 1rem;
 }
