@@ -1,12 +1,15 @@
-.productContainer{
-    display: grid;
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(
-            20rem,
-            1fr
-        )
-    );
-    padding: 4.1rem;
-    gap: 6rem;
+.productContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  padding: 4.1rem;
+  gap: 6rem;
+}
+.breadcumb li a {
+  font-family: "frontpageneue";
+}
+.itemList {
+  margin: 0px 100px;
+}
+h1 {
+  padding: 20px 0px;
 }

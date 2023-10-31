@@ -1,6 +1,7 @@
 import CartContainer from "../components/page/cart/CartContainer";
 import ContactoContainer from "../components/page/contacto/ContactoContainer";
 import DashboardContainer from "../components/page/dashboard/DashboardContainer";
+import EnviosContainer from "../components/page/envios/EnviosContainer";
 import HomeContainer from "../components/page/home/HomeContainer";
 import InfoContainer from "../components/page/info/InfoContainer";
 import ItemDetailContainer from "../components/page/itemDetail/ItemDetailContainer";
@@ -46,6 +47,11 @@ export const routes = [
     id: "info",
     path: "/info",
     Element: InfoContainer,
+  },
+  {
+    id: "envios",
+    path: "/envios",
+    Element: EnviosContainer,
   },
   {
     id: "contacto",

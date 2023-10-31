@@ -260,7 +260,7 @@ const NavbarContainer = () => {
                 <Link to={"/info"}>Ayuda</Link>
               </Nav.Link>
               <Nav.Link>
-                <Link to={"/info"}>Envios</Link>
+                <Link to={"/envios"}>Envios</Link>
               </Nav.Link>
               <Nav.Link>
                 <Link to={"/contacto"}>Contacto</Link>

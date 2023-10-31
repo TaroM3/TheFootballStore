@@ -1,0 +1,19 @@
+.contacto {
+  margin: 0px 100px;
+}
+.contacto div p {
+  font-size: var(--text-xs);
+  padding: var(--space-sm) 0px;
+}
+.contacto div {
+  padding: var(--space-sm) 0px;
+}
+.contacto h4 {
+  color: var(--primary);
+}
+.contactoDivs {
+  display: flex;
+}
+.contactoDivs div {
+  width: 50vw;
+}
