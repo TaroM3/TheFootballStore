@@ -1,9 +1,9 @@
 import { db } from "../../../firebaseConfig";
 import useFirestore from "../../../hooks/useFirebase";
-import TableProducts from "../../common/tableProducts/TableProducts";
 import { addDoc, collection } from "firebase/firestore";
+import Dashboard from "./Dashboard";
 
-const Dashboard = () => {
+const DashboardContainer = () => {
   const rellenar = () => {
     products.forEach((product) => {
       let refCollection = collection(db, "products");
@@ -16,9 +16,9 @@ const Dashboard = () => {
   return (
     <div>
       <button onClick={rellenar}>Rellenar base de datos</button>
-      {products.length > 0 ? <TableProducts products={products} /> : `Cargando`}
+      {products.length > 0 ? <Dashboard products={products} /> : `Cargando`}
     </div>
   );
 };
 
-export default Dashboard;
+export default DashboardContainer;
