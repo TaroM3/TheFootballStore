@@ -1,0 +1,11 @@
+.images {
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+.select{
+    background-color: black;
+    color: 'white'
+}

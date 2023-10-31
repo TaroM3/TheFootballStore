@@ -10,12 +10,13 @@ const ItemDetailContainer = () => {
   const [item] = useFirestore("products", id);
   const { addToCart } = useContext(CartContext);
 
-  const agregarAlCarrito = (size) => {
+  const agregarAlCarrito = (size, selectOption) => {
     let data = {
       id: id,
       ...item,
       quantity: 1,
       size: size,
+      selectOption: selectOption,
     };
     console.log(data);
     addToCart(data);
