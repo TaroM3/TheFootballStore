@@ -54,6 +54,7 @@ h2 {
 h3 {
   color: var(--main);
   font-family: "urae";
+  font-size: 1.5rem;
 }
 h4 {
   font-family: "Bebas Neue";
@@ -61,7 +62,7 @@ h4 {
   font-size: 2rem;
 }
 h5 {
-  padding: var(--space-xs);
+  font-size: 1.5rem;
 }
 a {
   text-decoration: none;

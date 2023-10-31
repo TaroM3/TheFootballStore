@@ -4,7 +4,7 @@
   align-items: start;
   font-family: Bebas Neue;
   background-color: var(--secondary);
-  padding-top: 20px;
+  padding-top: 15px;
 }
 ul {
   list-style: none;
@@ -72,4 +72,12 @@ a:focus {
   to {
     transform: translateX(-50%);
   }
+}
+
+input {
+  width: 8.9375rem;
+  height: 1.8125rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  padding: 10px;
 }

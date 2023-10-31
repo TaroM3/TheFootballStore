@@ -25,9 +25,10 @@ const ProductCard = ({ elemento }) => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "28px 0px",
+          padding: "50px 0px",
           backgroundColor: "black",
           color: "var(--primary)",
+          height: "50px",
         }}
       >
         <section className={styles.titleCard}>

@@ -2,15 +2,35 @@
   color: var(--primary);
   background-color: var(--secondary);
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-between;
   border-top: solid 5px var(--accent);
-  padding: 40px 0px;
+  padding: 40px 100px;
 }
-.ul li a {
+.footer a {
   transition-duration: 0.5s;
-  font-family: "Roboto", sans-serif;
+  font-family: "frontpageneue";
 }
 a:hover {
   color: var(--main);
+}
+.newsletter {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.footer li {
+  padding-bottom: var(--space-xs);
+}
+.footerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.input {
+  width: 439.474px;
+  height: 43px;
+  border-radius: 10px;
+  padding: 10px;
 }
