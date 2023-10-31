@@ -8,7 +8,7 @@ const ProductCard = ({ elemento }) => {
       className={styles.card}
       sx={{
         backgroundColor: "--primary",
-        marginRight: "10px",
+        marginRight: "5px",
         boxShadow: "0",
       }}
     >

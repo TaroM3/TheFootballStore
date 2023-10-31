@@ -1,10 +1,10 @@
-.info {
+.envios {
   margin: 0px 100px;
 }
-.info div p {
+.envios div p {
   font-size: var(--text-xs);
   padding: var(--space-sm) 0px;
 }
-.info div {
+.envios div {
   padding: var(--space-sm) 0px;
 }

@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "frontpageneue";
   font-weight: 100;
 }
 :root {
@@ -43,23 +43,30 @@
   --font-fneue: "frontpageneue";
   --font-bebas: "Bebas Neue";
 }
-h5 {
-  padding: var(--space-xs);
-}
+
 h1 {
   font-family: "Bebas Neue", sans-serif;
   text-align: left;
 }
-a {
-  text-decoration: none;
+h2 {
+  font-family: "Bebas Neue";
 }
 h3 {
   color: var(--main);
   font-family: "urae";
 }
-h2 {
+h4 {
   font-family: "Bebas Neue";
+  color: var(--main);
+  font-size: 2rem;
 }
+h5 {
+  padding: var(--space-xs);
+}
+a {
+  text-decoration: none;
+}
+
 .MuiBreadcrumbs-separator {
   color: var(--main);
 }

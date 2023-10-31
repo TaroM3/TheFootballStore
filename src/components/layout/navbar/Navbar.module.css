@@ -32,6 +32,9 @@ li a {
 a:hover {
   color: var(--main);
 }
+a:focus {
+  color: var(--main);
+}
 .item {
   display: flex;
   margin: 10px;
