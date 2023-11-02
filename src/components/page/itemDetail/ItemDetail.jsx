@@ -20,6 +20,9 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
   const [sizeOption, setSizeOption] = useState("");
   const [selectOption, setSelectOption] = useState("No");
   const [anchorEl, setAnchorEl] = useState(null);
+
+  const [counter, setCounter] = useState(1);
+
   const open = Boolean(anchorEl);
 
   const handleClickSelect = (event) => {
@@ -278,7 +281,7 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
           >
             Cantidad
           </Typography>
-          <CounterContainer quantity={1} />
+          <CounterContainer counter={counter} setCounter={setCounter} />
           <Button
             variant="outlined"
             sx={{
@@ -296,7 +299,7 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
                 color: "gray",
               },
             }}
-            onClick={() => agregarAlCarrito(sizeOption, selectOption)}
+            onClick={() => agregarAlCarrito(sizeOption, selectOption, counter)}
           >
             Agregar a tu lista de deseos
           </Button>

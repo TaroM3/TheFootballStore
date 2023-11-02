@@ -4,6 +4,7 @@ const Counter = ({ counter, setCounter }) => {
   return (
     <Box className={styles.container}>
       <button
+        disabled={counter <= 1 ? true : false}
         onClick={() => setCounter(counter - 1)}
         className={styles.buttons}
       >
