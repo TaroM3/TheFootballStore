@@ -5,7 +5,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Form } from "react-bootstrap";
 import CartWidget from "../../common/cartWidget/CartWidget";
-
 import { AccordionDetails, AccordionSummary, Typography } from "@mui/material";
 import Accordion from "@mui/material/Accordion";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";

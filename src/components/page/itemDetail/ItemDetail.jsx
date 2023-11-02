@@ -14,7 +14,7 @@ import { Image } from "react-bootstrap";
 import SizeButton from "../../common/sizeButton/SizeButton";
 import styles from "./ItemDetail.module.css";
 
-const ItemDetail = ({ item, agregarAlCarrito }) => {
+const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
   const [sizeOption, setSizeOption] = useState("");
   const [selectOption, setSelectOption] = useState("");
 
@@ -184,9 +184,15 @@ const ItemDetail = ({ item, agregarAlCarrito }) => {
             >
               Talle {sizeOption}
             </Typography>
+
             <Typography
+              onClick={talles}
               variant="body2"
-              sx={{ fontSize: "22px", fontFamily: "frontpageneue" }}
+              sx={{
+                fontSize: "22px",
+                fontFamily: "frontpageneue",
+                cursor: "pointer",
+              }}
             >
               Guía de talles
             </Typography>

@@ -1,11 +1,12 @@
 .images {
-    border-radius: 4px;
-    cursor: pointer;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-
-
-.select{
-    background-color: black;
-    color: 'white'
+.select {
+  background-color: black;
+  color: "white";
+}
+div:where(.swal2-container) img:where(.swal2-image) {
+  margin: 0;
 }

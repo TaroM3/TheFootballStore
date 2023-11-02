@@ -4,12 +4,30 @@ import useFirestore from "../../../hooks/useFirebase";
 import { useContext } from "react";
 import { CartContext } from "../../../context/CartContext";
 import { Box, Skeleton } from "@mui/material";
+import Swal from "sweetalert2";
 
 const ItemDetailContainer = () => {
   const { id } = useParams();
   const [item] = useFirestore("products", id);
   const { addToCart } = useContext(CartContext);
-
+  const talles = () => {
+    Swal.fire({
+      imageUrl:
+        "https://res.cloudinary.com/daq80uhh9/image/upload/v1698767089/thefootballstore/Copia_de_Brochure_CMYK_1_omr8yw.jpg",
+      imageWidth: "auto",
+      imageHeight: "auto",
+      heightAuto: false,
+      imageAlt: "Custom image",
+      showConfirmButton: false,
+      background: "none",
+      showClass: {
+        popup: "animate__animated animate__fadeInDown",
+      },
+      hideClass: {
+        popup: "animate__animated animate__fadeOutUp",
+      },
+    });
+  };
   const agregarAlCarrito = (size, selectOption) => {
     let data = {
       id: id,
@@ -23,8 +41,13 @@ const ItemDetailContainer = () => {
   };
   return (
     <>
+      {" "}
       {item?.title !== undefined ? (
-        <ItemDetail item={item} agregarAlCarrito={agregarAlCarrito} />
+        <ItemDetail
+          item={item}
+          agregarAlCarrito={agregarAlCarrito}
+          talles={talles}
+        />
       ) : (
         <Box
           sx={{

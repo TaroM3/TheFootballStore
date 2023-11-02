@@ -2,8 +2,27 @@ import { SvgIcon } from "@mui/material";
 import styles from "../footer/Footer.module.css";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Footer = () => {
+  const talles = () => {
+    Swal.fire({
+      imageUrl:
+        "https://res.cloudinary.com/daq80uhh9/image/upload/v1698767089/thefootballstore/Copia_de_Brochure_CMYK_1_omr8yw.jpg",
+      imageWidth: "auto",
+      imageHeight: "auto",
+      heightAuto: false,
+      imageAlt: "Custom image",
+      showConfirmButton: false,
+      background: "none",
+      showClass: {
+        popup: "animate__animated animate__fadeInDown",
+      },
+      hideClass: {
+        popup: "animate__animated animate__fadeOutUp",
+      },
+    });
+  };
   return (
     <div className={styles.footer}>
       {" "}
@@ -72,7 +91,7 @@ const Footer = () => {
             <Link to={"/info"}>Cuidados</Link>
           </li>
           <li>
-            <Link to={"/info"}>Guia de talles</Link>
+            <Link onClick={talles}>Guia de talles</Link>
           </li>
         </ul>
         <ul className={styles.ul}>
