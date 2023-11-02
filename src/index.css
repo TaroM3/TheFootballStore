@@ -51,9 +51,11 @@
 h1 {
   font-family: "Bebas Neue", sans-serif;
   text-align: left;
+  color: var(--primary);
 }
 h2 {
   font-family: "Bebas Neue";
+  color: var(--primary);
 }
 h3 {
   color: var(--main);
@@ -62,7 +64,6 @@ h3 {
 }
 h4 {
   font-family: "Bebas Neue";
-  color: var(--main);
   font-size: 2rem;
 }
 h5 {
@@ -82,15 +83,15 @@ input::-webkit-inner-spin-button {
   margin: 0 !important;
 }
 
-.Toastify__toast{
+.Toastify__toast {
   font-family: var(--font-fneue) !important;
   padding: 0 !important;
   height: 67px !important;
-  background: black ;
+  background: black;
   border: 1px solid white;
   border-radius: 2%;
 }
 
-.MuiList-root{
+.MuiList-root {
   background-color: black;
-} 
+}

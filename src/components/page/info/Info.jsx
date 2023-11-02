@@ -38,16 +38,13 @@ const Info = () => {
         </Typography>
       </Breadcrumbs>
       <div>
-        <h4>Ayuda</h4>
-        <p></p>
-      </div>
-      <div>
-        <h4>Cambios y devoluciones</h4>
-        <p></p>
-      </div>{" "}
-      <div>
-        <h4>Preguntas frecuentes</h4>
-        <p></p>
+        <h4>Cuidados</h4>
+        <div style={{ textAlign: "center" }}>
+          <img
+            style={{ width: "35vw" }}
+            src="https://res.cloudinary.com/daq80uhh9/image/upload/v1698951722/thefootballstore/image_6_e8wx5a.png"
+          />
+        </div>
       </div>
     </div>
   );
