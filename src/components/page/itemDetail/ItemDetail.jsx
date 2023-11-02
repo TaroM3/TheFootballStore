@@ -9,7 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { Image } from "react-bootstrap";
 import SizeButton from "../../common/sizeButton/SizeButton";
 import styles from "./ItemDetail.module.css";
@@ -18,9 +18,11 @@ import CounterContainer from "../../common/counter/CounterContainer";
 
 const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
   const [sizeOption, setSizeOption] = useState("");
-  const quantityRef = useRef();
   const [selectOption, setSelectOption] = useState("No");
   const [anchorEl, setAnchorEl] = useState(null);
+
+  const [counter, setCounter] = useState(1);
+
   const open = Boolean(anchorEl);
 
   const handleClickSelect = (event) => {
@@ -80,7 +82,6 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
           display: "flex",
           flexDirection: "row",
           padding: "2rem 0rem",
-          // gap: "2rem",
           justifyContent: "space-around",
         }}
       >
@@ -116,7 +117,7 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
             flexDirection: "column",
             justifyContent: "space-around",
             width: "400px",
-            gap: "10px",
+            gap: "17px",
           }}
         >
           <Typography
@@ -280,7 +281,7 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
           >
             Cantidad
           </Typography>
-          <CounterContainer />
+          <CounterContainer counter={counter} setCounter={setCounter} />
           <Button
             variant="outlined"
             sx={{
@@ -298,7 +299,7 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
                 color: "gray",
               },
             }}
-            onClick={() => agregarAlCarrito(sizeOption, selectOption)}
+            onClick={() => agregarAlCarrito(sizeOption, selectOption, counter)}
           >
             Agregar a tu lista de deseos
           </Button>

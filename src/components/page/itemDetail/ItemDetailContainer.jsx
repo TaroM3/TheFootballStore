@@ -30,7 +30,7 @@ const ItemDetailContainer = () => {
       },
     });
   };
-  const agregarAlCarrito = (size, selectOption, quantityRef) => {
+  const agregarAlCarrito = (size, selectOption, quantity) => {
     if (size === "") {
       toast.error("Debe elegir el talle de la camiseta", {
         position: "bottom-right",
@@ -45,10 +45,7 @@ const ItemDetailContainer = () => {
       let data = {
         id: id,
         ...item,
-        quantity:
-          quantityRef.current.value === ""
-            ? 1
-            : Number(quantityRef.current.value),
+        quantity: quantity < 0 ? 1 : quantity,
         size: size,
         selectOption: selectOption,
       };

@@ -1,15 +1,23 @@
 .container{
     display: flex;
-    border: 1px solid white;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    flex-direction: row;
+    height: 35px;
+    justify-content: space-between;
+    align-items: center;
+    width: 125px;
+    border-radius: 2px;
+    overflow: hidden;
 }
 
-.buttons {
-    padding: 0 !important;
-    margin: 0 !important;
-    width: 5px !important;
-    font-size: 25px;
-    height: 30px;
-    box-shadow: none;
-    border: 1px solid white;
+.buttons{
+    width: 40px ;
+    font-size: 20px;
+    height: 35px;
+    border-bottom: none;
+    border-top: none;
+    border-radius: 0;
+    background-color: black;
     color: white;
 }
