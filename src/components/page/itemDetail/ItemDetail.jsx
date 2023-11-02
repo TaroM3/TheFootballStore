@@ -5,25 +5,34 @@ import {
   Divider,
   Link,
   MenuItem,
-  Select,
+  Menu,
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Image } from "react-bootstrap";
 import SizeButton from "../../common/sizeButton/SizeButton";
 import styles from "./ItemDetail.module.css";
+import { ToastContainer } from "react-toastify";
+import CounterContainer from "../../common/counter/CounterContainer";
 
 const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
   const [sizeOption, setSizeOption] = useState("");
-  const [selectOption, setSelectOption] = useState("");
+  const quantityRef = useRef();
+  const [selectOption, setSelectOption] = useState("No");
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
 
-  const handleChange = (event) => {
-    console.log(event.target.value);
-    setSelectOption(event.target.value);
+  const handleClickSelect = (event) => {
+    setAnchorEl(event.currentTarget);
   };
-
-  // console.log(selectRef.current.value);
+  const handleClose = () => {
+    console.log(event.target.attributes.value?.nodeValue);
+    event.target.attributes.value?.nodeValue
+      ? setSelectOption(event.target.attributes.value.nodeValue)
+      : null;
+    setAnchorEl(null);
+  };
   return (
     <div>
       <Breadcrumbs style={{ marginLeft: "100px" }} aria-label="breadcrumb">
@@ -204,50 +213,74 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
           >
             Personalizada(Dorsal y/o Parches)
           </Typography>
-          <Select
-            labelId="select-label"
-            onChange={handleChange}
-            defaultValue="no"
+          <Button
+            id="basic-button"
             variant="outlined"
-            className={styles.select}
             sx={{
-              border: " 1px solid white",
-              width: "100px",
-              color: "white",
-              appearance: "",
-              backgroundColor: "black",
-              background: "no repeat right white",
-              padding: "5px 12px",
+              width: "70px",
+              height: "50px",
+              textAlign: "center",
               fontFamily: "frontpageneue",
+              fontSize: "15px",
+              border: "1px solid white",
+              color: "white",
+              flexDirection: "row",
+              justifyContent: "center",
+              textTransform: "capitalize",
+              ":hover": {
+                border: "1px solid var(--main)",
+                color: "var(--main)",
+              },
             }}
-            select
-            menuProps={{ color: "white" }}
-            IconComponent={ExpandMoreIcon}
+            aria-controls={open ? "basic-menu" : undefined}
+            aria-expanded={open ? "true" : undefined}
+            onClick={handleClickSelect}
           >
-            {/* <select style={}> */}
-            {/* <option>Hola</option>
-          <option>Hola</option>
-          <option>Hola</option> */}
+            {selectOption}
+            <ExpandMoreIcon />
+          </Button>
+          <Menu
+            id="basic-menu"
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleClose}
+            MenuListProps={{
+              "aria-labelledby": "basic-button",
+            }}
+          >
             <MenuItem
-              value="no"
-              sx={{ backgroundColor: "black", color: "white" }}
+              value="No"
+              onClick={handleClose}
+              sx={{
+                backgroundColor: "black",
+                color: "white",
+                fontFamily: "frontpageneue",
+                ":hover": { color: "var(--main)" },
+              }}
               color="black"
             >
               No
             </MenuItem>
             <MenuItem
-              value="si"
-              sx={{ backgroundColor: "black", color: "white" }}
+              value="Si"
+              onClick={handleClose}
+              sx={{
+                backgroundColor: "black",
+                color: "white",
+                fontFamily: "frontpageneue",
+                ":hover": { color: "var(--main)" },
+              }}
             >
               Si
             </MenuItem>
-          </Select>
+          </Menu>
           <Typography
             variant="body2"
             sx={{ fontSize: "19px", fontFamily: "frontpageneue" }}
           >
             Cantidad
           </Typography>
+          <CounterContainer />
           <Button
             variant="outlined"
             sx={{
@@ -269,6 +302,7 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
           >
             Agregar a tu lista de deseos
           </Button>
+          <ToastContainer className={styles.toast} />
         </Box>
       </Box>
     </div>

@@ -39,3 +39,10 @@
 .margen {
   margin: 0px 100px;
 }
+
+
+.home button{
+  box-shadow: none;
+  border-radius: 0;
+  height: 100%;
+}

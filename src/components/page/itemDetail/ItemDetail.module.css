@@ -10,3 +10,30 @@
 div:where(.swal2-container) img:where(.swal2-image) {
   margin: 0;
 }
+
+.inputNumber{
+  border: none;
+  height: 60px;
+  appearance: none;
+  font-size: 17px;
+  color: white;
+  text-align: center;
+  width: 60px;
+  border-bottom: 2px solid white;
+  background-color: black;
+  color: 'white';
+}
+.inputNumber:focus {
+  border: none;
+  outline: 0;
+  border-bottom: 2px solid white;
+  appearance: none;
+}
+
+.inputNumber:hover{
+  appearance: none;
+}
+.inputNumber::placeholder{
+  opacity: 1;
+  color: white;
+}
