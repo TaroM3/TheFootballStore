@@ -45,4 +45,5 @@
   box-shadow: none;
   border-radius: 0;
   height: 100%;
+  width: max-content;
 }
