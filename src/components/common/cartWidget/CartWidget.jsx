@@ -1,23 +1,20 @@
 import { Badge, Divider, Link } from "@mui/material";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { CartContext } from "../../../context/CartContext";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
-import { SvgIcon } from "@mui/material";
 import styles from "./CartWidget.module.css";
+import CounterContainer from "../counter/CounterContainer";
 
 const CartWidget = () => {
   const { getTotalQuantity } = useContext(CartContext);
   let total = getTotalQuantity();
-
+  const [counter, setCounter] = useState(1);
   const [state, setState] = React.useState({
     right: false,
   });
-  const { cart, clearCart, deleteById } = useContext(CartContext);
-  const limpiar = () => {
-    clearCart();
-  };
+  const { cart, deleteById } = useContext(CartContext);
+
   const toggleDrawer = (anchor, open) => (event) => {
     if (
       event.type === "keydown" &&
@@ -38,12 +35,11 @@ const CartWidget = () => {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
       bgcolor={"black"}
-      height={"100vh"}
     >
       <div className={styles.cart}>
         <div className={styles.titulo}>
           <h1>Lista de deseos</h1>
-          <Badge badgeContent={total} color="secondary">
+          <Badge badgeContent={total} color="primary">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -58,29 +54,44 @@ const CartWidget = () => {
             </svg>
           </Badge>
         </div>
-        <Divider color="white" />
+        <Divider color="white" style={{ margin: "20px 0px " }} />
+        <h2>Productos</h2>
+        <Divider color="white" style={{ margin: "20px 0px " }} />
         {cart.map((elemento) => {
           return (
             <div key={elemento.id} className={styles.cartItem}>
+              {" "}
               <div className={styles.cartInfo}>
-                <h3>{elemento.title}</h3>
+                <img className={styles.img} src={elemento.imgUrl} alt="" />{" "}
+                <div className={styles.nombre}>
+                  <p>{elemento.title}</p>{" "}
+                  <div style={{ display: "flex", justifyContent: "end" }}>
+                    <CounterContainer
+                      counter={counter}
+                      setCounter={setCounter}
+                    />
+                  </div>
+                </div>
               </div>
-              <img className={styles.img} src={elemento.imgUrl} alt="" />
-              <button
-                onClick={() => deleteById(elemento.id)}
-                className={styles.btn}
-              >
-                <SvgIcon component={DeleteOutlineIcon} />
-              </button>
+              <div>
+                <svg
+                  onClick={() => deleteById(elemento.id)}
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M16 9V19H8V9H16ZM14.5 3H9.5L8.5 4H5V6H19V4H15.5L14.5 3ZM18 7H6V19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
             </div>
           );
         })}
-        {cart.length > 0 && (
-          <button onClick={limpiar} className={styles.btn2}>
-            Limpiar carrito
-          </button>
-        )}
-
+        <Divider color="white" style={{ margin: "20px 0px " }} />
         {cart.length > 0 ? (
           <Link to="" className={styles.btn}>
             Iniciar Compra
@@ -88,7 +99,7 @@ const CartWidget = () => {
         ) : (
           <div className={styles.cartVacio}>
             <h2>Agrega productos para hacer un pedido</h2>
-            <Divider color="white" />
+            <Divider color="white" style={{ margin: "20px 0px " }} />
             <Link to={"/products"} className={styles.btn}>
               Ver productos
             </Link>
@@ -106,7 +117,7 @@ const CartWidget = () => {
             style={{ cursor: "pointer" }}
             onClick={toggleDrawer(anchor, true)}
           >
-            <Badge badgeContent={total} color="secondary">
+            <Badge badgeContent={total} color="primary">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"

@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: var(--space-sm);
 }
 
 .img {
@@ -16,7 +17,6 @@
   height: 100px;
   object-fit: cover;
   border-radius: 0.5rem;
-  margin: 0px 50px;
 }
 .cart h1 {
   color: var(--main);
@@ -43,7 +43,7 @@
   color: black;
   cursor: pointer;
 }
-.cartVacio a {
+.cart a {
   color: var(--Texto-1, #000);
   text-align: center;
   font-family: Bebas Neue;
@@ -53,4 +53,19 @@
   text-decoration: none;
   line-height: 2.25rem; /* 163.636% */
   text-transform: capitalize;
+}
+.cartInfo {
+  color: var(--primary);
+  display: flex;
+  width: fit-content;
+}
+.cart p {
+  font-size: 1.2rem;
+}
+.nombre {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30vw;
 }
