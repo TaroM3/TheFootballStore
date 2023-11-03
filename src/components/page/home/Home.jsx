@@ -3,11 +3,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import { Link } from "react-router-dom";
 import { Skeleton } from "@mui/material";
+import Whatsapp from "../../common/whatsappIcon/Whatsapp";
 
 const Home = ({ el }) => {
   let arr = [1, 2, 3, 4];
   return (
     <div className={styles.home}>
+      <Whatsapp />
       <Carousel showThumbs={false} showStatus={false}>
         <div>
           <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1697859086/Banner_Ilustraci%C3%B3n_e90apk.jpg" />
@@ -23,7 +25,7 @@ const Home = ({ el }) => {
         </div>
       </Carousel>
       <div className={styles.margen}>
-        <section
+        {/* <section
           style={{
             textAlign: "center",
             fontSize: "var(--text-xs)",
@@ -36,8 +38,8 @@ const Home = ({ el }) => {
           puede variar debido a factores externos. Nos esforzamos por minimizar
           cualquier demora y te mantendremos informado(a) sobre el estado de tu
           pedido.
-        </section>
-        <section>
+        </section> */}
+        <section style={{ marginTop: "50px" }}>
           <h2>Productos destacados</h2>
           <div className={styles.destacados}>
             {el.length > 0

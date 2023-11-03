@@ -15,6 +15,7 @@ import SizeButton from "../../common/sizeButton/SizeButton";
 import styles from "./ItemDetail.module.css";
 import { ToastContainer } from "react-toastify";
 import CounterContainer from "../../common/counter/CounterContainer";
+import Whatsapp from "../../common/whatsappIcon/Whatsapp";
 
 const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
   const [sizeOption, setSizeOption] = useState("");
@@ -37,6 +38,7 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
   };
   return (
     <div>
+      <Whatsapp />
       <Breadcrumbs style={{ marginLeft: "100px" }} aria-label="breadcrumb">
         <Link href="/">
           <svg

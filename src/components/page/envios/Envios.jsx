@@ -1,9 +1,11 @@
 import { Breadcrumbs, Link, Typography } from "@mui/material";
 import styles from "./Envios.module.css";
+import Whatsapp from "../../common/whatsappIcon/Whatsapp";
 
 const Envios = () => {
   return (
     <div className={styles.envios}>
+      <Whatsapp />
       <Breadcrumbs aria-label="breadcrumb">
         <Link href="/">
           <svg

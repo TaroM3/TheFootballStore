@@ -7,41 +7,41 @@
   height: 650px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin: 50px 0px;
+  justify-content: space-between;
   flex-direction: row;
 }
 .sections div img {
   width: 30vw;
   height: inherit;
-  padding: 20px;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 .sections div {
   height: inherit;
   display: flex;
+
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .destacados img {
   width: 20vw;
-  border-radius: 2rem;
+  border-radius: 1rem;
   border: solid var(--accent);
 }
 .destacados {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 }
 .destacados div {
-  padding: 20px;
+  padding: 20px 0px;
 }
 
 .margen {
-  margin: 0px 100px;
+  margin: 0px 50px;
 }
 
-
-.home button{
+.home button {
   box-shadow: none;
   border-radius: 0;
   height: 100%;

@@ -1,10 +1,12 @@
 import { Breadcrumbs, Link, Skeleton, Typography } from "@mui/material";
 import ProductCard from "../../common/productCard/ProductCard";
 import styles from "../itemList/ItemList.module.css";
+import Whatsapp from "../../common/whatsappIcon/Whatsapp";
 const ItemList = ({ items, categoryName, subCategoryName }) => {
   let arr = [1, 2, 3, 4];
   return (
     <div className={styles.itemList}>
+      <Whatsapp />
       <Breadcrumbs aria-label="breadcrumb">
         <Link href="/">
           <svg
@@ -56,7 +58,7 @@ const ItemList = ({ items, categoryName, subCategoryName }) => {
         style={{
           width: "100%",
           display: "flex",
-          justifyContent: "flex-start",
+          justifyContent: "space-between",
           flexWrap: "wrap",
         }}
       >

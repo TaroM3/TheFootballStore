@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   border-top: solid 5px var(--accent);
-  padding: 40px 100px;
+  padding: 20px 50px 100px 50px;
 }
 .footer a {
   transition-duration: 0.5s;
