@@ -3,8 +3,30 @@ import styles from "../footer/Footer.module.css";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
+import { useState } from "react";
+import { db } from "../../../firebaseConfig";
+import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 
 const Footer = () => {
+  const [data, setData] = useState({
+    email: "",
+  });
+
+  const handleSubmit = (evento) => {
+    evento.preventDefault();
+
+    let newsletter = {
+      contact: data,
+      date: serverTimestamp(),
+    };
+
+    const newsletterCollection = collection(db, "noticias");
+    addDoc(newsletterCollection, newsletter);
+  };
+
+  const handleChange = (evento) => {
+    setData({ ...data, [evento.target.name]: evento.target.value });
+  };
   const talles = () => {
     Swal.fire({
       imageUrl:
@@ -66,10 +88,7 @@ const Footer = () => {
       <section className={styles.footerContent}>
         <div className={styles.newsletter}>
           <p>Dejanos tu mail para recibir novedades</p>
-          <form
-            // onSubmit={handleSubmit}
-            className={styles.form}
-          >
+          <form onSubmit={handleSubmit} className={styles.form}>
             <input
               required
               className={styles.input}
@@ -79,7 +98,7 @@ const Footer = () => {
               // <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
               // <path d="M14.02 19.9444C13.9107 19.8345 13.8492 19.6856 13.8492 19.5303C13.8492 19.375 13.9107 19.2261 14.02 19.1162L20.0294 13.085L4.31152 13.085C4.15666 13.085 4.00814 13.0233 3.89864 12.9134C3.78913 12.8035 3.72762 12.6545 3.72762 12.4991C3.72762 12.3437 3.78913 12.1946 3.89864 12.0847C4.00814 11.9749 4.15666 11.9131 4.31153 11.9131L20.0294 11.9131L14.02 5.88187C13.9169 5.77079 13.8607 5.62388 13.8634 5.47208C13.866 5.32029 13.9273 5.17546 14.0343 5.0681C14.1413 4.96075 14.2856 4.89925 14.4369 4.89658C14.5882 4.8939 14.7346 4.95024 14.8453 5.05374L21.8522 12.085C21.9615 12.1949 22.0229 12.3438 22.0229 12.4991C22.0229 12.6543 21.9615 12.8033 21.8522 12.9131L14.8453 19.9444C14.7358 20.0541 14.5874 20.1157 14.4326 20.1157C14.2779 20.1157 14.1295 20.0541 14.02 19.9444Z" fill="#979797"/>
               // </svg>
-              // onChange={handleChange}
+              onChange={handleChange}
             />
           </form>
         </div>
@@ -105,11 +124,12 @@ const Footer = () => {
           </li>
           <li>
             <Link
+              target="blank"
               style={{
                 display: "flex",
                 alignItems: "center",
               }}
-              to={""}
+              to={"https://www.instagram.com/thefootballstore.ar/"}
             >
               <SvgIcon component={InstagramIcon} /> @thefootballstore.ar
             </Link>

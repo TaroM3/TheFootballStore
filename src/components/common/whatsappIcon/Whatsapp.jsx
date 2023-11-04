@@ -4,6 +4,7 @@ const Whatsapp = () => {
   return (
     <div>
       <Link
+        target="blank"
         to="https://wa.me/+5492216697039"
         style={{ position: "fixed", bottom: 10, right: 50 }}
       >

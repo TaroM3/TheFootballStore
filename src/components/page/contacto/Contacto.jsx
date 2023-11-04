@@ -1,7 +1,7 @@
 import { Breadcrumbs, Link, Typography } from "@mui/material";
 import styles from "./Contacto.module.css";
 import Whatsapp from "../../common/whatsappIcon/Whatsapp";
-const Contacto = () => {
+const Contacto = ({ handleChange, handleSubmit }) => {
   return (
     <div className={styles.contacto}>
       <Whatsapp />
@@ -43,10 +43,14 @@ const Contacto = () => {
         <div>
           <h4>Contacto</h4>
           <p>
-            Contactanos blablabal ? Lorem ipsum dolor sit amet consectetur.
-            Massa purus commodo faucibus id diam amet ultricies risus.{" "}
+            Para realizar tus consultas, podés contactarnos por Instagram,
+            Whatsapp, o completá el siguiente formulario:
           </p>
-          <Link className={styles.link} to={""}>
+          <a
+            target="blank"
+            className={styles.link}
+            href={"https://www.instagram.com/thefootballstore.ar/"}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
@@ -60,13 +64,11 @@ const Contacto = () => {
               />
             </svg>
             <p> @thefootballstore.ar</p>
-          </Link>
+          </a>
         </div>
         <div className={styles.form}>
           <h5>¡Mandanos un mensaje!</h5>
-          <form
-          // onSubmit={handleSubmit}
-          >
+          <form onSubmit={handleSubmit}>
             {" "}
             <input
               required
@@ -74,7 +76,7 @@ const Contacto = () => {
               type="text"
               placeholder="Nombre y Apellido"
               name="name"
-              // onChange={handleChange}
+              onChange={handleChange}
               minLength="3"
             />
             <input
@@ -83,7 +85,7 @@ const Contacto = () => {
               type="email"
               placeholder="Email"
               name="email"
-              // onChange={handleChange}
+              onChange={handleChange}
             />
             <input
               required
@@ -91,17 +93,18 @@ const Contacto = () => {
               type="tel"
               placeholder="Telefono"
               name="phone"
-              // onChange={handleChange}
+              onChange={handleChange}
               minLength="6"
               maxLength="16"
             />
             <textarea
+              onChange={handleChange}
               className={styles.mensaje}
-              name="mensaje"
+              name="message"
               id=""
               // cols="50"
               // rows="20"
-              placeholder="Mensaje"
+              placeholder="mensaje"
             ></textarea>
             <button type="submit">Enviar</button>
           </form>

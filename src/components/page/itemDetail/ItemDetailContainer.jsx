@@ -49,7 +49,6 @@ const ItemDetailContainer = () => {
         size: size,
         selectOption: selectOption,
       };
-      console.log(data);
 
       addToCart(data);
     }

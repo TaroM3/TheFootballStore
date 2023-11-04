@@ -47,6 +47,12 @@ const CartContextProvider = ({ children }) => {
     }, 0);
     return total;
   };
+  const getNames = () => {
+    let total = cart.reduce((acc, product) => {
+      return `${acc + product.title}, `;
+    }, "");
+    return total;
+  };
 
   //retorna la cantidad del producto que contenga el id pasado por parametro
   const getQuantityById = (id) => {
@@ -66,6 +72,7 @@ const CartContextProvider = ({ children }) => {
     getTotalPrice,
     addToCart,
     deleteById,
+    getNames,
     getTotalQuantity,
     getQuantityById,
     getPartialPrice,

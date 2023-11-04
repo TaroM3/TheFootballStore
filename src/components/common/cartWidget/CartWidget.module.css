@@ -39,6 +39,7 @@
   justify-content: center;
   flex-shrink: 0;
   border-radius: 0.25rem;
+  float: right;
   border: 1px solid var(--secondary);
   background: var(--accent);
   color: black;

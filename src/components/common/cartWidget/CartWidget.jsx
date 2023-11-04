@@ -7,8 +7,9 @@ import styles from "./CartWidget.module.css";
 import CounterContainer from "../counter/CounterContainer";
 
 const CartWidget = () => {
-  const { getTotalQuantity } = useContext(CartContext);
+  const { getTotalQuantity, getNames } = useContext(CartContext);
   let total = getTotalQuantity();
+  let nombresCart = getNames();
   const [counter, setCounter] = useState(1);
   const [state, setState] = React.useState({
     right: false,
@@ -93,9 +94,13 @@ const CartWidget = () => {
         })}
         <Divider color="white" style={{ margin: "20px 0px " }} />
         {cart.length > 0 ? (
-          <Link to="" className={styles.btn}>
+          <a
+            target="blank"
+            href={`https://api.whatsapp.com/send?phone=5492216697039&text=Hola, estoy interesado/a en: ${nombresCart} muchas gracias.`}
+            className={styles.btn}
+          >
             Iniciar Compra
-          </Link>
+          </a>
         ) : (
           <div className={styles.cartVacio}>
             <h2>Agrega productos para hacer un pedido</h2>
