@@ -204,6 +204,7 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
                 fontSize: "22px",
                 fontFamily: "frontpageneue",
                 cursor: "pointer",
+                textDecoration: "underline",
               }}
             >
               Guía de talles

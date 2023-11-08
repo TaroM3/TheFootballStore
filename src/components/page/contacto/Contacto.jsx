@@ -68,7 +68,7 @@ const Contacto = ({ handleChange, handleSubmit }) => {
         </div>
         <div className={styles.form}>
           <h5>¡Mandanos un mensaje!</h5>
-          <form onSubmit={handleSubmit}>
+          <form id="contactForm" onSubmit={handleSubmit}>
             {" "}
             <input
               required
@@ -101,7 +101,6 @@ const Contacto = ({ handleChange, handleSubmit }) => {
               onChange={handleChange}
               className={styles.mensaje}
               name="message"
-              id=""
               // cols="50"
               // rows="20"
               placeholder="mensaje"

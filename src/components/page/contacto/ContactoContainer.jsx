@@ -11,7 +11,10 @@ const ContactoContainer = () => {
     message: "",
   });
 
-  const handleSubmit = (evento) => {
+  const resetForm = () => {
+    document.querySelector("#contactForm").reset();
+  };
+  const handleSubmit = async (evento) => {
     evento.preventDefault();
 
     let consulta = {
@@ -20,7 +23,8 @@ const ContactoContainer = () => {
     };
 
     const consultaCollection = collection(db, "consulta");
-    addDoc(consultaCollection, consulta);
+    await addDoc(consultaCollection, consulta);
+    resetForm();
   };
 
   const handleChange = (evento) => {
