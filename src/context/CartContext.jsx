@@ -26,6 +26,17 @@ const CartContextProvider = ({ children }) => {
     }
   };
 
+  //actualiza la cantidad del producto que contenga el id pasado por parametro
+  const updateQuantityById = (id, quantity) => {
+    let newCart = cart.map((product) => {
+      if (product.id === +id) {
+        product.quantity = quantity;
+      }
+      return product;
+    });
+    setCart([...newCart]);
+  };
+
   //   retorna precio total del carrito
   const getTotalPrice = () => {
     let total = cart.reduce((acc, product) => {
@@ -76,6 +87,7 @@ const CartContextProvider = ({ children }) => {
     getTotalQuantity,
     getQuantityById,
     getPartialPrice,
+    updateQuantityById,
   };
   return <CartContext.Provider value={data}>{children}</CartContext.Provider>;
 };

@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: start;
+  /* align-items: start; */
   font-family: Bebas Neue;
   background-color: var(--secondary);
   padding-top: 15px;

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import styles from "./TabsUser.module.css";
-import { Box, Divider } from "@mui/material";
+import { Divider } from "@mui/material";
 import { tabs } from "./tabs";
-const TabsUser = () => {
+const TabsUser = ({ handleClose }) => {
   const [currentTab, setCurrentTab] = useState("1");
   const handleTabClick = () => {
     setCurrentTab(event.target.id);
@@ -27,7 +27,9 @@ const TabsUser = () => {
       {/* <Divider color="white" style={{ margin: "20px 0px " }} /> */}
       <div className={styles.content}>
         {tabs.map(({ id, Element }, i) => (
-          <div key={i}>{currentTab === `${id}` && <Element />}</div>
+          <div key={i}>
+            {currentTab === `${id}` && <Element handleClose={handleClose} />}
+          </div>
         ))}
       </div>
     </div>

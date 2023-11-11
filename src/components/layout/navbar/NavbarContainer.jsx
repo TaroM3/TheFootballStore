@@ -108,7 +108,7 @@ const NavbarContainer = () => {
                       padding: "0",
                     }}
                   >
-                    <Link to="/products">Productos</Link>
+                    <Link>Productos</Link>
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails

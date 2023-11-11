@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-
+import { getAuth } from "firebase/auth";
 // const firebaseConfig = {
 //   apiKey: "AIzaSyAFlqg9J7Y6zytHNY-isOiPvgZlK1i5EQ8",
 //   authDomain: "thefootballstore-141f0.firebaseapp.com",
@@ -20,4 +20,6 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+
 export const db = getFirestore(app);
+export const auth = getAuth(app);

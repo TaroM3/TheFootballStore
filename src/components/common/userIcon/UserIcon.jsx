@@ -1,18 +1,26 @@
-import { Divider, Drawer } from "@mui/material";
+import { Drawer } from "@mui/material";
 import { Box } from "@mui/system";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import TabsUser from "../tabsUser/TabsUser";
-import styles from "./UserIcon.module.css";
+// import styles from "./UserIcon.module.css";
 import CloseButton from "../closeButton/CloseButton";
+import { UserContext } from "../../../context/UserContext";
+import Profile from "../profile/Profile";
 
 const UserIcon = () => {
+  const { getConnection } = useContext(UserContext);
+  let isLoggedIn = getConnection();
+
   const [state, setState] = useState({
     right: false,
   });
 
-  // const types = ["Cash", "Credit Card", "Bitcoin"];
-  // const [active, setActive] = useState(types[0]);
+  // console.log(isLoggedIn);
+
+  const handleClose = () => {
+    toggleDrawer("right", false);
+  };
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -62,7 +70,7 @@ const UserIcon = () => {
                 sx={{
                   width: 700,
                   backgroundColor: "black",
-                  height: "90.8%",
+                  height: "100vh",
                 }}
               >
                 <Box
@@ -78,7 +86,11 @@ const UserIcon = () => {
                   <CloseButton />
                 </Box>
 
-                <TabsUser />
+                {isLoggedIn ? (
+                  <Profile handleClose={handleClose} />
+                ) : (
+                  <TabsUser handleClose={handleClose} />
+                )}
               </Box>
             </Drawer>
           </React.Fragment>

@@ -2,10 +2,11 @@ import { db } from "../../../firebaseConfig";
 import useFirestore from "../../../hooks/useFirebase";
 import { addDoc, collection } from "firebase/firestore";
 import Dashboard from "./Dashboard";
-
+import { products as mockUpProducts } from "../../products";
 const DashboardContainer = () => {
+  // console.log(mockUpProducts);
   const rellenar = () => {
-    products.forEach((product) => {
+    mockUpProducts.forEach((product) => {
       let refCollection = collection(db, "products");
       addDoc(refCollection, product);
     });

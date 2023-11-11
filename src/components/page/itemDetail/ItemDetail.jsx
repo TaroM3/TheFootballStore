@@ -22,7 +22,13 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
   const [selectOption, setSelectOption] = useState("No");
   const [anchorEl, setAnchorEl] = useState(null);
 
-  const [counter, setCounter] = useState(1);
+  // const [counter, setCounter] = useState(1);
+  let counter;
+
+  const quantityGetter = (quantity) => {
+    counter = quantity;
+    return quantity;
+  };
 
   const open = Boolean(anchorEl);
 
@@ -30,7 +36,6 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = () => {
-    console.log(event.target.attributes.value?.nodeValue);
     event.target.attributes.value?.nodeValue
       ? setSelectOption(event.target.attributes.value.nodeValue)
       : null;
@@ -284,7 +289,7 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
           >
             Cantidad
           </Typography>
-          <CounterContainer counter={counter} setCounter={setCounter} />
+          <CounterContainer quantity={1} quantityGetter={quantityGetter} />
           <Button
             variant="outlined"
             sx={{

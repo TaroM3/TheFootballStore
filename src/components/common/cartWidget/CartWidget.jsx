@@ -1,16 +1,19 @@
 import { Badge, Divider, Link } from "@mui/material";
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { CartContext } from "../../../context/CartContext";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import styles from "./CartWidget.module.css";
 import CounterContainer from "../counter/CounterContainer";
+import CloseButton from "../closeButton/CloseButton";
 
 const CartWidget = () => {
-  const { getTotalQuantity, getNames } = useContext(CartContext);
+  const { getTotalQuantity, getNames, updateQuantityById } =
+    useContext(CartContext);
   let total = getTotalQuantity();
   let nombresCart = getNames();
-  const [counter, setCounter] = useState(1);
+
+  // const [counter, setCounter] = useState(1);
   const [state, setState] = React.useState({
     right: false,
   });
@@ -33,19 +36,30 @@ const CartWidget = () => {
         width: anchor === "top" || anchor === "bottom" ? "auto" : 700,
       }}
       role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
       bgcolor={"black"}
     >
+      <Box
+        onClick={toggleDrawer("right", false)}
+        sx={{
+          width: "70px",
+          height: "70px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: "black",
+        }}
+      >
+        <CloseButton />
+      </Box>
       <div className={styles.cart}>
         <div className={styles.titulo}>
           <h1>Lista de deseos</h1>
           <Badge badgeContent={total} color="primary">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              viewBox="0 0 32 32"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
               fill="none"
             >
               <path
@@ -58,18 +72,25 @@ const CartWidget = () => {
         <Divider color="white" style={{ margin: "20px 0px " }} />
         <h2>Productos</h2>
         <Divider color="white" style={{ margin: "20px 0px " }} />
-        {cart.map((elemento) => {
+        {cart.map((elemento, i) => {
           return (
-            <div key={elemento.id} className={styles.cartItem}>
+            <div key={i} className={styles.cartItem}>
               {" "}
               <div className={styles.cartInfo}>
                 <img className={styles.img} src={elemento.imgUrl} alt="" />{" "}
                 <div className={styles.nombre}>
-                  <p>{elemento.title}</p>{" "}
-                  <div style={{ display: "flex", justifyContent: "end" }}>
+                  <h2>{elemento.title}</h2>{" "}
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                    }}
+                  >
+                    <p style={{ color: "var(--main)" }}>Size {elemento.size}</p>
                     <CounterContainer
-                      counter={counter}
-                      setCounter={setCounter}
+                      quantity={elemento.quantity}
+                      id={elemento.id}
                     />
                   </div>
                 </div>
@@ -105,7 +126,11 @@ const CartWidget = () => {
           <div className={styles.cartVacio}>
             <h2>Agrega productos para hacer un pedido</h2>
             <Divider color="white" style={{ margin: "20px 0px " }} />
-            <Link to={"/products"} className={styles.btn}>
+            <Link
+              to={"/products"}
+              className={styles.btn}
+              onClick={toggleDrawer(anchor, false)}
+            >
               Ver productos
             </Link>
           </div>
