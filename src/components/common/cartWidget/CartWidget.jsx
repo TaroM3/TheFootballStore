@@ -6,6 +6,7 @@ import Drawer from "@mui/material/Drawer";
 import styles from "./CartWidget.module.css";
 import CounterContainer from "../counter/CounterContainer";
 import CloseButton from "../closeButton/CloseButton";
+import CartProductCard from "../cartProductCard/CartProductCard";
 
 const CartWidget = () => {
   const { getTotalQuantity, getNames, updateQuantityById } =
@@ -73,45 +74,7 @@ const CartWidget = () => {
         <h2>Productos</h2>
         <Divider color="white" style={{ margin: "20px 0px " }} />
         {cart.map((elemento, i) => {
-          return (
-            <div key={i} className={styles.cartItem}>
-              {" "}
-              <div className={styles.cartInfo}>
-                <img className={styles.img} src={elemento.imgUrl} alt="" />{" "}
-                <div className={styles.nombre}>
-                  <h2>{elemento.title}</h2>{" "}
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                    }}
-                  >
-                    <p style={{ color: "var(--main)" }}>Size {elemento.size}</p>
-                    <CounterContainer
-                      quantity={elemento.quantity}
-                      id={elemento.id}
-                    />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <svg
-                  onClick={() => deleteById(elemento.id)}
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M16 9V19H8V9H16ZM14.5 3H9.5L8.5 4H5V6H19V4H15.5L14.5 3ZM18 7H6V19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-            </div>
-          );
+          return <CartProductCard product={elemento} key={i} />;
         })}
         <Divider color="white" style={{ margin: "20px 0px " }} />
         {cart.length > 0 ? (
