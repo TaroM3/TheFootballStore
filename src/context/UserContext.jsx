@@ -47,10 +47,10 @@ const UserContextProvider = ({ children }) => {
     if (tokenId) {
       if (user.name === "") {
         const docRef = doc(getData, tokenId);
-        const data = getDoc(docRef).then((res) => {
+        getDoc(docRef).then((res) => {
+          setUser({ ...res.data(), uidToken: res.id });
           return { ...res.data(), uidToken: res.id };
         });
-        setUser({ ...data });
       }
       return true;
     } else {
