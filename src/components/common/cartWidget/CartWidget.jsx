@@ -4,13 +4,11 @@ import { CartContext } from "../../../context/CartContext";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import styles from "./CartWidget.module.css";
-import CounterContainer from "../counter/CounterContainer";
 import CloseButton from "../closeButton/CloseButton";
 import CartProductCard from "../cartProductCard/CartProductCard";
 
 const CartWidget = () => {
-  const { getTotalQuantity, getNames, updateQuantityById } =
-    useContext(CartContext);
+  const { getTotalQuantity, getNames } = useContext(CartContext);
   let total = getTotalQuantity();
   let nombresCart = getNames();
 

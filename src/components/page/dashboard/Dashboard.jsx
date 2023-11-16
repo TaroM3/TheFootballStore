@@ -28,7 +28,7 @@ const Dashboard = ({ products }) => {
       currentPage + count;
     });
   };
-  // const prodPage = products.slice(0, 10);
+
   return (
     <div
       style={{
@@ -66,8 +66,6 @@ const Dashboard = ({ products }) => {
                   color: "text.secondary",
                 }}
               >
-                Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-                feugiat. Aliquam eget maximus est, id dignissim quam.
                 <Button>Modificar</Button>
               </Box>
             </AccordionDetails>
