@@ -37,17 +37,6 @@ const CartWidget = () => {
       role="presentation"
       bgcolor={"black"}
     >
-      <Box
-        onClick={toggleDrawer("right", false)}
-        sx={{
-          width: "70px",
-          height: "70px",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: "black",
-        }}
-      ></Box>
       <div className={styles.cart}>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <div className={styles.titulo}>
@@ -67,7 +56,9 @@ const CartWidget = () => {
               </svg>
             </Badge>{" "}
           </div>{" "}
-          <CloseButton />
+          <Box onClick={toggleDrawer("right", false)}>
+            <CloseButton />
+          </Box>
         </div>
         <Divider color="white" style={{ margin: "20px 0px " }} />
         <h2>Productos</h2>
