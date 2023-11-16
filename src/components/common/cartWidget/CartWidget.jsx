@@ -47,34 +47,41 @@ const CartWidget = () => {
           alignItems: "center",
           backgroundColor: "black",
         }}
-      >
-        <CloseButton />
-      </Box>
+      ></Box>
       <div className={styles.cart}>
-        <div className={styles.titulo}>
-          <h1>Lista de deseos</h1>
-          <Badge badgeContent={total} color="primary">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M16 4.61804L18.4432 12.1373L18.5554 12.4828H18.9187H26.8249L20.4286 17.1299L20.1347 17.3435L20.247 17.689L22.6902 25.2082L16.2939 20.5611L16 20.3475L15.7061 20.5611L9.30985 25.2082L11.753 17.689L11.8653 17.3435L11.5714 17.1299L5.17511 12.4828H13.0813H13.4446L13.5568 12.1373L16 4.61804Z"
-                stroke="#6DF0F7"
-              />
-            </svg>
-          </Badge>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <div className={styles.titulo}>
+            <h1>Lista de deseos</h1>
+            <Badge badgeContent={total} color="primary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M16 4.61804L18.4432 12.1373L18.5554 12.4828H18.9187H26.8249L20.4286 17.1299L20.1347 17.3435L20.247 17.689L22.6902 25.2082L16.2939 20.5611L16 20.3475L15.7061 20.5611L9.30985 25.2082L11.753 17.689L11.8653 17.3435L11.5714 17.1299L5.17511 12.4828H13.0813H13.4446L13.5568 12.1373L16 4.61804Z"
+                  stroke="#6DF0F7"
+                />
+              </svg>
+            </Badge>{" "}
+          </div>{" "}
+          <CloseButton />
         </div>
         <Divider color="white" style={{ margin: "20px 0px " }} />
         <h2>Productos</h2>
         <Divider color="white" style={{ margin: "20px 0px " }} />
         {cart.map((elemento, i) => {
-          return <CartProductCard product={elemento} key={i} />;
+          return (
+            <div key={{ i }}>
+              {" "}
+              <CartProductCard product={elemento} key={i} />{" "}
+              <Divider color="white" style={{ margin: "20px 0px " }} />
+            </div>
+          );
         })}
-        <Divider color="white" style={{ margin: "20px 0px " }} />
+
         {cart.length > 0 ? (
           <a
             target="blank"
@@ -85,15 +92,13 @@ const CartWidget = () => {
           </a>
         ) : (
           <div className={styles.cartVacio}>
-            <h2>Agrega productos para hacer un pedido</h2>
-            <Divider color="white" style={{ margin: "20px 0px " }} />
-            <Link
-              to={"/products"}
+            <a
+              href={"/products"}
               className={styles.btn}
               onClick={toggleDrawer(anchor, false)}
             >
               Ver productos
-            </Link>
+            </a>
           </div>
         )}
       </div>

@@ -140,16 +140,6 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
 
           <Typography
             variant="body1"
-            sx={{
-              fontSize: "25px",
-              fontFamily: "bebas neue",
-              color: "var(--main)",
-            }}
-          >
-            $25.000
-          </Typography>
-          <Typography
-            variant="body1"
             sx={{ fontSize: "25px", fontFamily: "frontpageneue" }}
           >
             Ver medios de pago

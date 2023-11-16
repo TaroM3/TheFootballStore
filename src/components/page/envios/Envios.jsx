@@ -42,7 +42,10 @@ const Envios = () => {
       </Breadcrumbs>{" "}
       <h4>Metodos de entrega</h4>
       <div style={{ textAlign: "center" }}>
-        <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1698767236/thefootballstore/Copia_de_Brochure_CMYK_wh5yvm.jpg" />
+        <img
+          style={{ width: "-webkit-fill-available" }}
+          src="https://res.cloudinary.com/daq80uhh9/image/upload/v1700096420/thefootballstore/Brochure_RGB_1_ehb7pm.jpg"
+        />
       </div>
       {/* <div>
 

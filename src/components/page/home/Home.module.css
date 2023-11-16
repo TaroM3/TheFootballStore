@@ -4,7 +4,6 @@
   color: var(--primary);
 }
 .sections {
-  height: 650px;
   display: flex;
   align-items: center;
   margin: 50px 0px;
@@ -14,7 +13,6 @@
 .sections div img {
   width: 30vw;
   height: inherit;
-  border-radius: 1rem;
 }
 .sections div {
   height: inherit;

@@ -103,7 +103,7 @@ const Contacto = ({ handleChange, handleSubmit }) => {
               name="message"
               // cols="50"
               // rows="20"
-              placeholder="mensaje"
+              placeholder="Mensaje"
             ></textarea>
             <button type="submit">Enviar</button>
           </form>
