@@ -77,12 +77,13 @@ const Home = ({ el }) => {
               <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1698367546/thefootballstore/ezgif-5-6ce96d7cdb_gvwfl7.gif" />
             </Link>
           </div>
-          <div>
-            <Link to="/category/liga-argentina">
-              <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1698367545/thefootballstore/ezgif-5-e5b37d74b4_joatin.gif" />
-            </Link>
+          <div style={{ height: "670px" }}>
+            {" "}
             <Link to="/category/selecciones">
               <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1698367545/thefootballstore/ezgif-5-6dc4e18f21_pe33dd.gif" />
+            </Link>
+            <Link to="/category/liga-argentina">
+              <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1698367545/thefootballstore/ezgif-5-e5b37d74b4_joatin.gif" />
             </Link>
           </div>
           <div>

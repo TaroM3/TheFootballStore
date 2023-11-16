@@ -7,7 +7,6 @@ import { Form } from "react-bootstrap";
 import CartWidget from "../../common/cartWidget/CartWidget";
 import { AccordionDetails, AccordionSummary, Typography } from "@mui/material";
 import Accordion from "@mui/material/Accordion";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import UserIcon from "../../common/userIcon/UserIcon";
 const NavbarContainer = () => {
   return (
@@ -96,9 +95,6 @@ const NavbarContainer = () => {
                     margin: "0px 0px",
                     padding: "0",
                   }}
-                  expandIcon={
-                    <ExpandMoreIcon style={{ color: "var(--primary)" }} />
-                  }
                   aria-controls="panel1a-content"
                   id="panel1a-header"
                 >
@@ -282,18 +278,12 @@ const NavbarContainer = () => {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              {/* <Nav.Link>
-                <Link to={"/info"}>Ayuda</Link>
-              </Nav.Link> */}
               <Nav.Link>
                 <Link to={"/envios"}>Envios</Link>
               </Nav.Link>
               <Nav.Link>
                 <Link to={"/contacto"}>Contacto</Link>
               </Nav.Link>
-              {/* <Nav.Link>
-                <Link to={"/dashboard"}>Dashboard</Link>
-              </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>{" "}
           <div style={{ display: "flex", margin: "0px 10px" }}>

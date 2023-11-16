@@ -11,7 +11,7 @@ div:where(.swal2-container) img:where(.swal2-image) {
   margin: 0;
 }
 
-.inputNumber{
+.inputNumber {
   border: none;
   height: 60px;
   appearance: none;
@@ -21,7 +21,7 @@ div:where(.swal2-container) img:where(.swal2-image) {
   width: 60px;
   border-bottom: 2px solid white;
   background-color: black;
-  color: 'white';
+  color: "white";
 }
 .inputNumber:focus {
   border: none;
@@ -30,10 +30,10 @@ div:where(.swal2-container) img:where(.swal2-image) {
   appearance: none;
 }
 
-.inputNumber:hover{
+.inputNumber:hover {
   appearance: none;
 }
-.inputNumber::placeholder{
+.inputNumber::placeholder {
   opacity: 1;
   color: white;
 }

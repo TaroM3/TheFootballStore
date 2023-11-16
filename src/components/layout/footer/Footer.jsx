@@ -37,6 +37,8 @@ const Footer = () => {
       imageAlt: "Custom image",
       showConfirmButton: false,
       background: "none",
+      showCloseButton: true,
+      closeButtonHtml: "X",
       showClass: {
         popup: "animate__animated animate__fadeInDown",
       },
@@ -100,6 +102,24 @@ const Footer = () => {
               // </svg>
               onChange={handleChange}
             />
+            <button
+              style={{
+                width: "4.625rem",
+                height: "2.0625rem",
+                flexShrink: "0",
+                borderRadius: "0.625rem",
+                background: "#FFE54E",
+                color: "#000",
+                fontFamily: "Bebas Neue",
+                fontSize: "1.125rem",
+                fontStyle: "normal",
+                fontWeight: "400",
+                lineHeight: "2.25rem",
+              }}
+              type="submit"
+            >
+              Enviar
+            </button>
           </form>
         </div>
         <ul className={styles.ul}>

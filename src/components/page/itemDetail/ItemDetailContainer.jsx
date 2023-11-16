@@ -7,6 +7,7 @@ import { Box, Skeleton } from "@mui/material";
 import Swal from "sweetalert2";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import CloseButton from "../../common/closeButton/CloseButton";
 
 const ItemDetailContainer = () => {
   const { id } = useParams();
@@ -22,6 +23,8 @@ const ItemDetailContainer = () => {
       imageAlt: "Custom image",
       showConfirmButton: false,
       background: "none",
+      showCloseButton: true,
+      closeButtonHtml: "X",
       showClass: {
         popup: "animate__animated animate__fadeInDown",
       },

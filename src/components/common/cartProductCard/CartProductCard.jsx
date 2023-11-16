@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import { useContext } from "react";
-=======
 import { useContext, useState } from "react";
->>>>>>> beb64d4e2dfe78d1736927d46af4045fd57e3804
 import CounterContainer from "../counter/CounterContainer";
 import styles from "./CartProductCard.module.css";
 import { CartContext } from "../../../context/CartContext";
