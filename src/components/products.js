@@ -3,7 +3,7 @@ export let products = [
     category: "retros",
     subCategory: "selecciones",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697734437/thefootballstore/Argentina%20Retro%20Jersey%20Away%20World%20Cup%202006.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139704/footballstore2/Argentina_Retro_Jersey_Away_World_Cup_2006_n5smsd.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -13,7 +13,7 @@ export let products = [
     category: "retros",
     subCategory: "clubes",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730486/thefootballstore/River%20Plate%20Retro%20Jersey%20Home%201986.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700146873/footballstore2/River_Plate_Retro_Jersey_Home_1986_gds7b6.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -23,7 +23,7 @@ export let products = [
     category: "retros",
     subCategory: "clubes",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731893/thefootballstore/Barcelona%20Retro%20Jersey%20Home%202015-16.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139739/footballstore2/Barcelona_Retro_Jersey_Home_2015-16_lxqmuu.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -33,7 +33,7 @@ export let products = [
     category: "retros",
     subCategory: "clubes",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731852/thefootballstore/Barcelona%20Retro%20Away%20Jersey%202013-14.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139735/footballstore2/Barcelona_Retro_Away_Jersey_2013-14_kznlco.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -43,7 +43,7 @@ export let products = [
     category: "retros",
     subCategory: "clubes",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731666/thefootballstore/Chelsea%20Retro%20Jersey%20Home%202012-13.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139770/footballstore2/Chelsea_Retro_Jersey_Home_2012-13_yxtblk.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -53,7 +53,7 @@ export let products = [
     category: "retros",
     subCategory: "clubes",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730681/thefootballstore/Real%20Madrid%20Retro%20Jersey%20Home%201998-00.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145933/footballstore2/Real_Madrid_Retro_Jersey_Home_1998-00_n10aco.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -63,7 +63,7 @@ export let products = [
     category: "retros",
     subCategory: "clubes",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731466/thefootballstore/Inter%20Milan%20Retro%20Jersey%20Away%202009-10.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700141568/footballstore2/Inter_Milan_Retro_Jersey_Away_2009-10_nx1pbl.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -73,7 +73,7 @@ export let products = [
     category: "retros",
     subCategory: "selecciones",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697734326/thefootballstore/Argentina%20Retro%20Jersey%20Away%20World%20Cup%201994.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139704/footballstore2/Argentina_Retro_Jersey_Away_World_Cup_1994_r6wemh.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -83,7 +83,7 @@ export let products = [
     category: "retros",
     subCategory: "selecciones",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697734299/thefootballstore/Brazil%20Retro%20Jersey%20Home%20World%20Cup%202002.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139745/footballstore2/Brazil_Retro_Jersey_Home_World_Cup_2002_gjxe0v.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -93,7 +93,7 @@ export let products = [
     category: "retros",
     subCategory: "selecciones",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697734238/thefootballstore/France%20Retro%20Jersey%20Away%20World%20Cup%201998.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139768/footballstore2/France_Retro_Jersey_Away_World_Cup_1998_e24ib3.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -103,7 +103,7 @@ export let products = [
     category: "retros",
     subCategory: "clubes",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730620/thefootballstore/Real%20Madrid%20Retro%20Jersey%20Away%202011-12.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145931/footballstore2/Real_Madrid_Retro_Jersey_Away_2011-12_umdytd.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -113,7 +113,7 @@ export let products = [
     category: "retros",
     subCategory: "selecciones",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697734360/thefootballstore/Argentina%20Retro%20Jersey%20Away%20World%20Cup%201998.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139704/footballstore2/Argentina_Retro_Jersey_Away_World_Cup_1998_xnhtbh.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -123,7 +123,7 @@ export let products = [
     category: "retros",
     subCategory: "clubes",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730545/thefootballstore/River%20Plate%20Retro%20Jersey%20Home%201996-97.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700146874/footballstore2/River_Plate_Retro_Jersey_Home_1996-97_leojtw.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -133,7 +133,7 @@ export let products = [
     category: "retros",
     subCategory: "clubes",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730729/thefootballstore/Real%20Madrid%20Retro%20Away%20Jersey%201999-01.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145930/footballstore2/Real_Madrid_Retro_Away_Jersey_1999-01_omykeu.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -143,7 +143,7 @@ export let products = [
     category: "retros",
     subCategory: "clubes",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731341/thefootballstore/Manchester%20United%20Retro%20Jersey%20Away%202002-03.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145275/footballstore2/Manchester_United_Retro_Jersey_Away_2002-03_sie67g.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -153,7 +153,7 @@ export let products = [
     category: "retros",
     subCategory: "clubes",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697732098/thefootballstore/AC%20Milan%20Retro%20Jersey%20Home%202006-07.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139703/footballstore2/AC_Milan_Retro_Jersey_Home_2006-07_jm1xx5.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -163,7 +163,7 @@ export let products = [
     category: "retros",
     subCategory: "clubes",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731602/thefootballstore/Chelsea%20UCL%20Final%20Home%20Retro%20Jersey%202008.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139745/footballstore2/Chelsea_UCL_Final_Home_Retro_Jersey_2008_gudo1w.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -173,7 +173,7 @@ export let products = [
     category: "retros",
     subCategory: "clubes",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731799/thefootballstore/Boca%20Juniors%20Retro%20Soccer%20Jersey%20Home%202002.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139741/footballstore2/Boca_Juniors_Retro_Soccer_Jersey_Home_2002_wfhzxl.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -183,7 +183,7 @@ export let products = [
     category: "retros",
     subCategory: "clubes",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730575/thefootballstore/River%20Plate%20Retro%20Away%20Jersey%201996-97.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700146873/footballstore2/River_Plate_Retro_Away_Jersey_1996-97_s6nxiy.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -193,7 +193,7 @@ export let products = [
     category: "retros",
     subCategory: "selecciones",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697734391/thefootballstore/Argentina%20Retro%20Jersey%20Home%20World%20Cup%202006.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139705/footballstore2/Argentina_Retro_Jersey_Home_World_Cup_2006_zbkuqv.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -203,7 +203,7 @@ export let products = [
     category: "retros",
     subCategory: "clubes",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731931/thefootballstore/Barcelona%20UCL%20Final%20Retro%20Home%20Jersey%202008-09.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139739/footballstore2/Barcelona_UCL_Final_Retro_Home_Jersey_2008-09_uixti8.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -213,7 +213,7 @@ export let products = [
     category: "retros",
     subCategory: "selecciones",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697734210/thefootballstore/Spain%20Retro%20Jersey%20Away%20World%20Cup%20Final%202010.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700146879/footballstore2/Spain_Retro_Jersey_Away_World_Cup_Final_2010_z7wyzp.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -223,7 +223,7 @@ export let products = [
     category: "retros",
     subCategory: "clubes",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731431/thefootballstore/Retro%20Manchester%20United%20Third%20Away%20Jersey%202007-08.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145934/footballstore2/Retro_Manchester_United_Third_Away_Jersey_2007-08_lgughs.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -233,7 +233,7 @@ export let products = [
     category: "retros",
     subCategory: "clubes",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731496/thefootballstore/Inter%20Milan%20UCL%20Final%20Retro%20Home%20Jersey%202009-10.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700142135/footballstore2/Inter_Milan_UCL_Final_Retro_Home_Jersey_2009-10_bawtba.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -243,7 +243,7 @@ export let products = [
     category: "retros",
     subCategory: "clubes",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697731399/thefootballstore/Manchester%20United%20Retro%20Jersey%20Home%20UCL%20Final%202007-08.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145934/footballstore2/Retro_Manchester_United_Third_Away_Jersey_2007-08_lgughs.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -253,7 +253,7 @@ export let products = [
     category: "retros",
     subCategory: "clubes",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697732256/thefootballstore/AC%20Milan%20UCL%20Final%20Retro%20Jersey%20Away%202006-07.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139703/footballstore2/AC_Milan_UCL_Final_Retro_Jersey_Away_2006-07_v0eyxd.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -263,7 +263,7 @@ export let products = [
     category: "liga-argentina",
     subCategory: "river",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729372/thefootballstore/River%20Plate%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145953/footballstore2/River_Plate_Away_Jersey_Player_Version_2023-24_p7ld5a.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -273,7 +273,7 @@ export let products = [
     category: "liga-argentina",
     subCategory: "river",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729433/thefootballstore/River%20Plate%20Third%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700146873/footballstore2/River_Plate_Third_Away_Jersey_Player_Version_2023-24_rq2vsf.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -283,7 +283,7 @@ export let products = [
     category: "liga-argentina",
     subCategory: "boca",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729505/thefootballstore/Boca%20Juniors%20Home%20Jersey%20Fan%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139771/footballstore2/Boca_Juniors_Home_Jersey_Fan_Version_2023-24_px6h7t.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -293,7 +293,7 @@ export let products = [
     category: "liga-argentina",
     subCategory: "boca",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729474/thefootballstore/Boca%20Juniors%20Jersey%20Third%20Away%20Fan%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700141534/footballstore2/Boca_Juniors_Jersey_Third_Away_Fan_Version_2023-24_bpoocx.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -303,7 +303,7 @@ export let products = [
   {
     category: "inter-miami",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729712/thefootballstore/Inter%20Miami%20CF%2010%20MESSI%20Home%20Jersey%20Player%20Version%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700141535/footballstore2/Inter_Miami_CF_10_MESSI_Home_Jersey_Player_Version_2022_lg87tm.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -312,7 +312,7 @@ export let products = [
   {
     category: "inter-miami",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729587/thefootballstore/Inter%20Miami%20CF%2010%20MESSI%20Away%20Jersey%20Fam%20Version%202023.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700141533/footballstore2/Inter_Miami_CF_10_MESSI_Away_Jersey_Fan_Version_2023_xn0i0e.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -321,7 +321,7 @@ export let products = [
   {
     category: "inter-miami",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729537/thefootballstore/Inter%20Miami%20CF%2010%20MESSI%20Home%20Jersey%20Fan%20Version%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700141535/footballstore2/Inter_Miami_CF_10_MESSI_Home_Jersey_Fan_Version_2022_v7hyk8.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -330,7 +330,7 @@ export let products = [
   {
     category: "inter-miami",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729762/thefootballstore/Inter%20Miami%20CF%2010%20MESSI%20Away%20Jersey%20Player%20Version%202023.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700141534/footballstore2/Inter_Miami_CF_10_MESSI_Away_Jersey_Player_Version_2023_auqp5c.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -339,7 +339,7 @@ export let products = [
   {
     category: "inter-miami",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729678/thefootballstore/Inter%20Miami%20CF%20Away%20Jersey%20Fan%20Version%202023.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700141535/footballstore2/Inter_Miami_CF_Away_Jersey_Fan_Version_2023_ipn4xg.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -348,7 +348,7 @@ export let products = [
   {
     category: "inter-miami",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729818/thefootballstore/Inter%20Miami%20CF%20Away%20Jersey%20Player%20Version%202023.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700141536/footballstore2/Inter_Miami_CF_Away_Jersey_Player_Version_2023_us8hil.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -357,7 +357,7 @@ export let products = [
   {
     category: "inter-miami",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729628/thefootballstore/Inter%20Miami%20CF%20Home%20Jersey%20Fan%20Version%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700141536/footballstore2/Inter_Miami_CF_Home_Jersey_Fan_Version_2022_x82kyi.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -366,7 +366,7 @@ export let products = [
   {
     category: "inter-miami",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729788/thefootballstore/Inter%20Miami%20CF%20Home%20Jersey%20Player%20Version%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700141536/footballstore2/Inter_Miami_CF_Home_Jersey_Player_Version_2022_tmwqwz.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -377,7 +377,7 @@ export let products = [
     category: "selecciones",
     subCategory: "america",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729313/thefootballstore/Argentina%20Jersey%20Home%20Player%20Version%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139703/footballstore2/Argentina_Jersey_Home_Player_Version_2022_hf2crq.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -387,7 +387,7 @@ export let products = [
     category: "selecciones",
     subCategory: "america",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697732298/thefootballstore/Argentina%20Three%20Stars%20Jersey%20Away%20Player%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139705/footballstore2/Argentina_Three_Stars_Jersey_Away_Player_2022_wwieeb.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -397,7 +397,7 @@ export let products = [
     category: "selecciones",
     subCategory: "america",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729338/thefootballstore/Argentina%20Three%20Stars%20Jersey%20Away%20Player%20Version%20World%20Cup%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139720/footballstore2/Argentina_Three_Stars_Jersey_Away_Player_Version_World_Cup_2022_doeeq2.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -407,7 +407,7 @@ export let products = [
     category: "selecciones",
     subCategory: "america",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733967/thefootballstore/Argentina%20World%20Cup%20Champion%20Edition%20Jersey%20Home%20Player%20Version%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139721/footballstore2/Argentina_World_Cup_Champion_Edition_Jersey_Home_Player_Version_2022_bgx2m3.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 1,
@@ -418,7 +418,7 @@ export let products = [
     category: "selecciones",
     subCategory: "america",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730124/thefootballstore/Uruguay%20Soccer%20Jersey%20Home%20Player%20Version%20World%20Cup%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145208/footballstore2/Uruguay_Soccer_Jersey_Home_Player_Version_World_Cup_2022_hc4zhr.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -428,7 +428,7 @@ export let products = [
     category: "selecciones",
     subCategory: "america",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733841/thefootballstore/Uruguay%20Soccer%20Jersey%20Away%20Player%20Version%20World%20Cup%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700147195/footballstore2/Uruguay_Soccer_Jersey_Away_Player_Version_World_Cup_2022_dkphnj.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -438,7 +438,7 @@ export let products = [
     category: "selecciones",
     subCategory: "america",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730171/thefootballstore/Brazil%20Jersey%20Away%20Player%20Version%20World%20Cup%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139769/footballstore2/Brazil_Jersey_Away_Player_Version_World_Cup_2022_chctom.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -448,7 +448,7 @@ export let products = [
     category: "selecciones",
     subCategory: "america",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730199/thefootballstore/Brazil%20Jersey%20Home%20Player%20Version%20World%20Cup%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139743/footballstore2/Brazil_Jersey_Home_Player_Version_World_Cup_2022_t9wv2l.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -459,7 +459,7 @@ export let products = [
     category: "selecciones",
     subCategory: "europa",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733376/thefootballstore/Spain%20Jersey%20Home%20Player%20Version%20World%20Cup%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700146875/footballstore2/Spain_Jersey_Home_Player_Version_World_Cup_2022_kaqb9f.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -469,7 +469,7 @@ export let products = [
     category: "selecciones",
     subCategory: "europa",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733350/thefootballstore/Spain%20Jersey%20Away%20Player%20Version%20World%20Cup%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700146874/footballstore2/Spain_Jersey_Away_Player_Version_World_Cup_2022_izppb1.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -479,7 +479,7 @@ export let products = [
     category: "selecciones",
     subCategory: "europa",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733419/thefootballstore/Portugal%20Soccer%20Jersey%20Away%20Player%20Version%20World%20Cup%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145923/footballstore2/Portugal_Soccer_Jersey_Away_Player_Version_World_Cup_2022_uhswj8.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -489,7 +489,7 @@ export let products = [
     category: "selecciones",
     subCategory: "europa",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733446/thefootballstore/Portugal%20Soccer%20Jersey%20Home%20Player%20Version%20World%20Cup%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145923/footballstore2/Portugal_Soccer_Jersey_Home_Player_Version_World_Cup_2022_zldnv6.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -499,7 +499,7 @@ export let products = [
     category: "selecciones",
     subCategory: "europa",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733524/thefootballstore/Netherlands%20Soccer%20Jersey%20Home%20Player%20Version%20World%20Cup%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145922/footballstore2/Netherlands_Soccer_Jersey_Home_Player_Version_World_Cup_2022_lv5qv9.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -509,7 +509,7 @@ export let products = [
     category: "selecciones",
     subCategory: "europa",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733491/thefootballstore/Netherlands%20Soccer%20Jersey%20Away%20Player%20Version%20World%20Cup%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145920/footballstore2/Netherlands_Soccer_Jersey_Away_Player_Version_World_Cup_2022_izsmao.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -519,7 +519,7 @@ export let products = [
     category: "selecciones",
     subCategory: "europa",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733552/thefootballstore/Italy%20Home%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700142135/footballstore2/Italy_Home_Jersey_Player_Version_2023-24_bypaqj.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -529,7 +529,7 @@ export let products = [
     category: "selecciones",
     subCategory: "europa",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733920/thefootballstore/Italy%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700142135/footballstore2/Italy_Away_Jersey_Player_Version_2023-24_yayczp.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 1,
@@ -539,7 +539,7 @@ export let products = [
     category: "selecciones",
     subCategory: "europa",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733611/thefootballstore/Germany%20Soccer%20Jersey%20Home%20Player%20Version%20World%20Cup%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139790/footballstore2/Germany_Soccer_Jersey_Home_Player_Version_World_Cup_2022_njknol.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -549,7 +549,7 @@ export let products = [
     category: "selecciones",
     subCategory: "europa",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733582/thefootballstore/Germany%20Soccer%20Jersey%20Away%20Player%20Version%20World%20Cup%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139824/footballstore2/Germany_Soccer_Jersey_Away_Player_Version_World_Cup_2022_pqmlcs.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -559,7 +559,7 @@ export let products = [
     category: "selecciones",
     subCategory: "europa",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733640/thefootballstore/France%20Soccer%20Jersey%20Away%20Player%20Version%20World%20Cup%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139768/footballstore2/France_Soccer_Jersey_Away_Player_Version_World_Cup_2022_covszk.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -569,7 +569,7 @@ export let products = [
     category: "selecciones",
     subCategory: "europa",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733677/thefootballstore/France%20Soccer%20Jersey%20Home%20Player%20Version%20World%20Cup%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139771/footballstore2/France_Soccer_Jersey_Home_Player_Version_World_Cup_2022_hcy96w.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -579,7 +579,7 @@ export let products = [
     category: "selecciones",
     subCategory: "europa",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733707/thefootballstore/England%20Soccer%20Jersey%20Away%20Player%20Version%20World%20Cup%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139770/footballstore2/England_Soccer_Jersey_Away_Player_Version_World_Cup_2022_ifmybt.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -589,7 +589,7 @@ export let products = [
     category: "selecciones",
     subCategory: "europa",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733737/thefootballstore/England%20Soccer%20Jersey%20Home%20Player%20Version%20World%20Cup%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139771/footballstore2/England_Soccer_Jersey_Home_Player_Version_World_Cup_2022_yjbirg.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -599,7 +599,7 @@ export let products = [
     category: "selecciones",
     subCategory: "europa",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733806/thefootballstore/Belgium%20Soccer%20Jersey%20Home%20Player%20Version%20World%20Cup%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139742/footballstore2/Belgium_Soccer_Jersey_Home_Player_Version_World_Cup_2022_vqf1c6.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -609,7 +609,7 @@ export let products = [
     category: "selecciones",
     subCategory: "europa",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733767/thefootballstore/Belgium%20Soccer%20Jersey%20Away%20Player%20Version%20World%20Cup%202022.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139747/footballstore2/Belgium_Soccer_Jersey_Away_Player_Version_World_Cup_2022_doabrq.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -619,7 +619,7 @@ export let products = [
     category: "bundesliga",
     subCategory: "bayern-munich",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733285/thefootballstore/Bayern%20Munich%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139738/footballstore2/Bayern_Munich_Away_Jersey_Player_Version_2023-24_qssehc.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -629,7 +629,7 @@ export let products = [
     category: "bundesliga",
     subCategory: "bayern-munich",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733254/thefootballstore/Bayern%20Munich%20Third%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139738/footballstore2/Bayern_Munich_Third_Jersey_Player_Version_2023-24_mjniac.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -639,7 +639,7 @@ export let products = [
     category: "bundesliga",
     subCategory: "bayern-munich",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733322/thefootballstore/Bayern%20Munich%20Home%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139737/footballstore2/Bayern_Munich_Home_Jersey_Player_Version_2023-24_aqzwrt.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -649,7 +649,7 @@ export let products = [
     category: "bundesliga",
     subCategory: "borussia-dortmund",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733205/thefootballstore/Borussia%20Dortmund%20Home%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139742/footballstore2/Borussia_Dortmund_Home_Jersey_Player_Version_2023-24_uhgw9s.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -659,7 +659,7 @@ export let products = [
     category: "bundesliga",
     subCategory: "borussia-dortmund",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733178/thefootballstore/Borussia%20Dortmund%20All-Black%20Jersey%20Player%20Version%202022-23.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139744/footballstore2/Borussia_Dortmund_All-Black_Jersey_Player_Version_2022-23_x1jlxt.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -669,7 +669,7 @@ export let products = [
     category: "serie-a",
     subCategory: "milan",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733080/thefootballstore/AC%20Milan%20Third%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139703/footballstore2/AC_Milan_Third_Away_Jersey_Player_Version_2023-24_gdlimm.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -679,7 +679,7 @@ export let products = [
     category: "serie-a",
     subCategory: "milan",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733147/thefootballstore/AC%20Milan%20Jersey%20Home%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139703/footballstore2/AC_Milan_Jersey_Home_Player_Version_2023-24_o7sdi3.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -689,7 +689,7 @@ export let products = [
     category: "serie-a",
     subCategory: "milan",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733109/thefootballstore/AC%20Milan%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139702/footballstore2/AC_Milan_Away_Jersey_Player_Version_2023-24_r1uy7w.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -699,7 +699,7 @@ export let products = [
     category: "serie-a",
     subCategory: "inter",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733000/thefootballstore/Inter%20Milan%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700141536/footballstore2/Inter_Milan_Away_Jersey_Player_Version_2023-24_w1znzh.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -709,7 +709,7 @@ export let products = [
     category: "serie-a",
     subCategory: "inter",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733040/thefootballstore/Inter%20Milan%20Home%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700141537/footballstore2/Inter_Milan_Home_Jersey_Player_Version_2023-24_o84uxh.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -719,7 +719,7 @@ export let products = [
     category: "serie-a",
     subCategory: "juventus",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697732890/thefootballstore/Juventus%20Home%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700142136/footballstore2/Juventus_Home_Jersey_Player_Version_2023-24_f9uytv.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -729,7 +729,7 @@ export let products = [
     category: "serie-a",
     subCategory: "juventus",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697732849/thefootballstore/Juventus%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700142136/footballstore2/Juventus_Away_Jersey_Player_Version_2023-24_xs9j3y.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -739,7 +739,7 @@ export let products = [
     category: "serie-a",
     subCategory: "juventus",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697732815/thefootballstore/Juventus%20Third%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700142135/footballstore2/Juventus_Third_Jersey_Player_Version_2023-24_fowwmu.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -749,7 +749,7 @@ export let products = [
     category: "serie-a",
     subCategory: "roma",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733886/thefootballstore/Roma%20Jersey%20Away%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700146874/footballstore2/Roma_Jersey_Away_Player_Version_2023-24_asxd8e.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 1,
@@ -759,7 +759,7 @@ export let products = [
     category: "serie-a",
     subCategory: "roma",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697732779/thefootballstore/Roma%20Jersey%20Home%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700146874/footballstore2/Roma_Jersey_Home_Player_Version_2023-24_bc1xtu.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -769,7 +769,7 @@ export let products = [
     category: "serie-a",
     subCategory: "napoli",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697732925/thefootballstore/Napoli%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145919/footballstore2/Napoli_Away_Jersey_Player_Version_2023-24_rtliao.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -779,7 +779,7 @@ export let products = [
     category: "serie-a",
     subCategory: "napoli",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697732972/thefootballstore/Napoli%20Home%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145922/footballstore2/Napoli_Home_Jersey_Player_Version_2023-24_rw8yjk.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -789,7 +789,7 @@ export let products = [
     category: "league-one",
     subCategory: "olympique-de-marsella",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730262/thefootballstore/Olympique%20de%20Marseille%20Jersey%20Away%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145924/footballstore2/Olympique_de_Marseille_Jersey_Away_2023-24_gy3fwu.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -799,7 +799,7 @@ export let products = [
     category: "league-one",
     subCategory: "olympique-de-marsella",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730296/thefootballstore/Olympique%20de%20Marseille%20Jersey%20Home%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145920/footballstore2/Olympique_de_Marseille_Jersey_Home_2023-24_c4bzar.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -809,7 +809,7 @@ export let products = [
     category: "league-one",
     subCategory: "lyon",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730336/thefootballstore/Olympique%20Lyon%20Home%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145921/footballstore2/Olympique_Lyon_Home_Jersey_Player_Version_2023-24_c2vqlw.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -819,7 +819,7 @@ export let products = [
     category: "league-one",
     subCategory: "psg",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730423/thefootballstore/PSG%20Home%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145925/footballstore2/PSG_Home_Jersey_Player_Version_2023-24_a9xxtg.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -829,7 +829,7 @@ export let products = [
     category: "league-one",
     subCategory: "psg",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730393/thefootballstore/PSG%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145928/footballstore2/PSG_Away_Jersey_Player_Version_2023-24_nydl9a.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -839,7 +839,7 @@ export let products = [
     category: "liga-santander",
     subCategory: "atletico-madrid",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729844/thefootballstore/Atletico%20Madrid%20120%20Anniversary%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139722/footballstore2/Atletico_Madrid_120_Anniversary_Away_Jersey_Player_Version_2023-24_y9e5l9.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -849,7 +849,7 @@ export let products = [
     category: "liga-santander",
     subCategory: "real-madrid",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729877/thefootballstore/Real%20Madrid%20Third%20Away%20Player%20Jersey%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145935/footballstore2/Real_Madrid_Third_Away_Player_Jersey_2023-24_zf7typ.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -859,7 +859,7 @@ export let products = [
     category: "liga-santander",
     subCategory: "real-madrid",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729978/thefootballstore/Real%20Madrid%20Home%20Jersey%20Fan%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145928/footballstore2/Real_Madrid_Home_Jersey_Fan_Version_2023-24_nhwmdp.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -869,7 +869,7 @@ export let products = [
     category: "liga-santander",
     subCategory: "real-madrid",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729935/thefootballstore/Real%20Madrid%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145928/footballstore2/Real_Madrid_Away_Jersey_Player_Version_2023-24_yp3wzx.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -879,7 +879,7 @@ export let products = [
     category: "liga-santander",
     subCategory: "real-madrid",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729903/thefootballstore/Real%20Madrid%20Away%20Jersey%20Fan%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145925/footballstore2/Real_Madrid_Away_Jersey_Fan_Version_2023-24_uzytuj.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -889,7 +889,7 @@ export let products = [
     category: "liga-santander",
     subCategory: "real-madrid",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697733999/thefootballstore/Real%20Madrid%20Home%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145929/footballstore2/Real_Madrid_Home_Jersey_Player_Version_2023-24_z8gdav.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 1,
@@ -899,7 +899,7 @@ export let products = [
     category: "liga-santander",
     subCategory: "barcelona",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697728595/thefootballstore/Barcelona%20Home%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139734/footballstore2/Barcelona_Home_Jersey_Player_Version_2023-24_ppcg9n.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -909,7 +909,7 @@ export let products = [
     category: "liga-santander",
     subCategory: "barcelona",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697734032/thefootballstore/Barcelona%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139722/footballstore2/Barcelona_Away_Jersey_Player_Version_2023-24_q344ly.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -919,7 +919,7 @@ export let products = [
     category: "liga-santander",
     subCategory: "barcelona",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697730021/thefootballstore/Barcelona%20Third%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139740/footballstore2/Barcelona_Third_Away_Jersey_Player_Version_2023-24_isg1is.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -929,7 +929,7 @@ export let products = [
     category: "premier-league",
     subCategory: "tottenham",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697728653/thefootballstore/Tottenham%20Hotspur%20Home%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700147194/footballstore2/Tottenham_Hotspur_Home_Jersey_Player_Version_2023-24_axwwq6.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -939,7 +939,7 @@ export let products = [
     category: "premier-league",
     subCategory: "tottenham",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697734173/thefootballstore/Tottenham%20Hotspur%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700146927/footballstore2/Tottenham_Hotspur_Away_Jersey_Player_Version_2023-24_irfrdo.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -949,7 +949,7 @@ export let products = [
     category: "premier-league",
     subCategory: "liverpool",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697728717/thefootballstore/Liverpool%20Away%20Jersey%20Fan%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700142137/footballstore2/Liverpool_Away_Jersey_Fan_Version_2023-24_kh6plt.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -959,7 +959,7 @@ export let products = [
     category: "premier-league",
     subCategory: "liverpool",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697728740/thefootballstore/Liverpool%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700142137/footballstore2/Liverpool_Away_Jersey_Player_Version_2023-24_rlmsnm.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -969,7 +969,7 @@ export let products = [
     category: "premier-league",
     subCategory: "liverpool",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697728789/thefootballstore/Liverpool%20Home%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700142138/footballstore2/Liverpool_Home_Jersey_Player_Version_2023-24_ss5efk.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -979,7 +979,7 @@ export let products = [
     category: "premier-league",
     subCategory: "liverpool",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697728765/thefootballstore/Liverpool%20Home%20Jersey%20Fan%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700142140/footballstore2/Liverpool_Home_Jersey_Fan_Version_2023-24_rilozw.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -989,7 +989,7 @@ export let products = [
     category: "premier-league",
     subCategory: "liverpool",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697728688/thefootballstore/Liverpool%20Third%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700142144/footballstore2/Liverpool_Third_Away_Jersey_Player_Version_2023-24_i11tyd.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -999,7 +999,7 @@ export let products = [
     category: "premier-league",
     subCategory: "chelsea",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697728818/thefootballstore/Chelsea%20Jersey%20Home%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700141533/footballstore2/Chelsea_Jersey_Home_Player_Version_2023-24_m5y0m6.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1009,7 +1009,7 @@ export let products = [
     category: "premier-league",
     subCategory: "arsenal",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697728970/thefootballstore/Arsenal%20Home%20Jersey%20Fan%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139721/footballstore2/Arsenal_Home_Jersey_Fan_Version_2023-24_skyfly.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1019,7 +1019,7 @@ export let products = [
     category: "premier-league",
     subCategory: "arsenal",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697728877/thefootballstore/Arsenal%20Away%20Jersey%20Fan%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139723/footballstore2/Arsenal_Away_Jersey_Fan_Version_2023-24_p8un60.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1029,7 +1029,7 @@ export let products = [
     category: "premier-league",
     subCategory: "arsenal",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729036/thefootballstore/Arsenal%20Home%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139721/footballstore2/Arsenal_Home_Jersey_Player_Version_2023-24_xrttl1.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1039,7 +1039,7 @@ export let products = [
     category: "premier-league",
     subCategory: "arsenal",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697728903/thefootballstore/Arsenal%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139722/footballstore2/Arsenal_Away_Jersey_Player_Version_2023-24_hxuwux.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1049,7 +1049,7 @@ export let products = [
     category: "premier-league",
     subCategory: "arsenal",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697728848/thefootballstore/Arsenal%20Third%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700139722/footballstore2/Arsenal_Third_Away_Jersey_Player_Version_2023-24_ssqrt3.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1059,7 +1059,7 @@ export let products = [
     category: "premier-league",
     subCategory: "manchester-city",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697727785/thefootballstore/manchester%20city%20-%20Manchester%20City%20Home%20Jersey%20Fan%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700142142/footballstore2/Manchester_City_Home_Jersey_Fan_Version_2023-24_onuxcu.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1069,7 +1069,7 @@ export let products = [
     category: "premier-league",
     subCategory: "manchester-city",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697727850/thefootballstore/manchester%20city-%20Manchester%20City%20Home%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700142141/footballstore2/Manchester_City_Home_Jersey_Player_Version_2023-24_j6il8k.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1079,7 +1079,7 @@ export let products = [
     category: "premier-league",
     subCategory: "manchester-city",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697727737/thefootballstore/Manchester%20city%20-%20Manchester%20City%20Away%20Jersey%20Fan%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700142139/footballstore2/Manchester_City_Away_Jersey_Fan_Version_2023-24_vqbor1.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1089,7 +1089,7 @@ export let products = [
     category: "premier-league",
     subCategory: "manchester-city",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697725518/thefootballstore/Manchester%20city%20-%20Manchester%20City%20Third%20Away%20Jersey%20Fan%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145208/footballstore2/Manchester_City_Third_Away_Jersey_Fan_Version_2023-24_lsvmlm.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1099,7 +1099,7 @@ export let products = [
     category: "premier-league",
     subCategory: "manchester-city",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697725637/thefootballstore/Manchester%20city%20-%20Manchester%20City%20Third%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145209/footballstore2/Manchester_City_Third_Away_Jersey_Player_Version_2023-24_xab2mu.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1109,7 +1109,7 @@ export let products = [
     category: "premier-league",
     subCategory: "manchester-city",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697725371/thefootballstore/Manchester%20city%20-%20Manchester%20City%20UCL%20Final%20Jersey%20Home%20Player%20Version%202022-23.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145222/footballstore2/Manchester_City_UCL_Final_Jersey_Home_Player_Version_2022-23_uywxxz.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1119,7 +1119,7 @@ export let products = [
     category: "premier-league",
     subCategory: "manchester-city",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697734105/thefootballstore/Manchester%20City%20Away%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700142140/footballstore2/Manchester_City_Away_Jersey_Player_Version_2023-24_rzzpan.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1129,7 +1129,7 @@ export let products = [
     category: "premier-league",
     subCategory: "manchester-city",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729173/thefootballstore/Manchester%20City%20Soccer%20Jersey%20Away%20Player%20Version%202022-23.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700142182/footballstore2/Manchester_City_Soccer_Jersey_Away_Player_Version_2022-23_yisbsg.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1139,7 +1139,7 @@ export let products = [
     category: "premier-league",
     subCategory: "manchester-city",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729100/thefootballstore/Manchester%20City%20Soccer%20Jersey%20Away%20Fan%20Version%202022-23.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700142142/footballstore2/Manchester_City_Soccer_Jersey_Away_Fan_Version_2022-23_m71xjj.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1149,7 +1149,7 @@ export let products = [
     category: "premier-league",
     subCategory: "manchester-city",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697734073/thefootballstore/Manchester%20City%20UCL%20Final%20Jersey%20Home%20Fan%20Version%202022-23.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145209/footballstore2/Manchester_City_UCL_Final_Jersey_Home_Fan_Version_2022-23_yu7gim.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1159,7 +1159,7 @@ export let products = [
     category: "premier-league",
     subCategory: "manchester-city",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697729072/thefootballstore/Manchester%20City%20Soccer%20Jersey%20Third%20Away%20Player%20Version%202022-23.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145208/footballstore2/Manchester_City_Soccer_Jersey_Third_Away_Player_Version_2022-23_i1zdnj.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1169,7 +1169,7 @@ export let products = [
     category: "premier-league",
     subCategory: "manchester-united",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697734138/thefootballstore/Manchester%20United%20Jersey%20Away%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145236/footballstore2/Manchester_United_Jersey_Away_Player_Version_2023-24_wpeqpa.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1179,7 +1179,7 @@ export let products = [
     category: "premier-league",
     subCategory: "manchester-united",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697727919/thefootballstore/Manchester%20united%20-%20Manchester%20United%20Soccer%20Jersey%20Third%20Away%20Player%20Version%202022-23.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145279/footballstore2/Manchester_United_Jersey_Third_Away_Player_Version_2023-24_rvjrei.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1189,7 +1189,7 @@ export let products = [
     category: "premier-league",
     subCategory: "manchester-united",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697728134/thefootballstore/Manchester%20United%20-%20Manchester%20United%20Jersey%20Third%20Away%20Fan%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145274/footballstore2/Manchester_United_Jersey_Third_Away_Fan_Version_2023-24_m5zvig.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1199,7 +1199,7 @@ export let products = [
     category: "premier-league",
     subCategory: "manchester-united",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697727977/thefootballstore/Manchester%20united%20-%20Manchester%20United%20Soccer%20Jersey%20Away%20Player%20Version%202022-23.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145322/footballstore2/Manchester_United_Soccer_Jersey_Away_Player_Version_2022-23_ji6mjd.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1209,7 +1209,7 @@ export let products = [
     category: "premier-league",
     subCategory: "manchester-united",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697728205/thefootballstore/Manchester%20United%20-%20Manchester%20United%20Jersey%20Third%20Away%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145928/footballstore2/Manchester_United_Soccer_Jersey_Third_Away_Player_Version_2022-23_d1slrz.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1219,7 +1219,7 @@ export let products = [
     category: "premier-league",
     subCategory: "manchester-united",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697728355/thefootballstore/Manchester%20United%20-%20Manchester%20United%20Home%20Jersey%20Fan%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145223/footballstore2/Manchester_United_Home_Jersey_Fan_Version_2023-24_btzyll.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1229,7 +1229,7 @@ export let products = [
     category: "premier-league",
     subCategory: "manchester-united",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697728398/thefootballstore/Manchester%20united%20-%20Manchester%20United%20Home%20Jersey%20Player%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145224/footballstore2/Manchester_United_Home_Jersey_Player_Version_2023-24_ob7i4l.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1239,7 +1239,7 @@ export let products = [
     category: "premier-league",
     subCategory: "manchester-united",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697728049/thefootballstore/Manchester%20United%20-%20Manchester%20United%20Jersey%20Home%20Player%20Version%202022-23.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145274/footballstore2/Manchester_United_Jersey_Home_Player_Version_2022-23_ifdqbo.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,
@@ -1249,7 +1249,7 @@ export let products = [
     category: "premier-league",
     subCategory: "manchester-united",
     imgUrl: [
-      "https://res.cloudinary.com/daq80uhh9/image/upload/v1697728288/thefootballstore/Manchester%20United%20-%20Manchester%20United%20Away%20Jersey%20Fan%20Version%202023-24.webp",
+      "https://res.cloudinary.com/daq80uhh9/image/upload/v1700145225/footballstore2/Manchester_United_Away_Jersey_Fan_Version_2023-24_d0ydf5.jpg",
     ],
     size: ["XXL", "XL", "L", "M", "S"],
     sold: 0,

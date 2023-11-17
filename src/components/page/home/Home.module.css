@@ -4,6 +4,7 @@
   color: var(--primary);
 }
 .sections {
+  height: 680px;
   display: flex;
   align-items: center;
   margin: 50px 0px;

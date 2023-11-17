@@ -77,7 +77,7 @@ const Home = ({ el }) => {
               <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1698367546/thefootballstore/ezgif-5-6ce96d7cdb_gvwfl7.gif" />
             </Link>
           </div>
-          <div style={{ height: "670px" }}>
+          <div>
             {" "}
             <Link to="/category/selecciones">
               <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1698367545/thefootballstore/ezgif-5-6dc4e18f21_pe33dd.gif" />
