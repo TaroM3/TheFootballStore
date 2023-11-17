@@ -9,7 +9,8 @@ import CartProductCard from "../cartProductCard/CartProductCard";
 
 const CartWidget = () => {
   const { getTotalQuantity, getNames } = useContext(CartContext);
-  let total = getTotalQuantity();
+  let total = Number(getTotalQuantity());
+  console.log(typeof total);
   let nombresCart = getNames();
 
   // const [counter, setCounter] = useState(1);

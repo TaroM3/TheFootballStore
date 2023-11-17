@@ -12,7 +12,7 @@ const CartContextProvider = ({ children }) => {
   //agrega producto al carrito
   const addToCart = (productToAdd) => {
     let exist = cart.some((product) => product.id === productToAdd.id);
-    if (exist) {
+    if (exist === true) {
       let newCart = cart.map((product) => {
         if (product.id === productToAdd.id) {
           return { ...product, quantity: productToAdd.quantity };
@@ -58,6 +58,7 @@ const CartContextProvider = ({ children }) => {
     }, 0);
     return total;
   };
+
   const getNames = () => {
     let total = cart.reduce((acc, product) => {
       return `${acc + product.title}, `;

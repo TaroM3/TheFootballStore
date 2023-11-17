@@ -22,13 +22,9 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
   const [selectOption, setSelectOption] = useState("No");
   const [anchorEl, setAnchorEl] = useState(null);
 
-  // const [counter, setCounter] = useState(1);
-  let counter;
+  const [counter, setCounter] = useState(1);
 
-  const quantityGetter = (quantity) => {
-    counter = quantity;
-    return quantity;
-  };
+  let quantity;
 
   const open = Boolean(anchorEl);
 
@@ -279,7 +275,7 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
           >
             Cantidad
           </Typography>
-          <CounterContainer quantity={1} quantityGetter={quantityGetter} />
+          <CounterContainer counter={counter} setCounter={setCounter} />
           <Button
             variant="outlined"
             sx={{

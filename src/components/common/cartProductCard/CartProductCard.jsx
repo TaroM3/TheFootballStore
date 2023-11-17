@@ -5,7 +5,7 @@ import { CartContext } from "../../../context/CartContext";
 
 const CartProductCard = ({ product }) => {
   const { deleteById } = useContext(CartContext);
-
+  const [counter, setCounter] = useState(product.quantity);
   return (
     <div className={styles.cartItem}>
       {" "}
@@ -21,7 +21,7 @@ const CartProductCard = ({ product }) => {
             }}
           >
             <p style={{ color: "var(--main)" }}>Size {product.size}</p>
-            <CounterContainer quantity={product.quantity} id={product.id} />
+            <CounterContainer counter={counter} setCounter={setCounter} />
           </div>
         </div>
       </div>

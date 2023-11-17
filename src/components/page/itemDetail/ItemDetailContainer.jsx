@@ -34,6 +34,7 @@ const ItemDetailContainer = () => {
     });
   };
   const agregarAlCarrito = (size, selectOption, quantity) => {
+    console.log(quantity);
     if (size === "") {
       toast.error("Debe elegir el talle de la camiseta", {
         position: "bottom-right",
@@ -48,7 +49,7 @@ const ItemDetailContainer = () => {
       let data = {
         id: id,
         ...item,
-        quantity: quantity < 0 ? 1 : quantity,
+        quantity: quantity <= 0 ? 1 : quantity,
         size: size,
         selectOption: selectOption,
       };
