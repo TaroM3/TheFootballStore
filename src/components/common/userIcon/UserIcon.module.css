@@ -1,25 +1,30 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  color: var(--main);
+}
 .titulo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .btn {
-    display: flex;
-    width: 18.75rem;
-    height: 3.75rem;
-    text-align: center;
-    font-family: "Bebas Neue";
-    flex-shrink: 0;
-    color: var(--secondary);
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    border-radius: 0.25rem;
-    float: right;
-    border: 1px solid var(--secondary);
-    background: var(--accent);
-    color: black;
-    cursor: pointer;
-  }
+  display: flex;
+  flex-direction: row;
+  margin: 20px 140px;
+  justify-content: space-between;
+}
 
-
+.btn {
+  display: flex;
+  width: 18.75rem;
+  height: 3.75rem;
+  text-align: center;
+  font-family: "Bebas Neue";
+  flex-shrink: 0;
+  color: var(--secondary);
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 0.25rem;
+  float: right;
+  border: 1px solid var(--secondary);
+  background: var(--accent);
+  color: black;
+  cursor: pointer;
+}

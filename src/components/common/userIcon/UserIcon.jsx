@@ -1,12 +1,12 @@
-import { Drawer } from "@mui/material";
+import { Divider, Drawer } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import TabsUser from "../tabsUser/TabsUser";
-// import styles from "./UserIcon.module.css";
-import CloseButton from "../closeButton/CloseButton";
+import styles from "./UserIcon.module.css";
 import { UserContext } from "../../../context/UserContext";
 import Profile from "../profile/Profile";
+import CloseButton from "../closeButton/CloseButton";
 
 const UserIcon = () => {
   const { getConnection } = useContext(UserContext);
@@ -73,19 +73,13 @@ const UserIcon = () => {
                   height: "100vh",
                 }}
               >
-                <Box
-                  sx={{
-                    width: "70px",
-                    height: "70px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                  onClick={toggleDrawer(anchor, false)}
-                >
-                  <CloseButton />
-                </Box>
-
+                <div className={styles.titulo}>
+                  <h1>Login</h1>{" "}
+                  <Box onClick={toggleDrawer(anchor, false)}>
+                    <CloseButton />
+                  </Box>
+                </div>
+                <Divider color="white" style={{ margin: "20px 0px " }} />
                 {isLoggedIn ? (
                   <Profile handleClose={handleClose} />
                 ) : (

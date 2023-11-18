@@ -67,7 +67,7 @@ const Login = ({ handleClose }) => {
           maxLength="16"
           ref={passwordRef}
         />
-        <button type="submit" onClick={loginSubmit}>
+        <button className={styles.btn} type="submit" onClick={loginSubmit}>
           Login
         </button>
       </form>

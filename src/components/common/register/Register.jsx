@@ -90,7 +90,7 @@ const Register = ({ handleClose }) => {
           maxLength="16"
           ref={passwordRef}
         />
-        <button type="submit" onClick={registerSubmit}>
+        <button className={styles.btn} type="submit" onClick={registerSubmit}>
           Registrarse
         </button>
       </form>
