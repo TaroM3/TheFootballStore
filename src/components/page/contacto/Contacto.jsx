@@ -1,12 +1,14 @@
-import { Breadcrumbs, Link, Typography } from "@mui/material";
+import { Breadcrumbs, Typography } from "@mui/material";
 import styles from "./Contacto.module.css";
 import Whatsapp from "../../common/whatsappIcon/Whatsapp";
+import { Link } from "react-router-dom";
+
 const Contacto = ({ handleChange, handleSubmit }) => {
   return (
     <div className={styles.contacto}>
       <Whatsapp />
       <Breadcrumbs aria-label="breadcrumb">
-        <Link href="/">
+        <Link to="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="25"
@@ -28,7 +30,7 @@ const Contacto = ({ handleChange, handleSubmit }) => {
           style={{ fontFamily: "frontpageneue" }}
           underline="hover"
           color="var(--main)"
-          href="/"
+          to="/"
         >
           Inicio
         </Link>

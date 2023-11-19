@@ -1,13 +1,14 @@
-import { Breadcrumbs, Link, Typography } from "@mui/material";
+import { Breadcrumbs, Typography } from "@mui/material";
 import styles from "./Envios.module.css";
 import Whatsapp from "../../common/whatsappIcon/Whatsapp";
+import { Link } from "react-router-dom";
 
 const Envios = () => {
   return (
     <div className={styles.envios}>
       <Whatsapp />
       <Breadcrumbs aria-label="breadcrumb">
-        <Link href="/">
+        <Link to="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="25"
@@ -29,7 +30,7 @@ const Envios = () => {
           style={{ fontFamily: "frontpageneue" }}
           underline="hover"
           color="var(--main)"
-          href="/"
+          to="/"
         >
           Inicio
         </Link>
