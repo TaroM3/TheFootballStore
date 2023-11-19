@@ -6,6 +6,17 @@ import { CartContext } from "../../../context/CartContext";
 const CartProductCard = ({ product }) => {
   const { deleteById } = useContext(CartContext);
   const [counter, setCounter] = useState(product.quantity);
+
+  const { addToCart } = useContext(CartContext);
+
+  const changeQuantity = (counter) => {
+    let data = {
+      ...product,
+      quantity: counter,
+    };
+
+    addToCart(data);
+  };
   return (
     <div className={styles.cartItem}>
       {" "}
@@ -21,7 +32,12 @@ const CartProductCard = ({ product }) => {
             }}
           >
             <p style={{ color: "var(--main)" }}>Size {product.size}</p>
-            <CounterContainer counter={counter} setCounter={setCounter} />
+
+            <CounterContainer
+              counter={counter}
+              setCounter={setCounter}
+              changeQuantity={changeQuantity}
+            />
           </div>
         </div>
       </div>

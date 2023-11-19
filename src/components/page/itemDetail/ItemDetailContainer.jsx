@@ -7,7 +7,6 @@ import { Box, Skeleton } from "@mui/material";
 import Swal from "sweetalert2";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import CloseButton from "../../common/closeButton/CloseButton";
 
 const ItemDetailContainer = () => {
   const { id } = useParams();
@@ -34,7 +33,6 @@ const ItemDetailContainer = () => {
     });
   };
   const agregarAlCarrito = (size, selectOption, quantity) => {
-    console.log(quantity);
     if (size === "") {
       toast.error("Debe elegir el talle de la camiseta", {
         position: "bottom-right",

@@ -16,8 +16,8 @@ const ProductCard = ({ elemento }) => {
         <CardMedia
           className={styles.img}
           component="img"
-          alt="camiseta"
-          image={elemento.imgUrl}
+          alt={`${elemento.title}`}
+          image={elemento.imgUrl[0]}
         />
       </Link>
       <CardContent

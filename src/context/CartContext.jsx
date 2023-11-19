@@ -20,7 +20,7 @@ const CartContextProvider = ({ children }) => {
           return product;
         }
       });
-      setCart(newCart);
+      setCart([...newCart]);
     } else {
       setCart([...cart, productToAdd]);
     }

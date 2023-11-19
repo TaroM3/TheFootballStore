@@ -3,11 +3,11 @@ import {
   Breadcrumbs,
   Button,
   Divider,
-  Link,
   MenuItem,
   Menu,
   Typography,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useState } from "react";
 import { Image } from "react-bootstrap";
@@ -24,8 +24,6 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
 
   const [counter, setCounter] = useState(1);
 
-  let quantity;
-
   const open = Boolean(anchorEl);
 
   const handleClickSelect = (event) => {
@@ -41,7 +39,7 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
     <div>
       <Whatsapp />
       <Breadcrumbs style={{ marginLeft: "100px" }} aria-label="breadcrumb">
-        <Link href="/">
+        <Link to="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="25"
@@ -60,10 +58,10 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
           </svg>
         </Link>
         <Link
+          to="/"
           style={{ fontFamily: "frontpageneue" }}
           underline="hover"
           color="var(--main)"
-          href="/"
         >
           Inicio
         </Link>
@@ -71,7 +69,7 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
           style={{ fontFamily: "frontpageneue" }}
           underline="hover"
           color="var(--main)"
-          href="/products"
+          to="/products"
         >
           Productos
         </Link>

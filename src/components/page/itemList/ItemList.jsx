@@ -1,14 +1,15 @@
-import { Breadcrumbs, Link, Skeleton, Typography } from "@mui/material";
+import { Breadcrumbs, Skeleton, Typography } from "@mui/material";
 import ProductCard from "../../common/productCard/ProductCard";
 import styles from "../itemList/ItemList.module.css";
 import Whatsapp from "../../common/whatsappIcon/Whatsapp";
+import { Link } from "react-router-dom";
 const ItemList = ({ items, categoryName, subCategoryName }) => {
   let arr = [1, 2, 3, 4];
   return (
     <div className={styles.itemList}>
       <Whatsapp />
       <Breadcrumbs aria-label="breadcrumb">
-        <Link href="/">
+        <Link to="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="25"
@@ -30,7 +31,7 @@ const ItemList = ({ items, categoryName, subCategoryName }) => {
           style={{ fontFamily: "frontpageneue" }}
           underline="hover"
           color="var(--main)"
-          href="/"
+          to="/"
         >
           Inicio
         </Link>
@@ -38,7 +39,7 @@ const ItemList = ({ items, categoryName, subCategoryName }) => {
           style={{ fontFamily: "frontpageneue" }}
           underline="hover"
           color="var(--main)"
-          href="/products"
+          to="/products"
         >
           Productos
         </Link>

@@ -10,7 +10,7 @@ import CartProductCard from "../cartProductCard/CartProductCard";
 const CartWidget = () => {
   const { getTotalQuantity, getNames } = useContext(CartContext);
   let total = Number(getTotalQuantity());
-  console.log(typeof total);
+
   let nombresCart = getNames();
 
   // const [counter, setCounter] = useState(1);
@@ -66,9 +66,9 @@ const CartWidget = () => {
         <Divider color="white" style={{ margin: "20px 0px " }} />
         {cart.map((elemento, i) => {
           return (
-            <div key={{ i }}>
+            <div key={i}>
               {" "}
-              <CartProductCard product={elemento} key={i} />{" "}
+              <CartProductCard product={elemento} />{" "}
               <Divider color="white" style={{ margin: "20px 0px " }} />
             </div>
           );
