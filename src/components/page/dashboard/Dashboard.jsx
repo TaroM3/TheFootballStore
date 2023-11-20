@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import { Image } from "react-bootstrap";
+import DashboardProduct from "../../common/dashboardProduct/DashboardProduct";
 
 // category: "retros",
 // subCategory: "selecciones",
@@ -59,15 +60,7 @@ const Dashboard = ({ products }) => {
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  color: "text.secondary",
-                }}
-              >
-                <Button>Modificar</Button>
-              </Box>
+              <DashboardProduct product={product} />
             </AccordionDetails>
           </Accordion>
         );

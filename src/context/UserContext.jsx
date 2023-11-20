@@ -22,15 +22,15 @@ const UserContextProvider = ({ children }) => {
     });
 
     const docRef = doc(getData, uidToken);
-    const userData = await getDoc(docRef).then((res) => {
+    await getDoc(docRef).then((res) => {
       setUser({ ...res.data(), uidToken: res.id });
     });
-
-    console.log(cookies.get("TFS_token"), userData);
   };
 
   const getRole = async () => {
-    if (user.uidToken !== "") {
+    const cookie = cookies.get("TFS_token");
+    console.log(cookie, "hola");
+    if (cookie !== "") {
       const docRef = doc(getData, user.uidToken);
 
       const role = await getDoc(docRef).then((res) => {
@@ -59,14 +59,14 @@ const UserContextProvider = ({ children }) => {
   };
   const logout = () => {
     // setUser(null);
+    auth.signOut();
     cookies.remove("TFS_token");
     setUser({
       uidToken: "",
       email: "",
       name: "",
-      role: "",
+      role: "user",
     });
-    auth.signOut();
   };
   const userDataTransfer = () => {
     // getConnection();

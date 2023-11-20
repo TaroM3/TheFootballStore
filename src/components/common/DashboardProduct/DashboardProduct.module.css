@@ -1,0 +1,24 @@
+.formDashboard {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+} 
+
+.formDashboard input {
+    width: 16rem;
+}
+
+.formDashboard input[type="file"] {
+    opacity: 0;
+    display: inline-block;
+  }
+
+  .imgSelection {
+    text-decoration: underline;
+    color: var(--secondary);
+  }
+  .btnModify{
+    color: var(--primary);
+    background-color: var(--secondary);
+    margin: auto;
+  }

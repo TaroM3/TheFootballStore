@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Router, Routes } from "react-router-dom";
 import Layout from "../components/layout/Layout";
 import { routes } from "./routes";
 import ProtectedRoutes from "./ProtectedRoutes";
@@ -16,6 +16,7 @@ const AppRouter = () => {
       {/* Rutas-privadas */}
       <Route element={<ProtectedRoutes />}>
         <Route path="/dashboard" element={<DashboardContainer />} />
+        {/* <Route path="/dashboard" element={Children} /> */}
       </Route>
 
       <Route path="*" element={<h1>404 - Not found</h1>} />
