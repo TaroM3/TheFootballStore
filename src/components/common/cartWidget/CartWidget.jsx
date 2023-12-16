@@ -1,28 +1,28 @@
-import { Badge, Divider, Link } from "@mui/material";
-import React, { useContext } from "react";
-import { CartContext } from "../../../context/CartContext";
-import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
-import styles from "./CartWidget.module.css";
-import CloseButton from "../closeButton/CloseButton";
-import CartProductCard from "../cartProductCard/CartProductCard";
+import { Badge, Divider, Link } from '@mui/material';
+import React from 'react';
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
+import styles from './CartWidget.module.css';
+import CloseButton from '../closeButton/CloseButton';
+import CartProductCard from '../cartProductCard/CartProductCard';
+import { useCart } from '../../../hooks/useCart';
 
 const CartWidget = () => {
-  const { getTotalQuantity, getNames } = useContext(CartContext);
-  let total = Number(getTotalQuantity());
+  // const { getTotalQuantity, getNames } = useContext(CartContext);
+  // let total = Number(getTotalQuantity());
 
-  let nombresCart = getNames();
+  // let nombresCart = getNames();
 
   // const [counter, setCounter] = useState(1);
   const [state, setState] = React.useState({
     right: false,
   });
-  const { cart } = useContext(CartContext);
+  const { products, quantity } = useCart();
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
+      event.type === 'keydown' &&
+      (event.key === 'Tab' || event.key === 'Shift')
     ) {
       return;
     }
@@ -33,16 +33,16 @@ const CartWidget = () => {
   const list = (anchor) => (
     <Box
       sx={{
-        width: anchor === "top" || anchor === "bottom" ? "auto" : 700,
+        width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 700,
       }}
       role="presentation"
-      bgcolor={"black"}
+      bgcolor={'black'}
     >
       <div className={styles.cart}>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <div className={styles.titulo}>
             <h1>Lista de deseos</h1>
-            <Badge badgeContent={total} color="primary">
+            <Badge badgeContent={quantity ?? quantity} color="primary">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -55,29 +55,29 @@ const CartWidget = () => {
                   stroke="#6DF0F7"
                 />
               </svg>
-            </Badge>{" "}
-          </div>{" "}
-          <Box onClick={toggleDrawer("right", false)}>
+            </Badge>{' '}
+          </div>{' '}
+          <Box onClick={toggleDrawer('right', false)}>
             <CloseButton />
           </Box>
         </div>
-        <Divider color="white" style={{ margin: "20px 0px " }} />
+        <Divider color="white" style={{ margin: '20px 0px ' }} />
         <h2>Productos</h2>
-        <Divider color="white" style={{ margin: "20px 0px " }} />
-        {cart.map((elemento, i) => {
+        <Divider color="white" style={{ margin: '20px 0px ' }} />
+        {products.map((elemento, i) => {
           return (
             <div key={i}>
-              {" "}
-              <CartProductCard product={elemento} />{" "}
-              <Divider color="white" style={{ margin: "20px 0px " }} />
+              {' '}
+              <CartProductCard product={elemento} />{' '}
+              <Divider color="white" style={{ margin: '20px 0px ' }} />
             </div>
           );
         })}
 
-        {cart.length > 0 ? (
+        {products.length > 0 ? (
           <a
             target="blank"
-            href={`https://api.whatsapp.com/send?phone=5492216697039&text=Hola, estoy interesado/a en: ${nombresCart} muchas gracias.`}
+            // href={`https://api.whatsapp.com/send?phone=5492216697039&text=Hola, estoy interesado/a en: ${nombresCart} muchas gracias.`}
             className={styles.btn}
           >
             Iniciar Compra
@@ -85,7 +85,7 @@ const CartWidget = () => {
         ) : (
           <div className={styles.cartVacio}>
             <a
-              href={"/products"}
+              href={'/products'}
               className={styles.btn}
               onClick={toggleDrawer(anchor, false)}
             >
@@ -99,13 +99,13 @@ const CartWidget = () => {
 
   return (
     <div>
-      {["right"].map((anchor) => (
+      {['right'].map((anchor) => (
         <React.Fragment key={anchor}>
           <Link
-            style={{ cursor: "pointer" }}
+            style={{ cursor: 'pointer' }}
             onClick={toggleDrawer(anchor, true)}
           >
-            <Badge badgeContent={total} color="primary">
+            <Badge badgeContent={quantity} color="primary">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"

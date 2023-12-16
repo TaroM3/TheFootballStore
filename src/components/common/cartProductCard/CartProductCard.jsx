@@ -1,13 +1,15 @@
-import { useContext, useState } from "react";
-import CounterContainer from "../counter/CounterContainer";
-import styles from "./CartProductCard.module.css";
-import { CartContext } from "../../../context/CartContext";
+import { useState } from 'react';
+import CounterContainer from '../counter/CounterContainer';
+import styles from './CartProductCard.module.css';
+import { useCart } from '../../../hooks/useCart';
+// import CartContext from '../../../context/CartContext';
 
 const CartProductCard = ({ product }) => {
-  const { deleteById } = useContext(CartContext);
+  // const { deleteById } = useContext(CartContext);
   const [counter, setCounter] = useState(product.quantity);
 
-  const { addToCart } = useContext(CartContext);
+  const { addToCart, removeById } = useCart();
+  // const { addToCart } = useContext(CartContext);
 
   const changeQuantity = (counter) => {
     let data = {
@@ -19,19 +21,19 @@ const CartProductCard = ({ product }) => {
   };
   return (
     <div className={styles.cartItem}>
-      {" "}
+      {' '}
       <div className={styles.cartInfo}>
-        <img className={styles.img} src={product.imgUrl} alt="" />{" "}
+        <img className={styles.img} src={product.imgUrl} alt="" />{' '}
         <div className={styles.nombre}>
-          <h2>{product.title}</h2>{" "}
+          <h2>{product.title}</h2>{' '}
           <div
             style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
             }}
           >
-            <p style={{ color: "var(--main)" }}>Size {product.size}</p>
+            <p style={{ color: 'var(--main)' }}>Size {product.size}</p>
 
             <CounterContainer
               counter={counter}
@@ -43,7 +45,7 @@ const CartProductCard = ({ product }) => {
       </div>
       <div>
         <svg
-          onClick={() => deleteById(product.id)}
+          onClick={() => removeById(product.id)}
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"

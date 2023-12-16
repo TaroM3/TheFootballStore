@@ -1,5 +1,5 @@
 import ContactoContainer from "../components/page/contacto/ContactoContainer";
-import DashboardContainer from "../components/page/dashboard/DashboardContainer";
+// import DashboardContainer from "../components/page/dashboard/DashboardContainer";
 import EnviosContainer from "../components/page/envios/EnviosContainer";
 import HomeContainer from "../components/page/home/HomeContainer";
 import InfoContainer from "../components/page/info/InfoContainer";
@@ -32,11 +32,11 @@ export const routes = [
     path: "/itemDetail/:id",
     Element: ItemDetailContainer,
   },
-  {
-    id: "dashboard",
-    path: "/dashboard",
-    Element: DashboardContainer,
-  },
+  // {
+  //   id: "dashboard",
+  //   path: "/dashboard",
+  //   Element: DashboardContainer,
+  // },
   {
     id: "info",
     path: "/info",
