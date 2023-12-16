@@ -1,15 +1,15 @@
-import { Card, CardContent, CardMedia, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
-import styles from "../productCard/ProductCard.module.css";
+import { Card, CardContent, CardMedia, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
+import styles from '../productCard/ProductCard.module.css';
 
 const ProductCard = ({ elemento }) => {
   return (
     <Card
       className={styles.card}
       sx={{
-        backgroundColor: "--primary",
-        marginRight: "5px",
-        boxShadow: "0",
+        backgroundColor: '--primary',
+        marginRight: '5px',
+        boxShadow: '0',
       }}
     >
       <Link to={`/itemDetail/${elemento.id}`}>
@@ -22,13 +22,13 @@ const ProductCard = ({ elemento }) => {
       </Link>
       <CardContent
         style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "50px 0px",
-          backgroundColor: "black",
-          color: "var(--primary)",
-          height: "50px",
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          padding: '50px 0px',
+          backgroundColor: 'black',
+          color: 'var(--primary)',
+          height: '50px',
         }}
       >
         <section className={styles.titleCard}>

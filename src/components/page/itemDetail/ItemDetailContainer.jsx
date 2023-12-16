@@ -11,7 +11,7 @@ import { useCart } from '../../../hooks/useCart';
 
 const ItemDetailContainer = () => {
   const { id } = useParams();
-  const [item] = useFirestore('products', id);
+  const [item] = useFirestore({ databaseName: 'products', id });
   const { addToCart } = useCart();
   // const { addToCart } = useContext(CartContext);
   const talles = () => {

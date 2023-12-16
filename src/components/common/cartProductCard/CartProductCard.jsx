@@ -5,11 +5,9 @@ import { useCart } from '../../../hooks/useCart';
 // import CartContext from '../../../context/CartContext';
 
 const CartProductCard = ({ product }) => {
-  // const { deleteById } = useContext(CartContext);
   const [counter, setCounter] = useState(product.quantity);
 
   const { addToCart, removeById } = useCart();
-  // const { addToCart } = useContext(CartContext);
 
   const changeQuantity = (counter) => {
     let data = {

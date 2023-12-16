@@ -1,8 +1,8 @@
-import { useContext } from "react";
-import { UserContext } from "../../../context/UserContext";
-import styles from "./Profile.module.css";
-import { Divider } from "@mui/material";
-import { Link } from "react-router-dom";
+import { useContext } from 'react';
+import { UserContext } from '../../../context/UserContext';
+import styles from './Profile.module.css';
+import { Divider } from '@mui/material';
+import { Link } from 'react-router-dom';
 const Profile = ({ handleClose }) => {
   const { userDataTransfer, logout } = useContext(UserContext);
   const user = userDataTransfer();
@@ -34,13 +34,13 @@ const Profile = ({ handleClose }) => {
             <path d="M3 22H22" stroke="#6DF0F7" />
           </svg>
         </div>
-        <Divider color="white" style={{ margin: "20px 0px " }} />
+        <Divider color="white" style={{ margin: '20px 0px ' }} />
       </header>
       <div className={styles.userData}>
         <h3>Email</h3>
         <p>{user.email}</p>
       </div>
-      {user.role === "admin" ? (
+      {user.role === 'admin' ? (
         <Link to="/dashboard">Dashboard</Link>
       ) : (
         <Link to="/products" className={styles.link}>
@@ -48,7 +48,7 @@ const Profile = ({ handleClose }) => {
         </Link>
       )}
 
-      <Divider color="white" style={{ margin: "20px 0px " }} />
+      <Divider color="white" style={{ margin: '20px 0px ' }} />
       {/* <h2>{user.role}</h2> */}
       <footer>
         <button className={styles.btn} onClick={handleCloseButton}>

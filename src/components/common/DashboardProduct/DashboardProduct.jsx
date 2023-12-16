@@ -1,6 +1,6 @@
-import { Box } from "@mui/material";
-import { useRef } from "react";
-import styles from "./DashboardProduct.module.css";
+import { Box } from '@mui/material';
+import { useRef } from 'react';
+import styles from './DashboardProduct.module.css';
 
 const DashboardProduct = ({ product }) => {
   const titleRef = useRef();
@@ -23,12 +23,12 @@ const DashboardProduct = ({ product }) => {
   return (
     <Box
       sx={{
-        display: "flex",
-        flexDirection: "column",
-        color: "text.secondary",
-        width: "100%",
-        alignItems: "center",
-        justifyContent: "center",
+        display: 'flex',
+        flexDirection: 'column',
+        color: 'text.secondary',
+        width: '100%',
+        alignItems: 'center',
+        justifyContent: 'center',
       }}
     >
       <form id={`mod${product.id}`} className={styles.formDashboard}>
@@ -77,7 +77,7 @@ const DashboardProduct = ({ product }) => {
           htmlFor={`fileUpload${product.id}`}
           className={styles.imgSelection}
         >
-          Agregar foto{" "}
+          Agregar foto{' '}
         </label>
         <input id={`fileUpload${product.id}`} type="file" name="imgUrl" />
         {/* </div> */}

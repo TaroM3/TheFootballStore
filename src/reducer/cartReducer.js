@@ -21,13 +21,11 @@ const updateCart = (updatedArray) => {
   const newTotal = updatedArray.reduce((total, product) => {
     return total + product.quantity;
   }, 0);
-  console.log(newQuantity, newTotal);
   return { newQuantity, newTotal };
 };
 
 const UPDATE_STATE_BY_ACTION = {
   [CART_ACTION.ADD_TO_CART]: (state, action) => {
-    // const updatedProducts = state.products.filter((product) => product.id !== action.payload.product.id)
     if (
       state.products.some((product) => product.id === action.payload.product.id)
     ) {
@@ -58,9 +56,12 @@ const UPDATE_STATE_BY_ACTION = {
     const updatedCart = state.products.filter(
       (product) => product.id !== action.payload.id
     );
+    const { newTotal, newQuantity } = updateCart(updatedCart);
     return {
       ...state,
       products: updatedCart,
+      total: newTotal,
+      quantity: newQuantity,
     };
   },
 };
@@ -70,30 +71,6 @@ function cartReducer(state, action) {
   const updateState = UPDATE_STATE_BY_ACTION[actionType];
 
   return updateState ? updateState(state, action) : state;
-  // const { type, payload } = action;
-  // let quantity;
-  // let total;
-  // switch (type) {
-  //   case [ACTION_TYPES.ADD_TO_CART]:
-  //     quantity = state.products.reduce((quantity, product) => {
-  //       quantity + product.quantity;
-  //     }, 0);
-  //     total = state.products.reduce((total, product) => {
-  //       total + product.price;
-  //     }, 0);
-  //     return {
-  //       ...state,
-  //       products: payload.products,
-  //       total: total,
-  //       quantity: quantity,
-  //     };
-  //   case [ACTION_TYPES.DELETE_BY_ID]:
-  //     return { ...state, products: payload.products };
-  //   case [ACTION_TYPES.UPDATE_CART]:
-  //     return { ...state, total: payload.total, quantity: payload.quantity };
-  //   default:
-  //     throw new Error(`No case for type ${type} found in cartReducer`);
-  // }
 }
 
 export default cartReducer;

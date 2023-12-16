@@ -1,17 +1,17 @@
-import { useRef } from "react";
-import styles from "./Register.module.css";
-import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth, db } from "../../../firebaseConfig";
-import { doc, setDoc } from "firebase/firestore";
+import { useRef } from 'react';
+import styles from './Register.module.css';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { auth, db } from '../../../firebaseConfig';
+import { doc, setDoc } from 'firebase/firestore';
 // import { UserContext } from "../../../context/UserContext";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer, toast } from 'react-toastify';
 const Register = ({ handleClose }) => {
   const nameRef = useRef();
   const emailRef = useRef();
   const passwordRef = useRef();
 
   const resetForm = () => {
-    document.querySelector("#registerForm").reset();
+    document.querySelector('#registerForm').reset();
   };
   const registerSubmit = async () => {
     event.preventDefault();
@@ -21,8 +21,8 @@ const Register = ({ handleClose }) => {
       passwordRef.current.value
     )
       .then((res) => {
-        toast.success("Registro exitoso", {
-          position: "bottom-right",
+        toast.success('Registro exitoso', {
+          position: 'bottom-right',
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
@@ -34,7 +34,7 @@ const Register = ({ handleClose }) => {
         setDoc(docuRef, {
           name: nameRef.current.value,
           email: emailRef.current.value,
-          role: "user",
+          role: 'user',
           cart: [],
         });
         // res.user.updateProfile({
@@ -42,8 +42,8 @@ const Register = ({ handleClose }) => {
         // });
       })
       .catch(() => {
-        toast.error("El email ya esta en uso.", {
-          position: "bottom-right",
+        toast.error('El email ya esta en uso.', {
+          position: 'bottom-right',
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,

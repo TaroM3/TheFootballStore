@@ -1,18 +1,18 @@
-import { db } from "../../../firebaseConfig";
-import useFirestore from "../../../hooks/useFirebase";
-import { addDoc, collection } from "firebase/firestore";
-import Dashboard from "./Dashboard";
-import { products as mockUpProducts } from "../../products";
+import { db } from '../../../firebaseConfig';
+import useFirestore from '../../../hooks/useFirebase';
+import { addDoc, collection } from 'firebase/firestore';
+import Dashboard from './Dashboard';
+import { products as mockUpProducts } from '../../products';
 const DashboardContainer = () => {
   // console.log(mockUpProducts);
   const rellenar = () => {
     mockUpProducts.forEach((product) => {
-      let refCollection = collection(db, "products");
+      let refCollection = collection(db, 'products');
       addDoc(refCollection, product);
     });
   };
 
-  const [products] = useFirestore("products");
+  const [products] = useFirestore({ databaseName: 'products' });
 
   return (
     <div>

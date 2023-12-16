@@ -1,18 +1,18 @@
-import { useState } from "react";
-import { db } from "../../../firebaseConfig";
-import { addDoc, collection, serverTimestamp } from "firebase/firestore";
-import Contacto from "./Contacto";
+import { useState } from 'react';
+import { db } from '../../../firebaseConfig';
+import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
+import Contacto from './Contacto';
 
 const ContactoContainer = () => {
   const [data, setData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
   });
 
   const resetForm = () => {
-    document.querySelector("#contactForm").reset();
+    document.querySelector('#contactForm').reset();
   };
   const handleSubmit = async (evento) => {
     evento.preventDefault();
@@ -22,7 +22,7 @@ const ContactoContainer = () => {
       date: serverTimestamp(),
     };
 
-    const consultaCollection = collection(db, "consulta");
+    const consultaCollection = collection(db, 'consulta');
     await addDoc(consultaCollection, consulta);
     resetForm();
   };

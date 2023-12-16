@@ -1,11 +1,11 @@
-import styles from "../home/Home.module.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-import { Link } from "react-router-dom";
-import { Skeleton } from "@mui/material";
-import Whatsapp from "../../common/whatsappIcon/Whatsapp";
+import styles from '../home/Home.module.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import { Link } from 'react-router-dom';
+import { Skeleton } from '@mui/material';
+import Whatsapp from '../../common/whatsappIcon/Whatsapp';
 
-const Home = ({ el }) => {
+const Home = ({ data }) => {
   let arr = [1, 2, 3, 4];
   return (
     <div className={styles.home}>
@@ -39,11 +39,11 @@ const Home = ({ el }) => {
           cualquier demora y te mantendremos informado(a) sobre el estado de tu
           pedido.
         </section> */}
-        <section style={{ marginTop: "50px" }}>
+        <section style={{ marginTop: '50px' }}>
           <h2>Productos destacados</h2>
           <div className={styles.destacados}>
-            {el.length > 0
-              ? el.map((elemento) => {
+            {data.length > 0
+              ? data.map((elemento) => {
                   return (
                     <div key={elemento.id}>
                       <Link to={`/itemDetail/${elemento.id}`}>
@@ -62,7 +62,7 @@ const Home = ({ el }) => {
                       />
                       <Skeleton
                         variant="text"
-                        sx={{ fontSize: "1.3rem" }}
+                        sx={{ fontSize: '1.3rem' }}
                         width={100}
                       />
                     </div>
@@ -73,12 +73,12 @@ const Home = ({ el }) => {
         <section className={styles.sections}>
           <div>
             <Link to="/category/premier-league">
-              {" "}
+              {' '}
               <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1698367546/thefootballstore/ezgif-5-6ce96d7cdb_gvwfl7.gif" />
             </Link>
           </div>
           <div>
-            {" "}
+            {' '}
             <Link to="/category/selecciones">
               <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1698367545/thefootballstore/ezgif-5-6dc4e18f21_pe33dd.gif" />
             </Link>
@@ -87,7 +87,7 @@ const Home = ({ el }) => {
             </Link>
           </div>
           <div>
-            {" "}
+            {' '}
             <Link to="/category/serie-a">
               <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1698367546/thefootballstore/ezgif-5-5a9fe775da_kbfdxj.gif" />
             </Link>

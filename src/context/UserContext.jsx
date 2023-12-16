@@ -1,23 +1,23 @@
-import { createContext, useState } from "react";
-import Cookies from "universal-cookie";
-import { auth, db } from "../firebaseConfig";
-import { collection, doc, getDoc } from "firebase/firestore";
+import { createContext, useState } from 'react';
+import Cookies from 'universal-cookie';
+import { auth, db } from '../firebaseConfig';
+import { collection, doc, getDoc } from 'firebase/firestore';
 
 export const UserContext = createContext();
 
 const UserContextProvider = ({ children }) => {
   const cookies = new Cookies();
   const [user, setUser] = useState({
-    uidToken: "",
-    email: "",
-    name: "",
-    role: "",
+    uidToken: '',
+    email: '',
+    name: '',
+    role: '',
   });
-  const getData = collection(db, "users");
+  const getData = collection(db, 'users');
 
   const login = async (uidToken) => {
-    cookies.set("TFS_token", uidToken, {
-      sameSite: "strict",
+    cookies.set('TFS_token', uidToken, {
+      sameSite: 'strict',
       maxAge: 3600,
     });
 
@@ -28,9 +28,9 @@ const UserContextProvider = ({ children }) => {
   };
 
   const getRole = async () => {
-    const cookie = cookies.get("TFS_token");
-    console.log(cookie, "hola");
-    if (cookie !== "") {
+    const cookie = cookies.get('TFS_token');
+    console.log(cookie, 'hola');
+    if (cookie !== '') {
       const docRef = doc(getData, user.uidToken);
 
       const role = await getDoc(docRef).then((res) => {
@@ -39,13 +39,13 @@ const UserContextProvider = ({ children }) => {
 
       return role;
     } else {
-      return "";
+      return '';
     }
   };
   const getConnection = () => {
-    const tokenId = cookies.get("TFS_token");
+    const tokenId = cookies.get('TFS_token');
     if (tokenId) {
-      if (user.name === "") {
+      if (user.name === '') {
         const docRef = doc(getData, tokenId);
         getDoc(docRef).then((res) => {
           setUser({ ...res.data(), uidToken: res.id });
@@ -60,12 +60,12 @@ const UserContextProvider = ({ children }) => {
   const logout = () => {
     // setUser(null);
     auth.signOut();
-    cookies.remove("TFS_token");
+    cookies.remove('TFS_token');
     setUser({
-      uidToken: "",
-      email: "",
-      name: "",
-      role: "user",
+      uidToken: '',
+      email: '',
+      name: '',
+      role: 'user',
     });
   };
   const userDataTransfer = () => {

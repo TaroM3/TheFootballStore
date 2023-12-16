@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const Whatsapp = () => {
   return (
@@ -6,7 +6,7 @@ const Whatsapp = () => {
       <Link
         target="blank"
         to="https://wa.me/+5492216697039"
-        style={{ position: "fixed", bottom: 10, right: 50 }}
+        style={{ position: 'fixed', bottom: 10, right: 50 }}
       >
         <img
           alt="Chat on WhatsApp"

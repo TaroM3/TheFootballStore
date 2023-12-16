@@ -1,8 +1,8 @@
-import { Typography, Box } from "@mui/material";
-import styles from "./Counter.module.css";
+import { Typography, Box } from '@mui/material';
+import styles from './Counter.module.css';
 const Counter = ({ counter, setCounter, changeQuantity }) => {
   const updateQuantity = (counter, addition = true) => {
-    if (typeof changeQuantity === "function") {
+    if (typeof changeQuantity === 'function') {
       if (addition === true) {
         setCounter(counter + 1);
         changeQuantity(counter + 1);

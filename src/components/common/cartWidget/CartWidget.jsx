@@ -6,18 +6,15 @@ import styles from './CartWidget.module.css';
 import CloseButton from '../closeButton/CloseButton';
 import CartProductCard from '../cartProductCard/CartProductCard';
 import { useCart } from '../../../hooks/useCart';
+import whatsappTemplate from '../../../utils/whatsappTemplate';
 
 const CartWidget = () => {
-  // const { getTotalQuantity, getNames } = useContext(CartContext);
-  // let total = Number(getTotalQuantity());
-
-  // let nombresCart = getNames();
-
-  // const [counter, setCounter] = useState(1);
   const [state, setState] = React.useState({
     right: false,
   });
   const { products, quantity } = useCart();
+
+  const { url } = whatsappTemplate(products);
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -75,11 +72,7 @@ const CartWidget = () => {
         })}
 
         {products.length > 0 ? (
-          <a
-            target="blank"
-            // href={`https://api.whatsapp.com/send?phone=5492216697039&text=Hola, estoy interesado/a en: ${nombresCart} muchas gracias.`}
-            className={styles.btn}
-          >
+          <a target="blank" href={url} className={styles.btn}>
             Iniciar Compra
           </a>
         ) : (

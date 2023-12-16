@@ -1,12 +1,12 @@
-import { Divider, Drawer } from "@mui/material";
-import { Box } from "@mui/system";
-import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
-import TabsUser from "../tabsUser/TabsUser";
-import styles from "./UserIcon.module.css";
-import { UserContext } from "../../../context/UserContext";
-import Profile from "../profile/Profile";
-import CloseButton from "../closeButton/CloseButton";
+import { Divider, Drawer } from '@mui/material';
+import { Box } from '@mui/system';
+import React, { useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
+import TabsUser from '../tabsUser/TabsUser';
+import styles from './UserIcon.module.css';
+import { UserContext } from '../../../context/UserContext';
+import Profile from '../profile/Profile';
+import CloseButton from '../closeButton/CloseButton';
 
 const UserIcon = () => {
   const { getConnection } = useContext(UserContext);
@@ -19,13 +19,13 @@ const UserIcon = () => {
   // console.log(isLoggedIn);
 
   const handleClose = () => {
-    toggleDrawer("right", false);
+    toggleDrawer('right', false);
   };
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
+      event.type === 'keydown' &&
+      (event.key === 'Tab' || event.key === 'Shift')
     ) {
       return;
     }
@@ -36,10 +36,10 @@ const UserIcon = () => {
   return (
     <>
       <div>
-        {["right"].map((anchor) => (
+        {['right'].map((anchor) => (
           <React.Fragment key={anchor}>
             <Link
-              style={{ cursor: "pointer" }}
+              style={{ cursor: 'pointer' }}
               onClick={toggleDrawer(anchor, true)}
             >
               <svg
@@ -69,17 +69,17 @@ const UserIcon = () => {
               <Box
                 sx={{
                   width: 700,
-                  backgroundColor: "black",
-                  height: "100vh",
+                  backgroundColor: 'black',
+                  height: '100vh',
                 }}
               >
                 <div className={styles.titulo}>
-                  <h1>Login</h1>{" "}
+                  <h1>Login</h1>{' '}
                   <Box onClick={toggleDrawer(anchor, false)}>
                     <CloseButton />
                   </Box>
                 </div>
-                <Divider color="white" style={{ margin: "20px 0px " }} />
+                <Divider color="white" style={{ margin: '20px 0px ' }} />
                 {isLoggedIn ? (
                   <Profile handleClose={handleClose} />
                 ) : (

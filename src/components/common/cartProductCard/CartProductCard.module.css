@@ -1,21 +1,21 @@
 .cartInfo {
     color: var(--primary);
     display: flex;
-    width: fit-content;
+    width: 95%;
   }
   .cart p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .nombre {
-    padding: 15px;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30vw;
+    width: auto;
   }
   .img {
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 7rem;
     object-fit: cover;
     border-radius: 0.5rem;
   }
@@ -24,6 +24,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 0px;
+    margin: .25rem 0px;
     align-items: center;
   }

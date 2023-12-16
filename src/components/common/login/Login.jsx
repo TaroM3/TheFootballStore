@@ -1,9 +1,9 @@
-import { useContext, useRef } from "react";
-import styles from "./Login.module.css";
-import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../../firebaseConfig";
-import { UserContext } from "../../../context/UserContext";
-import { ToastContainer, toast } from "react-toastify";
+import { useContext, useRef } from 'react';
+import styles from './Login.module.css';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../../../firebaseConfig';
+import { UserContext } from '../../../context/UserContext';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Login = ({ handleClose }) => {
   const emailRef = useRef();
@@ -12,7 +12,7 @@ const Login = ({ handleClose }) => {
   const { login } = useContext(UserContext);
 
   const resetForm = () => {
-    document.querySelector("#loginForm").reset();
+    document.querySelector('#loginForm').reset();
   };
 
   const loginSubmit = async () => {
@@ -31,8 +31,8 @@ const Login = ({ handleClose }) => {
       })
       .catch((res) => {
         console.log(res);
-        toast.error("El usuario o contraseña no es valida.", {
-          position: "bottom-right",
+        toast.error('El usuario o contraseña no es valida.', {
+          position: 'bottom-right',
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,

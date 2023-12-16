@@ -6,20 +6,20 @@ import {
   MenuItem,
   Menu,
   Typography,
-} from "@mui/material";
-import { Link } from "react-router-dom";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { useState } from "react";
-import { Image } from "react-bootstrap";
-import SizeButton from "../../common/sizeButton/SizeButton";
-import styles from "./ItemDetail.module.css";
-import { ToastContainer } from "react-toastify";
-import CounterContainer from "../../common/counter/CounterContainer";
-import Whatsapp from "../../common/whatsappIcon/Whatsapp";
+} from '@mui/material';
+import { Link } from 'react-router-dom';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { useState } from 'react';
+import { Image } from 'react-bootstrap';
+import SizeButton from '../../common/sizeButton/SizeButton';
+import styles from './ItemDetail.module.css';
+import { ToastContainer } from 'react-toastify';
+import CounterContainer from '../../common/counter/CounterContainer';
+import Whatsapp from '../../common/whatsappIcon/Whatsapp';
 
 const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
-  const [sizeOption, setSizeOption] = useState("");
-  const [selectOption, setSelectOption] = useState("No");
+  const [sizeOption, setSizeOption] = useState('');
+  const [selectOption, setSelectOption] = useState('No');
   const [anchorEl, setAnchorEl] = useState(null);
 
   const [counter, setCounter] = useState(1);
@@ -38,7 +38,7 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
   return (
     <div>
       <Whatsapp />
-      <Breadcrumbs style={{ marginLeft: "100px" }} aria-label="breadcrumb">
+      <Breadcrumbs style={{ marginLeft: '100px' }} aria-label="breadcrumb">
         <Link to="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -59,14 +59,14 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
         </Link>
         <Link
           to="/"
-          style={{ fontFamily: "frontpageneue" }}
+          style={{ fontFamily: 'frontpageneue' }}
           underline="hover"
           color="var(--main)"
         >
           Inicio
         </Link>
         <Link
-          style={{ fontFamily: "frontpageneue" }}
+          style={{ fontFamily: 'frontpageneue' }}
           underline="hover"
           color="var(--main)"
           to="/products"
@@ -74,24 +74,24 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
           Productos
         </Link>
         <Typography
-          style={{ fontFamily: "frontpageneue", textTransform: "capitalize" }}
+          style={{ fontFamily: 'frontpageneue', textTransform: 'capitalize' }}
           color="var(--main)"
         ></Typography>
       </Breadcrumbs>
       <Box
         sx={{
-          display: "flex",
-          flexDirection: "row",
-          padding: "2rem 0rem",
-          justifyContent: "space-around",
+          display: 'flex',
+          flexDirection: 'row',
+          padding: '2rem 0rem',
+          justifyContent: 'space-around',
         }}
       >
         <Box
           sx={{
-            display: "flex",
-            flexDirection: "row",
-            gap: "10px",
-            height: "600px",
+            display: 'flex',
+            flexDirection: 'row',
+            gap: '10px',
+            height: '600px',
           }}
         >
           <Box>
@@ -114,19 +114,19 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
         </Box>
         <Box
           sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-around",
-            width: "400px",
-            gap: "17px",
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-around',
+            width: '400px',
+            gap: '17px',
           }}
         >
           <Typography
-            style={{ fontFamily: "Bebas Neue" }}
+            style={{ fontFamily: 'Bebas Neue' }}
             variant="h1"
             component="div"
             sx={{
-              fontSize: "32px",
+              fontSize: '32px',
             }}
           >
             {item.title}
@@ -134,26 +134,26 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
 
           <Typography
             variant="body1"
-            sx={{ fontSize: "25px", fontFamily: "frontpageneue" }}
+            sx={{ fontSize: '25px', fontFamily: 'frontpageneue' }}
           >
             Ver medios de pago
           </Typography>
           <Divider
             variant="fullWidth"
-            sx={{ backgroundColor: "var(--accent)" }}
+            sx={{ backgroundColor: 'var(--accent)' }}
           />
           <Typography
             variant="body1"
-            sx={{ fontSize: "25px", fontFamily: "frontpageneue" }}
+            sx={{ fontSize: '25px', fontFamily: 'frontpageneue' }}
           >
             Seleccionar Talle
           </Typography>
           <Box
             sx={{
-              display: "flex",
-              flexDirection: "row-reverse",
-              width: "100%",
-              justifyContent: "space-between",
+              display: 'flex',
+              flexDirection: 'row-reverse',
+              width: '100%',
+              justifyContent: 'space-between',
             }}
           >
             {item.size.map((size) => {
@@ -169,18 +169,18 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
 
           <Box
             sx={{
-              width: "100%",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
+              width: '100%',
+              display: 'flex',
+              flexDirection: 'row',
+              justifyContent: 'space-between',
             }}
           >
             <Typography
               variant="body2"
               sx={{
-                fontSize: "22px",
-                fontFamily: "frontpageneue",
-                color: "var(--main)",
+                fontSize: '22px',
+                fontFamily: 'frontpageneue',
+                color: 'var(--main)',
               }}
             >
               Talle {sizeOption}
@@ -190,10 +190,10 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
               onClick={talles}
               variant="body2"
               sx={{
-                fontSize: "22px",
-                fontFamily: "frontpageneue",
-                cursor: "pointer",
-                textDecoration: "underline",
+                fontSize: '22px',
+                fontFamily: 'frontpageneue',
+                cursor: 'pointer',
+                textDecoration: 'underline',
               }}
             >
               Guía de talles
@@ -202,7 +202,7 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
           {/* </Box> */}
           <Typography
             variant="body2"
-            sx={{ fontSize: "19px", fontFamily: "frontpageneue" }}
+            sx={{ fontSize: '19px', fontFamily: 'frontpageneue' }}
           >
             Personalizada(Dorsal y/o Parches)
           </Typography>
@@ -210,23 +210,23 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
             id="basic-button"
             variant="outlined"
             sx={{
-              width: "70px",
-              height: "50px",
-              textAlign: "center",
-              fontFamily: "frontpageneue",
-              fontSize: "15px",
-              border: "1px solid white",
-              color: "white",
-              flexDirection: "row",
-              justifyContent: "center",
-              textTransform: "capitalize",
-              ":hover": {
-                border: "1px solid var(--main)",
-                color: "var(--main)",
+              width: '70px',
+              height: '50px',
+              textAlign: 'center',
+              fontFamily: 'frontpageneue',
+              fontSize: '15px',
+              border: '1px solid white',
+              color: 'white',
+              flexDirection: 'row',
+              justifyContent: 'center',
+              textTransform: 'capitalize',
+              ':hover': {
+                border: '1px solid var(--main)',
+                color: 'var(--main)',
               },
             }}
-            aria-controls={open ? "basic-menu" : undefined}
-            aria-expanded={open ? "true" : undefined}
+            aria-controls={open ? 'basic-menu' : undefined}
+            aria-expanded={open ? 'true' : undefined}
             onClick={handleClickSelect}
           >
             {selectOption}
@@ -238,17 +238,17 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
             open={open}
             onClose={handleClose}
             MenuListProps={{
-              "aria-labelledby": "basic-button",
+              'aria-labelledby': 'basic-button',
             }}
           >
             <MenuItem
               value="No"
               onClick={handleClose}
               sx={{
-                backgroundColor: "black",
-                color: "white",
-                fontFamily: "frontpageneue",
-                ":hover": { color: "var(--main)" },
+                backgroundColor: 'black',
+                color: 'white',
+                fontFamily: 'frontpageneue',
+                ':hover': { color: 'var(--main)' },
               }}
               color="black"
             >
@@ -258,10 +258,10 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
               value="Si"
               onClick={handleClose}
               sx={{
-                backgroundColor: "black",
-                color: "white",
-                fontFamily: "frontpageneue",
-                ":hover": { color: "var(--main)" },
+                backgroundColor: 'black',
+                color: 'white',
+                fontFamily: 'frontpageneue',
+                ':hover': { color: 'var(--main)' },
               }}
             >
               Si
@@ -269,7 +269,7 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
           </Menu>
           <Typography
             variant="body2"
-            sx={{ fontSize: "19px", fontFamily: "frontpageneue" }}
+            sx={{ fontSize: '19px', fontFamily: 'frontpageneue' }}
           >
             Cantidad
           </Typography>
@@ -277,18 +277,18 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
           <Button
             variant="outlined"
             sx={{
-              width: "400px",
-              backgroundColor: "var(--main)",
-              textTransform: "uppercase",
-              fontFamily: "Bebas Neue",
-              color: "white",
-              fontSize: "17px",
-              padding: "12px",
-              borderColor: "white",
-              ":hover": {
-                backgroundColor: "black",
-                borderColor: "gray",
-                color: "gray",
+              width: '400px',
+              backgroundColor: 'var(--main)',
+              textTransform: 'uppercase',
+              fontFamily: 'Bebas Neue',
+              color: 'white',
+              fontSize: '17px',
+              padding: '12px',
+              borderColor: 'white',
+              ':hover': {
+                backgroundColor: 'black',
+                borderColor: 'gray',
+                color: 'gray',
               },
             }}
             onClick={() => agregarAlCarrito(sizeOption, selectOption, counter)}

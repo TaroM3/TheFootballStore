@@ -10,7 +10,8 @@ import {
 import { useEffect, useState } from 'react';
 import { db } from '../firebaseConfig';
 //entra por parametro el nombre de la base de datos y devuelve un array de objetos
-const useFirestore = (databaseName, id = undefined) => {
+const useFirestore = ({ databaseName, id = undefined, limitValue = 12 }) => {
+  // const {databaseName, limitValue, id } = props
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -18,7 +19,7 @@ const useFirestore = (databaseName, id = undefined) => {
     const first = query(
       collection(db, 'products'),
       orderBy('sold', 'desc'),
-      limit(12)
+      limit(limitValue)
     );
     if (id !== undefined) {
       const getRef = doc(getData, id);
@@ -33,7 +34,7 @@ const useFirestore = (databaseName, id = undefined) => {
         setData(arrayData);
       });
     }
-  }, [databaseName, id]);
+  }, [databaseName, id, limitValue]);
   return [data];
 };
 

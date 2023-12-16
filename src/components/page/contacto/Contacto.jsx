@@ -1,7 +1,7 @@
-import { Breadcrumbs, Typography } from "@mui/material";
-import styles from "./Contacto.module.css";
-import Whatsapp from "../../common/whatsappIcon/Whatsapp";
-import { Link } from "react-router-dom";
+import { Breadcrumbs, Typography } from '@mui/material';
+import styles from './Contacto.module.css';
+import Whatsapp from '../../common/whatsappIcon/Whatsapp';
+import { Link } from 'react-router-dom';
 
 const Contacto = ({ handleChange, handleSubmit }) => {
   return (
@@ -27,7 +27,7 @@ const Contacto = ({ handleChange, handleSubmit }) => {
           </svg>
         </Link>
         <Link
-          style={{ fontFamily: "frontpageneue" }}
+          style={{ fontFamily: 'frontpageneue' }}
           underline="hover"
           color="var(--main)"
           to="/"
@@ -35,7 +35,7 @@ const Contacto = ({ handleChange, handleSubmit }) => {
           Inicio
         </Link>
         <Typography
-          style={{ fontFamily: "frontpageneue", textTransform: "capitalize" }}
+          style={{ fontFamily: 'frontpageneue', textTransform: 'capitalize' }}
           color="var(--main)"
         >
           Contacto
@@ -51,7 +51,7 @@ const Contacto = ({ handleChange, handleSubmit }) => {
           <a
             target="blank"
             className={styles.link}
-            href={"https://www.instagram.com/thefootballstore.ar/"}
+            href={'https://www.instagram.com/thefootballstore.ar/'}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ const Contacto = ({ handleChange, handleSubmit }) => {
         <div className={styles.form}>
           <h5>¡Mandanos un mensaje!</h5>
           <form id="contactForm" onSubmit={handleSubmit}>
-            {" "}
+            {' '}
             <input
               required
               className={styles.input}
@@ -109,7 +109,7 @@ const Contacto = ({ handleChange, handleSubmit }) => {
             ></textarea>
             <button type="submit">Enviar</button>
           </form>
-        </div>{" "}
+        </div>{' '}
       </section>
     </div>
   );

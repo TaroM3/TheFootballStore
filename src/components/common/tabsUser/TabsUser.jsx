@@ -1,8 +1,8 @@
-import { useState } from "react";
-import styles from "./TabsUser.module.css";
-import { tabs } from "./tabs";
+import { useState } from 'react';
+import styles from './TabsUser.module.css';
+import { tabs } from './tabs';
 const TabsUser = ({ handleClose }) => {
-  const [currentTab, setCurrentTab] = useState("1");
+  const [currentTab, setCurrentTab] = useState('1');
   const handleTabClick = () => {
     setCurrentTab(event.target.id);
   };

@@ -5,10 +5,10 @@ import {
   Box,
   Button,
   Typography,
-} from "@mui/material";
-import { useState } from "react";
-import { Image } from "react-bootstrap";
-import DashboardProduct from "../../common/dashboardProduct/DashboardProduct";
+} from '@mui/material';
+import { useState } from 'react';
+import { Image } from 'react-bootstrap';
+import DashboardProduct from '../../common/dashboardProduct/DashboardProduct';
 
 // category: "retros",
 // subCategory: "selecciones",
@@ -33,11 +33,11 @@ const Dashboard = ({ products }) => {
   return (
     <div
       style={{
-        padding: "3rem 0rem",
-        with: "100%",
-        display: "grid",
-        justifyContent: "center",
-        gap: "1rem",
+        padding: '3rem 0rem',
+        with: '100%',
+        display: 'grid',
+        justifyContent: 'center',
+        gap: '1rem',
       }}
     >
       {products.map((product) => {
@@ -52,10 +52,10 @@ const Dashboard = ({ products }) => {
               aria-controls={`${product.id}-content`}
               id={`${product.id}-header`}
             >
-              <Typography sx={{ width: "33%", flexShrink: 0 }}>
+              <Typography sx={{ width: '33%', flexShrink: 0 }}>
                 <Image src={product.imgUrl} width={50}></Image>
               </Typography>
-              <Typography sx={{ color: "text.primary" }}>
+              <Typography sx={{ color: 'text.primary' }}>
                 {product.title}
               </Typography>
             </AccordionSummary>
@@ -67,9 +67,9 @@ const Dashboard = ({ products }) => {
       })}
       <Box
         sx={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-around",
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-around',
         }}
       >
         <Button onClick={() => handleChangePage(-1)}>Anterior</Button>
