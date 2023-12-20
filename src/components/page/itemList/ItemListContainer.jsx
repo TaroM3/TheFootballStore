@@ -10,7 +10,12 @@ const ItemListContainer = () => {
   const { categoryName } = useParams();
   const { subCategoryName } = useParams();
 
-  const [data] = useFirestore({ databaseName: 'products' });
+  console.log(categoryName, subCategoryName);
+  const [data] = useFirestore({
+    databaseName: 'products',
+    category: categoryName,
+    subCategory: subCategoryName,
+  });
   // useEffect(() => {
   //   let productsCollection = collection(db, "products");
   //   let consulta;

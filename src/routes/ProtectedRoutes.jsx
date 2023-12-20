@@ -1,14 +1,12 @@
 // import { useContext } from 'react';
 import { Navigate, Outlet } from 'react-router-dom';
+import { useUser } from '../hooks/useUser';
 // import { UserContext } from '../context/UserContext';
 
 const ProtectedRoutes = () => {
-  // Condicional, si es admin entra a Outlet, sino entra a Navigate(home)
-  // const { getRole } = useContext(UserContext);
+  const { isAdmin } = useUser();
 
-  let role = 'user';
-
-  return role === 'admin' ? <Outlet /> : <Navigate to="/" />;
+  return isAdmin ? <Outlet /> : <Navigate to="/" />;
 };
 
 export default ProtectedRoutes;

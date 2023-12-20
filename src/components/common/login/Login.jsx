@@ -1,15 +1,18 @@
-import { useContext, useRef } from 'react';
+import { useRef } from 'react';
 import styles from './Login.module.css';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../../firebaseConfig';
-import { UserContext } from '../../../context/UserContext';
+// import { UserContext } from '../../../context/UserContext';
 import { ToastContainer, toast } from 'react-toastify';
+// import { collection, doc, getDoc } from 'firebase/firestore';
+import { useUser } from '../../../hooks/useUser';
 
-const Login = ({ handleClose }) => {
+const Login = ({ toggleDrawer }) => {
   const emailRef = useRef();
   const passwordRef = useRef();
 
-  const { login } = useContext(UserContext);
+  // const { login } = useContext(UserContext);
+  const { login } = useUser();
 
   const resetForm = () => {
     document.querySelector('#loginForm').reset();
@@ -25,9 +28,9 @@ const Login = ({ handleClose }) => {
     )
       .then((res) => {
         const uidToken = res.user.uid;
-        console.log(res);
-        login(uidToken);
-        handleClose();
+        // const token = res.user.getIdToken();
+        login({ uidToken: uidToken, token: res.user.getIdToken() });
+        console.log(uidToken);
       })
       .catch((res) => {
         console.log(res);
@@ -41,6 +44,8 @@ const Login = ({ handleClose }) => {
           progress: undefined,
         });
       });
+
+    toggleDrawer('right', false);
 
     resetForm();
   };

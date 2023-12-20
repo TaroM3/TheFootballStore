@@ -1,4 +1,3 @@
-// import CloseIcon from "@mui/icons-material/Close";
 const CloseButton = () => {
   return (
     <div
@@ -23,13 +22,6 @@ const CloseButton = () => {
     >
       x
     </div>
-    // <CloseIcon
-    //   sx={{
-    //     color: "var(--primary)",
-    //     width: "50px",
-    //     height: "50px",
-    //   }}
-    // />
   );
 };
 

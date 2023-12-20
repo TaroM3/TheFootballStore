@@ -5,7 +5,7 @@ import { auth, db } from '../../../firebaseConfig';
 import { doc, setDoc } from 'firebase/firestore';
 // import { UserContext } from "../../../context/UserContext";
 import { ToastContainer, toast } from 'react-toastify';
-const Register = ({ handleClose }) => {
+const Register = ({ toggleDrawer }) => {
   const nameRef = useRef();
   const emailRef = useRef();
   const passwordRef = useRef();
@@ -55,7 +55,8 @@ const Register = ({ handleClose }) => {
     auth.signOut();
     console.log(auth.currentUser.uid);
     resetForm();
-    handleClose();
+    // handleClose();
+    toggleDrawer('right', false);
   };
   return (
     <div className={styles.container}>

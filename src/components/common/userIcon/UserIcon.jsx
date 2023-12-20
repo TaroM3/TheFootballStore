@@ -1,26 +1,28 @@
 import { Divider, Drawer } from '@mui/material';
 import { Box } from '@mui/system';
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import TabsUser from '../tabsUser/TabsUser';
 import styles from './UserIcon.module.css';
-import { UserContext } from '../../../context/UserContext';
 import Profile from '../profile/Profile';
 import CloseButton from '../closeButton/CloseButton';
+// import { useUser } from '../../../hooks/useUser';
+import { auth } from '../../../firebaseConfig';
+import { useUser } from '../../../hooks/useUser';
 
 const UserIcon = () => {
-  const { getConnection } = useContext(UserContext);
-  let isLoggedIn = getConnection();
-
+  // const { getConnection } = useContext(UserContext);
+  const isLoggedIn = auth.currentUser;
+  const { login, name } = useUser();
   const [state, setState] = useState({
     right: false,
   });
 
-  // console.log(isLoggedIn);
-
-  const handleClose = () => {
-    toggleDrawer('right', false);
-  };
+  console.log(auth.currentUser);
+  if (isLoggedIn && name === '') {
+    const uidToken = auth.currentUser.uid;
+    login({ uidToken });
+  }
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -32,6 +34,22 @@ const UserIcon = () => {
 
     setState({ ...state, [anchor]: open });
   };
+  // const toggleDrawer = (anchor, open) => {
+  //   // if (
+  //   //   event.type === 'keydown' &&
+  //   //   (event.key === 'Tab' || event.key === 'Shift')
+  //   // ) {
+  //   //   return;
+  //   // }
+
+  //   setState({ ...state, [anchor]: open });
+  //   return;
+  // };
+
+  const close = toggleDrawer('right', false);
+  // const handleClose = () => {
+  //   toggleDrawer('right', false);
+  // };
 
   return (
     <>
@@ -75,15 +93,16 @@ const UserIcon = () => {
               >
                 <div className={styles.titulo}>
                   <h1>Login</h1>{' '}
-                  <Box onClick={toggleDrawer(anchor, false)}>
+                  {/* <Box onClick={toggleDrawer(anchor, false)}> */}
+                  <Box onClick={close}>
                     <CloseButton />
                   </Box>
                 </div>
                 <Divider color="white" style={{ margin: '20px 0px ' }} />
-                {isLoggedIn ? (
-                  <Profile handleClose={handleClose} />
+                {isLoggedIn !== null ? (
+                  <Profile toggleDrawer={toggleDrawer} />
                 ) : (
-                  <TabsUser handleClose={handleClose} />
+                  <TabsUser toggleDrawer={toggleDrawer} />
                 )}
               </Box>
             </Drawer>

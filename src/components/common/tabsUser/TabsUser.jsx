@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './TabsUser.module.css';
 import { tabs } from './tabs';
-const TabsUser = ({ handleClose }) => {
+const TabsUser = ({ toggleDrawer }) => {
   const [currentTab, setCurrentTab] = useState('1');
   const handleTabClick = () => {
     setCurrentTab(event.target.id);
@@ -12,7 +12,7 @@ const TabsUser = ({ handleClose }) => {
       <div className={styles.content}>
         {tabs.map(({ id, Element }, i) => (
           <div key={i}>
-            {currentTab === `${id}` && <Element handleClose={handleClose} />}
+            {currentTab === `${id}` && <Element toggleDrawer={toggleDrawer} />}
           </div>
         ))}
       </div>

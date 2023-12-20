@@ -1,21 +1,23 @@
-import { useContext } from 'react';
-import { UserContext } from '../../../context/UserContext';
+// import { useContext } from 'react';
+// import { UserContext } from '../../../context/UserContext';
 import styles from './Profile.module.css';
 import { Divider } from '@mui/material';
 import { Link } from 'react-router-dom';
-const Profile = ({ handleClose }) => {
-  const { userDataTransfer, logout } = useContext(UserContext);
-  const user = userDataTransfer();
+import { useUser } from '../../../hooks/useUser';
+const Profile = ({ toggleDrawer }) => {
+  const { name, email, logout, isAdmin, state } = useUser();
+  // const user = userDataTransfer();
 
+  console.log(state);
   const handleCloseButton = () => {
+    toggleDrawer('right', false);
     logout();
-    handleClose();
   };
   return (
     <div className={styles.container}>
       <header>
         <div className={styles.title}>
-          <h1>{user.name}</h1>
+          <h1>{name}</h1>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="23"
@@ -38,9 +40,10 @@ const Profile = ({ handleClose }) => {
       </header>
       <div className={styles.userData}>
         <h3>Email</h3>
-        <p>{user.email}</p>
+        <p>{email}</p>
       </div>
-      {user.role === 'admin' ? (
+      {/* {user.role === 'admin' ? ( */}
+      {isAdmin ? (
         <Link to="/dashboard">Dashboard</Link>
       ) : (
         <Link to="/products" className={styles.link}>

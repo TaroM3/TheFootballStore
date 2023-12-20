@@ -64,6 +64,14 @@ const UPDATE_STATE_BY_ACTION = {
       quantity: newQuantity,
     };
   },
+  [CART_ACTION.CLEAR_CART]: (state, action) => {
+    return {
+      ...state,
+      products: action.payload.products,
+      total: 0,
+      quantity: 0,
+    };
+  },
 };
 
 function cartReducer(state, action) {
