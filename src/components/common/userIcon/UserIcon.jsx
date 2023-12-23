@@ -6,12 +6,10 @@ import TabsUser from '../tabsUser/TabsUser';
 import styles from './UserIcon.module.css';
 import Profile from '../profile/Profile';
 import CloseButton from '../closeButton/CloseButton';
-// import { useUser } from '../../../hooks/useUser';
 import { auth } from '../../../firebaseConfig';
 import { useUser } from '../../../hooks/useUser';
 
 const UserIcon = () => {
-  // const { getConnection } = useContext(UserContext);
   const isLoggedIn = auth.currentUser;
   const { login, name } = useUser();
   const [state, setState] = useState({
@@ -34,22 +32,8 @@ const UserIcon = () => {
 
     setState({ ...state, [anchor]: open });
   };
-  // const toggleDrawer = (anchor, open) => {
-  //   // if (
-  //   //   event.type === 'keydown' &&
-  //   //   (event.key === 'Tab' || event.key === 'Shift')
-  //   // ) {
-  //   //   return;
-  //   // }
-
-  //   setState({ ...state, [anchor]: open });
-  //   return;
-  // };
 
   const close = toggleDrawer('right', false);
-  // const handleClose = () => {
-  //   toggleDrawer('right', false);
-  // };
 
   return (
     <>
@@ -86,7 +70,7 @@ const UserIcon = () => {
             >
               <Box
                 sx={{
-                  width: 700,
+                  width: { xs: '100vw', md: '70vw', lg: '35vw' },
                   backgroundColor: 'black',
                   height: '100vh',
                 }}

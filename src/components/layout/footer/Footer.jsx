@@ -1,15 +1,15 @@
-import { SvgIcon } from "@mui/material";
-import styles from "../footer/Footer.module.css";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import { Link } from "react-router-dom";
-import Swal from "sweetalert2";
-import { useState } from "react";
-import { db } from "../../../firebaseConfig";
-import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import { SvgIcon } from '@mui/material';
+import styles from '../footer/Footer.module.css';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
+import { useState } from 'react';
+import { db } from '../../../firebaseConfig';
+import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 
 const Footer = () => {
   const [data, setData] = useState({
-    email: "",
+    email: '',
   });
 
   const handleSubmit = (evento) => {
@@ -20,7 +20,7 @@ const Footer = () => {
       date: serverTimestamp(),
     };
 
-    const newsletterCollection = collection(db, "noticias");
+    const newsletterCollection = collection(db, 'noticias');
     addDoc(newsletterCollection, newsletter);
   };
 
@@ -30,31 +30,30 @@ const Footer = () => {
   const talles = () => {
     Swal.fire({
       imageUrl:
-        "https://res.cloudinary.com/daq80uhh9/image/upload/v1698767089/thefootballstore/Copia_de_Brochure_CMYK_1_omr8yw.jpg",
-      imageWidth: "auto",
-      imageHeight: "auto",
+        'https://res.cloudinary.com/daq80uhh9/image/upload/v1698767089/thefootballstore/Copia_de_Brochure_CMYK_1_omr8yw.jpg',
+      imageWidth: 'auto',
+      imageHeight: 'auto',
       heightAuto: false,
-      imageAlt: "Custom image",
+      imageAlt: 'Custom image',
       showConfirmButton: false,
-      background: "none",
+      background: 'none',
       showCloseButton: true,
-      closeButtonHtml: "X",
+      closeButtonHtml: 'X',
       showClass: {
-        popup: "animate__animated animate__fadeInDown",
+        popup: 'animate__animated animate__fadeInDown',
       },
       hideClass: {
-        popup: "animate__animated animate__fadeOutUp",
+        popup: 'animate__animated animate__fadeOutUp',
       },
     });
   };
   return (
     <div className={styles.footer}>
-      {" "}
+      {' '}
       <section
         style={{
-          display: "flex",
-          marginLeft: "-50px",
-          alignItems: "center",
+          display: 'flex',
+          alignItems: 'center',
         }}
       >
         <svg
@@ -84,9 +83,9 @@ const Footer = () => {
               <rect width="54.8097" height="49" fill="white" />
             </clipPath>
           </defs>
-        </svg>{" "}
+        </svg>{' '}
         <h3> The Football Store </h3>
-      </section>{" "}
+      </section>{' '}
       <section className={styles.footerContent}>
         <div className={styles.newsletter}>
           <p>Dejanos tu mail para recibir novedades</p>
@@ -104,17 +103,17 @@ const Footer = () => {
             />
             <button
               style={{
-                width: "4.625rem",
-                height: "2.0625rem",
-                flexShrink: "0",
-                borderRadius: "0.625rem",
-                background: "#FFE54E",
-                color: "#000",
-                fontFamily: "Bebas Neue",
-                fontSize: "1.125rem",
-                fontStyle: "normal",
-                fontWeight: "400",
-                lineHeight: "2.25rem",
+                width: '4.625rem',
+                height: '2.0625rem',
+                flexShrink: '0',
+                borderRadius: '0.625rem',
+                background: '#FFE54E',
+                color: '#000',
+                fontFamily: 'Bebas Neue',
+                fontSize: '1.125rem',
+                fontStyle: 'normal',
+                fontWeight: '400',
+                lineHeight: '2.25rem',
               }}
               type="submit"
             >
@@ -124,10 +123,10 @@ const Footer = () => {
         </div>
         <ul className={styles.ul}>
           <li>
-            <Link to={"/products"}>Productos</Link>
+            <Link to={'/products'}>Productos</Link>
           </li>
           <li>
-            <Link to={"/info"}>Cuidados</Link>
+            <Link to={'/info'}>Cuidados</Link>
           </li>
           <li>
             <Link onClick={talles}>Guia de talles</Link>
@@ -135,21 +134,21 @@ const Footer = () => {
         </ul>
         <ul className={styles.ul}>
           <li>
-            <Link to={"/envios"}>Metodos de entrega</Link>
+            <Link to={'/envios'}>Metodos de entrega</Link>
           </li>
         </ul>
         <ul className={styles.ul}>
           <li>
-            <Link to={"/contacto"}>Contacto</Link>
+            <Link to={'/contacto'}>Contacto</Link>
           </li>
           <li>
             <Link
               target="blank"
               style={{
-                display: "flex",
-                alignItems: "center",
+                display: 'flex',
+                alignItems: 'center',
               }}
-              to={"https://www.instagram.com/thefootballstore.ar/"}
+              to={'https://www.instagram.com/thefootballstore.ar/'}
             >
               <SvgIcon component={InstagramIcon} /> @thefootballstore.ar
             </Link>

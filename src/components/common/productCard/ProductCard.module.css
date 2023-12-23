@@ -11,7 +11,8 @@
 
 .card {
   cursor: pointer;
-  width: 21vw;
+  /* width: 21vw; */
+  width: 18.5rem;
 }
 
 .titleCard a div {

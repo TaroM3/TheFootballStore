@@ -29,8 +29,12 @@ const CartWidget = () => {
 
   const list = (anchor) => (
     <Box
+      // sx={{
+      //   width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 700,
+      // }}
+
       sx={{
-        width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 700,
+        width: { xs: '100vw', lg: '43.75rem' },
       }}
       role="presentation"
       bgcolor={'black'}

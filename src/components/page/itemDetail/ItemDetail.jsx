@@ -10,7 +10,6 @@ import {
 import { Link } from 'react-router-dom';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useState } from 'react';
-import { Image } from 'react-bootstrap';
 import SizeButton from '../../common/sizeButton/SizeButton';
 import styles from './ItemDetail.module.css';
 import { ToastContainer } from 'react-toastify';
@@ -38,7 +37,7 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
   return (
     <div>
       <Whatsapp />
-      <Breadcrumbs style={{ marginLeft: '100px' }} aria-label="breadcrumb">
+      <Breadcrumbs style={{ marginLeft: '6.25rem' }} aria-label="breadcrumb">
         <Link to="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -81,44 +80,54 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
       <Box
         sx={{
           display: 'flex',
-          flexDirection: 'row',
+          flexDirection: {
+            xs: 'column',
+            sm: 'column',
+            md: 'column',
+            lg: 'row',
+          },
           padding: '2rem 0rem',
           justifyContent: 'space-around',
+          alignItems: 'center',
         }}
       >
         <Box
           sx={{
             display: 'flex',
-            flexDirection: 'row',
-            gap: '10px',
-            height: '600px',
+            flexDirection: { xs: 'column-reverse', lg: 'row' },
+            gap: '0.625rem',
+            minHeight: '37.5rem',
           }}
         >
           <Box>
             {item.imgUrl.map((image) => {
               return (
-                <Image
-                  width={150}
+                <Box
+                  component="img"
                   key={image}
                   src={image}
                   className={styles.images}
+                  sx={{ width: { xs: '5rem', sm: '6rem', md: '9.375rem' } }}
                 />
               );
             })}
           </Box>
-          <Image
-            width={600}
+          <Box
+            component="img"
+            sx={{ width: { xs: '21.875rem', sm: '21.875rem', md: '31.25rem' } }}
             src={`${item.imgUrl[0]}`}
             className={styles.images}
           />
         </Box>
+
         <Box
           sx={{
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-around',
-            width: '400px',
-            gap: '17px',
+            alignItems: 'space-between',
+            width: { xs: '21.875rem', md: '30rem' },
+            gap: '1.0625rem',
           }}
         >
           <Typography
@@ -277,13 +286,13 @@ const ItemDetail = ({ item, agregarAlCarrito, talles }) => {
           <Button
             variant="outlined"
             sx={{
-              width: '400px',
+              width: { xs: '21.875rem', sm: '21.875rem', md: '31.25rem' },
               backgroundColor: 'var(--main)',
               textTransform: 'uppercase',
               fontFamily: 'Bebas Neue',
               color: 'white',
-              fontSize: '17px',
-              padding: '12px',
+              fontSize: '1.0625rem',
+              padding: '0.75rem',
               borderColor: 'white',
               ':hover': {
                 backgroundColor: 'black',

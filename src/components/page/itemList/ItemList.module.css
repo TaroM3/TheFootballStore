@@ -1,7 +1,9 @@
 .productContainer {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   padding: 4.1rem;
+  
   gap: 6rem;
 }
 .breadcumb li a {
@@ -12,4 +14,45 @@
 }
 h1 {
   padding: 20px 0px;
+}
+
+.btn {
+  display: flex;
+  width: 15rem;
+  height: 3rem;
+  text-align: center;
+  font-family: "Bebas Neue";
+  flex-shrink: 0;
+  color: var(--secondary);
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 0.25rem;
+  float: right;
+  border: 1px solid var(--secondary);
+  background: var(--accent);
+  color: black;
+  cursor: pointer;
+  background-color: var(--accent);
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1091px){
+  .btn{
+    width: 10rem;
+  }
+}
+.btnContainer{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+@media(max-width: 701px){
+  .productContainer{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;  
+  }
 }

@@ -16,6 +16,11 @@
   color: var(--primary);
 }
 
+@media (max-width: 500px) {
+  .input{
+    width: 15rem;
+  }
+}
 .container {
   display: flex;
   justify-content: center;

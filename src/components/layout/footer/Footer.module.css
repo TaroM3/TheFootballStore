@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   border-top: solid 5px var(--accent);
-  padding: 20px 50px 100px 50px;
+  padding: 1.25rem 3.125rem 6.25rem 3.125rem;
 }
 .footer a {
   transition-duration: 0.5s;
@@ -29,8 +29,22 @@ a:hover {
   justify-content: space-between;
 }
 .input {
-  width: 439.474px;
-  height: 43px;
-  border-radius: 10px;
-  padding: 10px;
+  /* width: 27.467125rem; */
+  width: 27.467125rem;
+  height: 2.6875rem;
+  border-radius: 0.625rem;
+  padding: 0.625rem;
+}
+
+@media (max-width: 973px){
+  .footerContent{
+    flex-direction: column;
+    align-items: space-evenly;
+  }
+}
+
+@media (max-width: 519px) {
+  .input{
+    width: 20rem;
+  }
 }

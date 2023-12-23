@@ -1,5 +1,5 @@
 .images {
-  border-radius: 4px;
+  border-radius: .25rem;
   cursor: pointer;
 }
 
@@ -13,20 +13,20 @@ div:where(.swal2-container) img:where(.swal2-image) {
 
 .inputNumber {
   border: none;
-  height: 60px;
+  height: 3.75rem;
   appearance: none;
-  font-size: 17px;
+  font-size: 1.0625rem;
   color: white;
   text-align: center;
-  width: 60px;
-  border-bottom: 2px solid white;
+  width: 3.75rem;
+  border-bottom: 0.125 solid white;
   background-color: black;
   color: "white";
 }
 .inputNumber:focus {
   border: none;
   outline: 0;
-  border-bottom: 2px solid white;
+  border-bottom: 0.125rem solid white;
   appearance: none;
 }
 

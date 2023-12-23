@@ -6,9 +6,6 @@
   align-items: center;
 }
 .cart {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
   padding: var(--space-sm);
   min-height: 100vh;
 }
@@ -44,6 +41,11 @@
   background: var(--accent);
   color: black;
   cursor: pointer;
+}
+@media (max-width: 700px) {
+  .btn{
+    width: 100%;
+  }
 }
 .cart a {
   color: var(--Texto-1, #000);

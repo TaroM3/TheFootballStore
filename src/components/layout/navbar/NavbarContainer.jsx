@@ -1,18 +1,18 @@
-import { Link } from "react-router-dom";
-import styles from "../navbar/Navbar.module.css";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import { Form } from "react-bootstrap";
-import CartWidget from "../../common/cartWidget/CartWidget";
-import { AccordionDetails, AccordionSummary, Typography } from "@mui/material";
-import Accordion from "@mui/material/Accordion";
-import UserIcon from "../../common/userIcon/UserIcon";
+import { Link } from 'react-router-dom';
+import styles from '../navbar/Navbar.module.css';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { Form } from 'react-bootstrap';
+import CartWidget from '../../common/cartWidget/CartWidget';
+import { AccordionDetails, AccordionSummary } from '@mui/material';
+import Accordion from '@mui/material/Accordion';
+import UserIcon from '../../common/userIcon/UserIcon';
 const NavbarContainer = () => {
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
-        {" "}
+        {' '}
         <div className={styles.container}>
           <div className={styles.scroll}>
             <div className={styles.RightToLeft}>
@@ -29,7 +29,6 @@ const NavbarContainer = () => {
           </div>
         </div>
         <Container className={styles.navbar}>
-          {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" /> */}{" "}
           <div>
             <Navbar.Brand>
               <Link to="/">
@@ -67,57 +66,62 @@ const NavbarContainer = () => {
           <Navbar.Collapse
             id="responsive-navbar-nav"
             style={{
-              display: "flex",
-              width: "100%",
-              justifyContent: "center",
+              display: 'flex',
+              width: '100%',
+              justifyContent: 'center',
             }}
           >
             <Nav
               className="me-auto"
               style={{
-                display: "flex",
-                minWidth: "50%",
-                alignItems: "start",
-                justifyContent: "space-around",
+                display: 'flex',
+                minWidth: '50%',
+                alignItems: 'start',
+                justifyContent: 'space-around',
               }}
             >
-              {" "}
+              {/* {' '} */}
               <Accordion
                 style={{
-                  backgroundColor: "var(--secondary)",
-                  color: "var(--primary)",
-                  marginTop: "-15px",
+                  backgroundColor: 'var(--secondary)',
+                  color: 'var(--primary)',
+                  marginTop: '-15px',
                 }}
                 className={styles.dropdown}
               >
                 <AccordionSummary
                   style={{
-                    margin: "0px 0px",
-                    padding: "0",
+                    margin: '0px 0px',
+                    padding: '0',
                   }}
                   aria-controls="panel1a-content"
                   id="panel1a-header"
                 >
-                  <Typography
+                  {/* <Typography
                     style={{
                       margin: "0",
                       padding: "0",
                     }}
-                  >
-                    <Link>Productos</Link>
-                  </Typography>
+                  > */}
+                  {/* <Link>Productos</Link> */}
+                  <p>Productos</p>
+                  {/* </Typography> */}
                 </AccordionSummary>
                 <AccordionDetails
                   style={{
-                    width: "max-content",
-                    marginLeft: "-200%",
-                    height: "auto",
-                    transitionDuration: "279ms",
+                    width: 'max-content',
+                    marginLeft: '-200%',
+                    height: 'auto',
+                    transitionDuration: '279ms',
                   }}
                 >
-                  <Typography className={styles.item}>
+                  <div
+                    style={{ marginLeft: '-100px', padding: '0' }}
+                    className={styles.item}
+                    // onClick={}
+                  >
                     <ul>
-                      {" "}
+                      {' '}
                       <Link to="/category/premier-league">Premier League</Link>
                       <li>
                         <Link to="/category/premier-league/subcategory/tottenham">
@@ -244,9 +248,9 @@ const NavbarContainer = () => {
                           Europa
                         </Link>
                       </li>
-                    </ul>{" "}
+                    </ul>{' '}
                     <ul>
-                      <Link to="/category/inter-miami">Inter Miami</Link>{" "}
+                      <Link to="/category/inter-miami">Inter Miami</Link>{' '}
                     </ul>
                     <ul>
                       <Link to="/category/liga-argentina">Liga Argentina</Link>
@@ -275,31 +279,31 @@ const NavbarContainer = () => {
                         </Link>
                       </li>
                     </ul>
-                  </Typography>
+                  </div>
                 </AccordionDetails>
               </Accordion>
               <Nav.Link>
-                <Link to={"/envios"}>Envios</Link>
+                <Link to={'/envios'}>Envios</Link>
               </Nav.Link>
               <Nav.Link>
-                <Link to={"/contacto"}>Contacto</Link>
+                <Link to={'/contacto'}>Contacto</Link>
               </Nav.Link>
             </Nav>
-          </Navbar.Collapse>{" "}
-          <div style={{ display: "flex", margin: "0px 10px" }}>
-            <Form style={{ margin: "0px 10px" }} className="d-flex">
+          </Navbar.Collapse>{' '}
+          <div style={{ display: 'flex', margin: '0px 10px' }}>
+            <Form style={{ margin: '0px 10px' }} className="d-flex">
               <Form.Control
                 type="search"
                 placeholder="Buscar"
                 className="me-2"
                 aria-label="Search"
               />
-            </Form>{" "}
+            </Form>{' '}
             <CartWidget />
             <UserIcon />
           </div>
-        </Container>{" "}
-      </Navbar>{" "}
+        </Container>{' '}
+      </Navbar>{' '}
     </div>
   );
 };

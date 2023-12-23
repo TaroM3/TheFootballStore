@@ -27,3 +27,22 @@
     margin: .25rem 0px;
     align-items: center;
   }
+@media(max-width: 700px){
+  .cartInfo {
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cartItem{
+    flex-direction: column;
+  }
+  .img{
+    width: 15rem;
+    height: 17rem;
+  }
+  .nombre{
+    width: 22.5rem;
+    height: fit-content;
+    gap: 1rem;
+  }
+}

@@ -1,9 +1,9 @@
-import { Breadcrumbs, Skeleton, Typography } from "@mui/material";
-import ProductCard from "../../common/productCard/ProductCard";
-import styles from "../itemList/ItemList.module.css";
-import Whatsapp from "../../common/whatsappIcon/Whatsapp";
-import { Link } from "react-router-dom";
-const ItemList = ({ items, categoryName, subCategoryName }) => {
+import { Breadcrumbs, Skeleton, Typography } from '@mui/material';
+import ProductCard from '../../common/productCard/ProductCard';
+import styles from '../itemList/ItemList.module.css';
+import Whatsapp from '../../common/whatsappIcon/Whatsapp';
+import { Link } from 'react-router-dom';
+const ItemList = ({ items, categoryName, subCategoryName, setPrev, prev }) => {
   let arr = [1, 2, 3, 4];
   return (
     <div className={styles.itemList}>
@@ -28,7 +28,7 @@ const ItemList = ({ items, categoryName, subCategoryName }) => {
           </svg>
         </Link>
         <Link
-          style={{ fontFamily: "frontpageneue" }}
+          style={{ fontFamily: 'frontpageneue' }}
           underline="hover"
           color="var(--main)"
           to="/"
@@ -36,7 +36,7 @@ const ItemList = ({ items, categoryName, subCategoryName }) => {
           Inicio
         </Link>
         <Link
-          style={{ fontFamily: "frontpageneue" }}
+          style={{ fontFamily: 'frontpageneue' }}
           underline="hover"
           color="var(--main)"
           to="/products"
@@ -44,7 +44,7 @@ const ItemList = ({ items, categoryName, subCategoryName }) => {
           Productos
         </Link>
         <Typography
-          style={{ fontFamily: "frontpageneue", textTransform: "capitalize" }}
+          style={{ fontFamily: 'frontpageneue', textTransform: 'capitalize' }}
           color="var(--main)"
         >
           {categoryName}
@@ -57,10 +57,10 @@ const ItemList = ({ items, categoryName, subCategoryName }) => {
       </div>
       <div
         style={{
-          width: "100%",
-          display: "flex",
-          justifyContent: "space-between",
-          flexWrap: "wrap",
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'space-between',
+          flexWrap: 'wrap',
         }}
       >
         {items.length > 0
@@ -73,13 +73,24 @@ const ItemList = ({ items, categoryName, subCategoryName }) => {
                   <Skeleton variant="rectangular" width={300} height={300} />
                   <Skeleton
                     variant="text"
-                    sx={{ fontSize: "1.3rem" }}
+                    sx={{ fontSize: '1.3rem' }}
                     width={100}
                   />
                 </div>
               );
             })}
       </div>
+      <button
+        disabled={prev - 10 > 0 ? false : true}
+        onClick={setPrev(() => {
+          prev - 10;
+        })}
+      >
+        Anterior
+      </button>
+      <button disabled={items.length < 10} onClick={setPrev(() => prev + 10)}>
+        Siguiente
+      </button>
     </div>
   );
 };

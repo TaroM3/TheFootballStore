@@ -82,7 +82,7 @@ const ItemDetailContainer = () => {
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'space-around',
-              width: '350px',
+              width: '21.875rem',
             }}
           >
             <Skeleton variant="text" sx={{ fontSize: '32px' }} width={350} />
