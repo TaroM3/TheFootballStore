@@ -71,13 +71,13 @@ const Home = ({ data }) => {
           </div>
         </section>
         <section className={styles.sections}>
-          <div>
+          <div className={styles.sideImage}>
             <Link to="/category/premier-league">
               {' '}
               <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1698367546/thefootballstore/ezgif-5-6ce96d7cdb_gvwfl7.gif" />
             </Link>
           </div>
-          <div>
+          <div className={styles.middle}>
             {' '}
             <Link to="/category/selecciones">
               <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1698367545/thefootballstore/ezgif-5-6dc4e18f21_pe33dd.gif" />
@@ -86,7 +86,7 @@ const Home = ({ data }) => {
               <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1698367545/thefootballstore/ezgif-5-e5b37d74b4_joatin.gif" />
             </Link>
           </div>
-          <div>
+          <div className={styles.sideImage}>
             {' '}
             <Link to="/category/serie-a">
               <img src="https://res.cloudinary.com/daq80uhh9/image/upload/v1698367546/thefootballstore/ezgif-5-5a9fe775da_kbfdxj.gif" />

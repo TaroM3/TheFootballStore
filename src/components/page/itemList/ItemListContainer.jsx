@@ -15,11 +15,6 @@ const ItemListContainer = () => {
   const { categoryName } = useParams();
   const { subCategoryName } = useParams();
 
-  console.log(categoryName, subCategoryName);
-  // const [page, setPage] = useState(1);
-
-  // console.log(page);
-
   const [data] = useFirestore({
     databaseName: 'products',
     category: categoryName,
@@ -29,62 +24,16 @@ const ItemListContainer = () => {
 
   const [initialIndex, setInitialIndex] = useState(0);
 
-  let lastItem = 10;
-
-  console.log(initialIndex);
+  let lastItem = 12;
 
   const handleClickNext = () => {
-    setInitialIndex(initialIndex + 10);
+    setInitialIndex(initialIndex + 12);
   };
 
   const handleClickPrev = () => {
-    setInitialIndex(initialIndex - 10);
+    setInitialIndex(initialIndex - 12);
   };
-  //========================
-  // useEffect(() => {
-  //   let productsCollection = collection(db, 'products');
-  //   let consulta;
-  //   if (subCategoryName) {
-  //     consulta = query(
-  //       productsCollection,
-  //       where('subCategory', '==', subCategoryName),
-  //       limit(10),
-  //       startAt(1)
-  //     );
-  //   } else if (categoryName) {
-  //     consulta = query(
-  //       productsCollection,
-  //       where('category', '==', categoryName),
-  //       limit(10),
-  //       startAt({ id: 1 })
-  //     );
-  //   } else {
-  //     consulta = query(
-  //       productsCollection,
-  //       limit(10),
-  //       orderBy('title'),
-  //       startAt(page)
-  //     );
-  //   }
 
-  //   getDocs(consulta).then((res) => {
-  //     let productos = res.docs.map((doc) => {
-  //       return { ...doc.data(), id: doc.id };
-  //     });
-
-  //     setItems(productos);
-  //   });
-  // }, [categoryName, subCategoryName, page]);
-  // =========================
-  // return (
-  // <ItemList
-  //   items={data}
-  //   categoryName={categoryName}
-  //   subCategoryName={subCategoryName}
-  //   setPrev={setPrev}
-  //   prev={prev}
-  // />
-  // );
   console.log(data.length);
   let arr = [1, 2, 3, 4];
   return (
@@ -169,7 +118,7 @@ const ItemListContainer = () => {
       <div className={styles.btnContainer}>
         <button
           className={styles.btn}
-          disabled={initialIndex < 10}
+          disabled={initialIndex < 12}
           onClick={handleClickPrev}
         >
           Anterior
@@ -179,7 +128,7 @@ const ItemListContainer = () => {
           disabled={
             data.filter((_, index) => {
               return initialIndex <= index && index < initialIndex + lastItem;
-            }).length < 10
+            }).length < 12
           }
           onClick={handleClickNext}
         >

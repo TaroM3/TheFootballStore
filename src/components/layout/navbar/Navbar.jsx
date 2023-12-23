@@ -17,8 +17,10 @@ const Navbar = () => {
           <span>LAS MEJORES CAMISETAS DE FUTBOL ⚽ </span>
           <span>LAS MEJORES CAMISETAS DE FUTBOL ⚽ </span>
           <span>LAS MEJORES CAMISETAS DE FUTBOL ⚽ </span>
+          <span>LAS MEJORES CAMISETAS DE FUTBOL ⚽ </span>
         </div>
         <div className={styles.marquee__group} aria-hidden="true">
+          <span>LAS MEJORES CAMISETAS DE FUTBOL ⚽ </span>
           <span>LAS MEJORES CAMISETAS DE FUTBOL ⚽ </span>
           <span>LAS MEJORES CAMISETAS DE FUTBOL ⚽ </span>
           <span>LAS MEJORES CAMISETAS DE FUTBOL ⚽ </span>

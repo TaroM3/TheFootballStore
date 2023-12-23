@@ -16,7 +16,6 @@ const UserIcon = () => {
     right: false,
   });
 
-  console.log(auth.currentUser);
   if (isLoggedIn && name === '') {
     const uidToken = auth.currentUser.uid;
     login({ uidToken });
@@ -76,7 +75,7 @@ const UserIcon = () => {
                 }}
               >
                 <div className={styles.titulo}>
-                  <h1>Login</h1>{' '}
+                  <h1>The Foothball Store</h1>{' '}
                   {/* <Box onClick={toggleDrawer(anchor, false)}> */}
                   <Box onClick={close}>
                     <CloseButton />
