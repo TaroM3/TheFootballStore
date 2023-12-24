@@ -1,4 +1,4 @@
-import Box from "@mui/material";
+import { Box } from "@mui/material";
 import { useRef } from "react";
 import styles from "./DashboardProduct.module.css";
 
